@@ -1,0 +1,2237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<base href="./">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="color-scheme" content="only light">
+		<meta name="author" content="Rulepop LLC">
+		<meta name="copyright" content="Site code © 2022 Rulepop LLC">
+		<meta name="description" content="Vantage 规则速查。非官方中文离线译本。">
+		<title>Vantage 规则 | 非官方中文离线版</title>
+		<!--PWA-->
+		<link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+		<link rel="icon" href="meta/favicon.png" type="image/png">
+		<meta name="theme-color" content="#32628b">
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@rulepop">
+		<meta name="twitter:creator" content="@rulepop">
+		<!-- Open Graph -->
+		<meta property="og:url" content="https://vantage.rulepop.com/">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Vantage | Rulepop">
+		<meta property="og:description" content="Vantage 规则速查。非官方中文离线译本。">
+		<meta property="og:image" content="https://vantage.rulepop.com/meta/screen-home.webp">
+		<script type="module" crossorigin src="assets/index-Dguy4xGg.js?v=zh4"></script>
+		<link rel="stylesheet" crossorigin href="assets/index-8K0bZrJ_.css?v=zh4">
+	<link rel="manifest" href="manifest.webmanifest"></head>
+	<body>
+		<header>
+			<img src="ui/vantage.webp" alt="Vantage" width="1500" height="356">
+			<h1 class="visually-hidden">Vantage 规则</h1>
+		</header>
+		<nav>
+			<fieldset id="quick-ref-nav">
+				<legend>快速参考</legend>
+				<ul>
+					<li><a href="#turns">回合</a></li>
+					<li><a href="#icons">图标</a></li>
+					<li><a href="#components">组件</a></li>
+					<li><a href="#setup">开局</a></li>
+					<li><a href="#reminders">提醒</a></li>
+					<li><a href="#urtf">U.R.T.F.</a></li>
+					<li><a href="#story-lookup">故事书</a></li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>详细规则</legend>
+				<ul>
+					<li><a href="#actions">行动</a></li>
+					<li><a href="#boost">激励</a></li>
+					<li><a href="#cards">卡牌</a></li>
+					<li><a href="#challenge-dice">挑战骰</a></li>
+					<li><a href="#continue">继续</a></li>
+					<li><a href="#cost">费用与行动</a></li>
+					<li><a href="#damage">伤害</a></li>
+					<li><a href="#end-game">游戏结束</a></li>
+					<li><a href="#gameplay">流程</a></li>
+					<li><a href="#grid">卡阵</a></li>
+					<li><a href="#locations">地点</a></li>
+					<li><a href="#penalties">惩罚</a></li>
+					<li><a href="#results">结果</a></li>
+					<li><a href="#shared-info">共享信息</a></li>
+					<li><a href="#skills">技能</a></li>
+					<li><a href="#slots">槽位</a></li>
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+			</fieldset>
+			<fieldset id="spoilers-nav" data-relevance="spnav-show">
+				<legend>剧透</legend>
+				<ul>
+					<li><a href="#abilities">能力</a></li>
+					<li><a href="#animals">动物</a></li>
+					<li><a href="#characters">角色</a></li>
+					<li><a href="#composition">构成</a></li>
+					<li><a href="#curses">诅咒</a></li>
+					<li><a href="#difficulty">难度</a></li>
+					<li><a href="#elementals">元素体</a></li>
+					<li><a href="#escape-pods">逃生舱</a></li>
+					<li><a href="#experience">经历</a></li>
+					<li><a href="#flora">植物</a></li>
+					<li><a href="#goals">目标</a></li>
+					<li><a href="#interactions">互动</a></li>
+					<li><a href="#items">物品</a></li>
+					<li><a href="#lessons">课程</a></li>
+					<li><a href="#obstacles">障碍</a></li>
+					<li><a href="#orbs">光球</a></li>
+					<li><a href="#puzzles">谜题</a></li>
+					<li><a href="#runes">符文</a></li>
+					<li><a href="#seeds-and-trees">种子与树木</a></li>
+					<li><a href="#sentients">智者</a></li>
+					<li><a href="#skirm">Skirm</a></li>
+					<li><a href="#spells">法术</a></li>
+					<li><a href="#structures">建筑</a></li>
+					<li><a href="#terrain">地形</a></li>
+					<li><a href="#traveler">旅者</a></li>
+					<li><a href="#trials">试炼</a></li>
+					<li><a href="#vehicles">载具</a></li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>附加</legend>
+				<ul>
+					<li><a href="#faq">常见问题</a></li>
+					<li><a href="#errata">勘误</a></li>
+					<li><a href="#resources">资源</a></li>
+				</ul>
+			</fieldset>
+		</nav>
+		<main>
+			<!-- About -->
+			<rp-modal id="about"><p class="zh-notice" style="background:#eef6fb;border-left:4px solid #32628b;padding:.6rem .8rem;margin:0 0 1rem"><b>非官方中文离线译本。</b>原文来自 <a href="https://vantage.rulepop.com/">vantage.rulepop.com</a>（Stonemaier Games / Rulepop）。规则、界面与故事书已译为简体中文。仅供拥有正版游戏的玩家桌边查阅，请勿重新发布。</p>
+				<h2 slot="header">这是什么？</h2>
+				<svg class="float-right w125" viewBox="0 0 336 500"><use href="#logo-stonemaier-games"/></svg>
+				<p>
+					本站是 <cite><a href="https://stonemaiergames.com/games/vantage/">Vantage</a></cite> 的规则速查（原站为 Stonemaier Games 官方参考；本镜像为非官方中文译本）。
+				</p>
+				<p>适合快速查找某条规则，也可作为盒内规则书、教学视频或教人玩游戏时的补充。
+				</p>
+				<h3>使用提示</h3>
+				<p>
+					<dfn><a href="#history-nav">前进/后退导航</a></dfn>：将每条规则条目视为独立网页。若要返回，按 <em>返回按钮</em>。
+				</p>
+				<p>
+					<dfn><a href="#find">查看索引 <svg class="◊" viewBox="0 0 500 500"><use href="#icon-find"/></svg></a></dfn>：找不到你要的内容？索引收录游戏中所有术语。 <em>警告：</em> 包括 <a href="#spoilers">剧透</a>.
+				</p>
+				<p>
+					<dfn><a href="#install-pwa">安装本站</a>:</dfn> 本站是 <svg class="◊ pwa" viewBox="0 0 500 190"><use href="#pwa-logo"/></svg> （渐进式 Web 应用）。你可将其安装为独立应用，速度极快，且离线也能使用。
+				</p>
+				<p>
+					<dfn><a href="#link-to-rule">链接到规则</a></dfn>：想分享某条规则的链接？只需点击其标题！
+				</p>
+				<!-- cSpell:disable -->
+				<details>
+					<summary>制作人员</summary>
+					<div>
+						<p><dfn>设计：</dfn> Jamey Stegmaier</p>
+						<p><dfn>美术：</dfn> Valentina Filić、Sören Meding 与 Emilien Rotival</p>
+						<h3>特别感谢</h3>
+						<p>Vantage 对我来说（Jamey）已是一项投入超过 8 年的热情项目，但我并非孤军奋战。除了 Valentina Filić、Sören Meding 与 Emilien Rotival 以近 1700 幅插画创造整颗行星这一浩大努力之外，我永远感激 Juliana Moreno 与 Ariel Rubin（The Wild Optimists）设计部分局内谜题，Ira Fay 从零打造试玩 App，Panda Game Manufacturing 的 Shannon Lentz 多年来关于组件的讨论，Jose Manuel López-Cepero 打造 Web App，Karel Titeca 与 Christine Santana 的排版与平面设计，Morten Monrad Pedersen 与 Automa Factory 团队协助剧透包单人规则，开发者 Garrett Feiner 与 Travis Willse 的细致反馈与编辑，以及 Ryan Davis 与 Travis Willse 为许多 Move 与 Depart 故事书结果增添额外亮点。</p>
+						<p><dfn>测试玩家：</dfn> Mike Bartoo-Abud, Mitch Caudill, Blake Chursinoff, Caleb Chursinoff, Dusty Craine, Ryan S. Davis, Susannah Eisenbraun, Mark Espiridion, Ira Fay, Allie Feiner, Garrett Feiner, William Augustus Griffin Sr., Lindsay Grossmann, Ossian Hawkes, Wanja Heeren, Preston Holmes, Chris Ingold, Josh Jahner, Ben Jepsen, Abigail Jones, Emily Jones, Derik Kellner, Robert Konigsberg, Max Lüdov, Tyler McKinnon, Thom Mollinga, Chris Munford, Jay Nabedian, Crystal Nevin, Jason Nevin, Nicolas Pupat, Gregory Rempe, Caroline Rempe, Clara Rempe, Dominick Salazar, Ana Salazar, Erica Sanders, Artur Carvalho Santos, Nathan Smith, Franziska Steiner, David Studley, Lieve Teugels, Karel Titeca, Kobe Titeca, Michael Vannoy, Josh Ward, Travis Willse, Shawn Wilson, Darren Wolford, Frank Wolf, Kentoku Yamamoto</p>
+						<p><dfn>校对：</dfn> Brian Chandler, Garrett Feiner, Jan Horák, Jared Kepron, Mike Lee, Crystal Nevin, Justin Radziewicz, Asa Swain, Karel Titeca, Ian Tyrrell, Jay Voss, Josh Ward, Travis Willse, Dana Woller, Dave Zokvic</p>
+						<p>我也无比感激在许多方面启发 Vantage 的优秀游戏，包括 The Legend of Zelda: Breath of the Wild（与 Tears of the Kingdom）、The Witcher 3、Baldur's Gate 3、Eastshade、Stardew Valley、Subnautica、Red Dead Redemption、Ghost of Tsushima、Elden Ring、Tunic、TIME Stories、The 7th Continent（与 Citadel）、Sleeping Gods、Tainted Grail、Earthborne Rangers、Near and Far、Crusoe Crew、Lands of Galzyr、Micro Macro、One Deck Dungeon、Roll Player Adventures 等。</p>
+					</div>
+				</details>
+				<!-- cSpell:enable -->
+				<details>
+					<summary>更新日志</summary>
+					<div>
+						<dl>
+							<dt>13 May 2026</dt>
+								<dd>
+									<p>故事书条目小幅修正。屏幕前进/后退导航调整。</p>
+								</dd>
+							<dt>14 Feb 2026</dt>
+								<dd>
+									<p>故事书条目小幅调整。</p>
+								</dd>
+							<dt>22 Jan 2026</dt>
+								<dd>
+									<p>故事书条目小幅调整。</p>
+								</dd>
+							<dt>26 Dec 2025</dt>
+								<dd>
+									<p>更新勘误以与 Stonemaier 网站一致。</p>
+								</dd>
+							<dt>10 Dec 2025</dt>
+								<dd>
+									<p>在故事书查询中加入来自《秘密之书》的地点001，并对部分故事书措辞做了小幅修正。</p>
+								</dd>
+							<dt>26 Oct 2025</dt>
+								<dd>
+									<p>故事条目格式与措辞的小幅修正。</p>
+								</dd>
+							<dt>13 Oct 2025</dt>
+								<dd>
+									<p>已更新 <a href="#errata">勘误</a>。故事书条目修正与澄清。</p>
+								</dd>
+							<dt>20 Sep 2025</dt>
+								<dd>
+									<p>故事书条目修正与澄清。</p>
+								</dd>
+							<dt>11 Sep 2025</dt>
+								<dd>
+									<p>已更新 <a href="#errata">勘误</a>。故事书条目格式与措辞的小幅修正。</p>
+								</dd>
+							<dt>29 Aug 2025</dt>
+								<dd>
+									<p>已更新 <a href="#errata">勘误</a>。故事书条目格式与措辞的小幅修正。</p>
+								</dd>
+							<dt>26 Aug 2025</dt>
+								<dd>
+									<p><a href="#errata">勘误</a> 针对离开213。额外规则澄清。部分故事书条目措辞微调。</p>
+								</dd>
+							<dt>17 Aug 2025</dt>
+								<dd>
+									<p>更新城市术语条目。修复故事书条目中的连字符问题。</p>
+								</dd>
+							<dt>9 Aug 2025</dt>
+								<dd>
+									<p>更新勘误。</p>
+								</dd>
+							<dt>7 Aug 2025</dt>
+								<dd>
+									<p>更新部分故事书条目文字，以及少量内容样式修正。</p>
+								</dd>
+							<dt>2 Aug 2025</dt>
+								<dd>
+									<p>更新了部分故事书条目文字，并修正两处小笔误。</p>
+								</dd>
+							<dt>28 Jul 2025</dt>
+								<dd>
+									<p>更新勘误。启用屏幕常亮设置。在部分故事书条目中加入链接。</p>
+								</dd>
+							<dt>25 Jul 2025</dt>
+								<dd>
+									<p>更新了勘误。修复了个位数故事书条目的访问。</p>
+								</dd>
+							<dt>24 Jul 2025</dt>
+								<dd>
+									<p>在故事书条目中加入披露控件以隐藏决策结果。</p>
+								</dd>
+							<dt>23 Jul 2025</dt>
+								<dd>
+									<p>新增故事书查询功能，含故事书内容更新。</p>
+								</dd>
+							<dt>21 Jul 2025</dt>
+								<dd>
+									<p>更新勘误与 FAQ。纳入《秘密之书》术语表内容。</p>
+								</dd>
+							<dt>17 Jul 2025</dt>
+								<dd>
+									<p>已添加至 <a href="#grid">卡阵</a> 章节：“你不得在供应区中的横向卡牌上放置挑战骰。”</p>
+								</dd>
+							<dt>16 Jul 2025</dt>
+								<dd>
+									<p>来自规则书 r20 版本的更新。更新了勘误。</p>
+								</dd>
+							<dt>15 Jul 2025</dt>
+								<dd>
+									<p>新增常见问题、勘误与资源。</p>
+								</dd>
+						</dl>
+					</div>
+				</details>
+				<button id="check-for-update">检查更新</button>
+				<dl class="grid">
+					<dt>上次检查</dt>
+					<dd id="last-updated"></dd>
+				</dl>
+			</rp-modal>
+			<!-- Rules -->
+			<rp-modal id="abilities" class="glossary">
+				<h2 slot="header">能力</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>能力卡为你和其他玩家提供挑战骰 <a href="#slots">槽位</a> 针对特定行动。例如你可能学会游泳，并可指导需要游泳的同伴（故有影响 <svg class="◊" viewBox="0 0 500 500"><use href="#i-impact"/></svg> 槽位）。</p>
+				<ul>
+					<li>
+						<p>能力卡上部分行动提到「附近」自然特征，表示仅当该特征在当前地点可见且易达时可用。</p>
+					</li>
+					<li>
+						<p>部分能力行动允许获得匹配行动的收益（即在地点上，计为已完成的地点行动）。</p>
+					</li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="actions">
+				<h2 slot="header">行动</h2>
+				<p><dfn><a href="#turns">回合</a> 步骤 1：从三类行动中选择一项行动</dfn></p>
+				<p>你在不知费用或结果的情况下做出选择，但你总会成功。挑战在于避免失去 <a href="#penalties">时间</a> (<svg class="◊" viewBox="0 0 400 500"><use href="#i-time"/></svg>), <a href="#penalties">士气</a> (<svg class="◊" viewBox="0 0 500 478"><use href="#i-morale"/></svg>），或 <a href="#penalties">体力</a> (<svg class="◊" viewBox="0 0 500 500"><use href="#i-health"/></svg>).</p>
+				<fieldset class="rp-controls unlabeled tabs">
+					<ul data-relevance-set>
+						<li><label><input name="action-type" type="radio" value="act-location" checked><span>地点</span></label></li>
+						<li><label><input name="action-type" type="radio" value="act-card"><span>卡牌</span></label></li>
+						<li><label><input name="action-type" type="radio" value="act-depart"><span>离开</span></label></li>
+					</ul>
+				</fieldset>
+				<div id="location-action" data-relevance="act-location">
+					<img class="float-right w100 shadow" src="figs/location-actions.webp" alt="Location Actions" width="278" height="446">
+					<p>每个 <a href="#locations">地点</a> 列出（通常为 6 个）地点行动，类别为 <span class="move skill">移动</span> <svg class="◊" viewBox="0 0 398 500"><use href="#i-move"/></svg>, <span class="look skill">观察</span> <span class="nowrap"><svg class="◊" viewBox="0 0 500 400"><use href="#i-look"/></svg>,</span> <span class="engage skill">接触</span> <span class="nowrap"><svg class="◊" viewBox="0 0 500 500"><use href="#i-engage"/></svg>,</span> <span class="help skill">协助</span> <span class="nowrap"><svg class="◊" viewBox="0 0 500 416"><use href="#i-help"/></svg>,</span> <span class="take skill">获取</span> <span class="nowrap"><svg class="◊" viewBox="0 0 500 400"><use href="#i-take"/></svg>,</span> and <span class="overpower skill">压制</span> <svg class="◊" viewBox="0 0 234 500"><use href="#i-overpower"/></svg>.</p>
+					<ul>
+						<li><p>查阅此地点的故事书条目（例如，对于 <span class="look skill">观察-<span class="action">研究</span></span> 在地点 272 上的行动，查阅故事中条目 272 <span class="look skill">观察</span> 故事书）。</p></li>
+						<li>
+							<p><strong class="danger">若你此前在此执行过地点行动（即使是在倒数第二个回合之前的某回合），你不能再执行另一次。</strong> 改为选择离开行动或卡牌行动。</p>
+							<ul>
+								<li>
+									<img class="float-right w100 shadow" src="figs/always-available-action.webp" alt="Always available action" width="257" height="212">
+									<p><strong>“始终可用”</strong>: 部分地点行动列表可能注明特定行动始终可用。即使你此前在此执行过该行动或其他地点行动，此行动仍可用。</p>
+								</li>
+							</ul>
+						</li>
+						<li><p>若本局有其他玩家曾到访同一地点，你不可执行主题矛盾的地点行动（例如若有人曾在该处烧桥，你不可过桥）。因 Vantage 是高度视觉化的单局游戏，玩家应能记住去过何处、做过什么（必要时允许做笔记）。</p></li>
+					</ul>
+				</div>
+				<div id="card-action" data-relevance="act-card">
+					<p>许多非地点卡包含行动选项。其中包括你 <a href="#grid">卡阵</a>、你的供应区，以及 <a href="#center">中央板</a>.</p>
+					<img class="wide-figure shadow" src="figs/card-action.webp" alt="Card Action" width="742" height="153">
+					<ul>
+						<li>
+							<img class="float-right w100 shadow" src="figs/storybook-card-action.webp" alt="Storybook card action" width="277" height="276">
+							<p>查阅该特定卡牌的故事书条目（例如，对于 <span class="help skill">协助-EQUIP</span> 在卡牌 1435 上的行动，查阅故事中条目 1435 <span class="help skill">协助</span> 故事书）。</p></li>
+						<li><p>在完成行动之前，你不得观察将要获得的卡牌（若有）。</p></li>
+						<li><p>除非另有说明，即使你已在该卡上执行过行动，你仍可执行卡牌行动。</p></li>
+					</ul>
+				</div>
+				<div id="depart-action" data-relevance="act-depart">
+					<img class="float-right w100 shadow" src="figs/depart-action.webp" alt="Depart Action" width="276" height="290">
+					<p>离开你的 <a href="#locations">地点</a> 向四个基本方向之一前往另一地点（北始终指向前方）。这是 <span class="move skill">移动</span> 行动。</p>
+					<ul>
+						<li><p>每个数字（此地点为 500、273 和 271）是一个 <strong>列出的相邻地点</strong>。你可以通过 1 费用前往这些地点中的任意一个 <span class="move skill">移动</span> 行动（<span class="move action">步行</span> or <span class="move action">游泳</span>）且不使用故事书。</p></li>
+						<li><p>每颗星（<span class="star">*</span>）需查阅 Depart 故事书。对此地点，在 Depart 故事书中查看地点 272 的「向南移动」条目，以获知向南离开的费用、行动与结果。</p></li>
+						<li><p>在极少见的情况下，若某方向既未显示地点编号，也未 <span class="star">*</span>，你无法沿该方向从此地点离开。</p></li>
+					</ul>
+				</div>
+				<aside><p>你将不知费用与结果就选择本回合行动，但行动总会成功。阅读费用与描述后不可改主意。游戏很大一部分在于直觉、讨论与尝试学习。</p></aside>
+			</rp-modal>
+			<rp-modal id="animals" class="glossary">
+				<h2 slot="header">动物</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>Vantage 包含大量动物（与类人 <a href="#sentients">智者</a> 世界）。</p>
+				<ul>
+					<li><p><strong>野生：</strong> 当你获得大多数动物时，它们为野生。它们提供 1 挑战骰 <a href="#slots">槽位</a> 但没有 <a href="#boost">激励</a> 能力。部分动物还会提高你的 <a href="#grid">储备</a> 容量（它们替你携带物品）。</p></li>
+					<li><p><strong>忠诚：</strong> 忠诚动物拥有多个骰 <a href="#slots">槽位</a> 且一个 <a href="#boost">激励</a> 能力。</p></li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="book-of-secrets">
+				<h2 slot="header">《秘密之书》与术语</h2>
+				<img class="float-right w100 shadow" src="components/book-of-secrets.webp" alt="《秘密之书》" width="300" height="360">
+				<p>仅在卡牌或行动结果指示时查阅《秘密之书》条目。其中含谜题解法与目标结算。</p>
+			</rp-modal>
+			<rp-modal id="book-of-vantages">
+				<h2 slot="header">《视界之书》</h2>
+				<img class="float-right w150 shadow" src="components/book-of-vantages.webp" alt="《视界之书》" width="200" height="149">
+				<p>仅在卡牌或行动结果指示时查阅《视界之书》；若查阅，可向其他玩家描述所见，但不可直接展示。</p>
+			</rp-modal>
+			<rp-modal id="boost">
+				<h2 slot="header">激励</h2>
+				<p><strong>在任意回合的任意时刻（即使在行动中途或其他玩家执行行动时）</strong>，你可使用激励 <svg class="◊" viewBox="0 0 446 500"><use href="#i-boost"/></svg> 你……卡牌上的能力 <a href="#grid">卡阵</a> 使自己受益。激励代表你在探索星球并使用所发现事物时学到的知识。</p>
+				<rp-composite class="boost-card" aspect-ratio="1300/916">
+					<img class="captain cr-card-57x87 shadow" src="components/card-captain.webp" alt="Character" width="600" height="916">
+					<img class="character-boost" src="figs/boost-character.webp" alt="Character boost" width="269" height="118">
+					<img class="animal cr-card-57x87 shadow" src="components/animal-card.webp" alt="卡牌" width="600" height="916">
+					<img class="card-boost" src="figs/boost-card.webp" alt="Card boost" width="209" height="132">
+					<img class="one" src="figs/number-key.svg#1" alt="1">
+					<img class="two" src="figs/number-key.svg#2" alt="2">
+				</rp-composite>
+				<ol class="num-key">
+					<li><p>激励获得/支付于 <a href="#locations">地点</a> 进出你的角色（例如，若某地点行动的故事书文字写“获得1个激励”，则将其放在你的角色上）。</p></li>
+					<li><p>在其他所有卡牌上获得/支付的激励均置于/取自该卡。</p></li>
+				</ol>
+				<ul>
+					<li><p>每张卡的激励容量有限，不可超出。</p></li>
+					<li><p>激励能力的效果持续至当前回合结束。</p></li>
+					<li><p>当某图标 <svg class="◊" viewBox="0 0 446 500"><use href="#i-boost"/></svg> 代替“激励”一词时，图标数量代表激励数量。 <svg class="◊" viewBox="0 0 446 500"><use href="#i-boost"/></svg> 为 1 激励， <svg class="◊" viewBox="0 0 446 500"><use href="#i-boost"/></svg><svg class="◊" viewBox="0 0 446 500"><use href="#i-boost"/></svg> 为 2 激励。</p></li>
+					<li><p>Vantage 中激励标记总数无硬性上限。若 60 枚激励皆在卡上且仍需更多，任意 cube 皆可补充。</p></li>
+					<li><p>若挑战骰能力写明「将它们放入 <a href="#center">中央板</a>，”指的是中央板的惩罚区（否则会写“<a href="#challenge-dice">回收</a>」骰子，使其返回挑战骰池）。</p></li>
+					<li><p>部分卡牌要求玩家放置通用的「<a href="#tokens">标记</a>」以追踪进度；激励标记用于此目的。</p></li>
+					<li><p>你的激励能力使你受益。若激励能力具有影响 <svg class="◊" viewBox="0 0 500 500"><use href="#i-impact"/></svg> 图标，可使任意玩家受益。</p></li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="cards">
+				<h2 slot="header">卡牌</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#locations">地点卡</a></li>
+				</ul>
+				<figure>
+					<rp-composite class="character-card" aspect-ratio="600/916">
+						<img class="card cr-card-57x87 shadow" src="components/card-captain.webp" alt="Character" width="600" height="916">
+						<img class="slot-move" src="figs/number-key.svg#1" alt="1">
+						<img class="coin-value" src="figs/number-key.svg#2" alt="2">
+						<img class="reserve" src="figs/number-key.svg#3" alt="3">
+						<img class="when-placed" src="figs/number-key.svg#4" alt="4">
+						<img class="card-number" src="figs/number-key.svg#5" alt="5">
+						<img class="slot-impact" src="figs/number-key.svg#6" alt="6">
+						<img class="card-actions" src="figs/number-key.svg#7" alt="7">
+						<img class="boost-capacity" src="figs/number-key.svg#8" alt="8">
+						<img class="boost-standard" src="figs/number-key.svg#9" alt="9">
+						<img class="boost-special" src="figs/number-key.svg#10" alt="10">
+					</rp-composite>
+				</figure>
+				<ol class="num-key">
+					<li><dfn>挑战骰 <a href="#slots">槽位</a> (<span class="move skill">移动</span>)</dfn> 你的一枚挑战骰可放置于此（需 <span class="move skill">移动</span> 行动）；在此放置骰子后获得 1 激励</li>
+					<li><dfn>部分卡牌有金币价值（<svg class="◊" viewBox="0 0 500 500"><use href="#i-coin"/></svg>)</dfn> 游戏会在此重要时告知你</li>
+					<li><dfn><a href="#grid">储备</a> 容量</dfn> 你可保留在卡阵之外的纵向卡牌数量（额外 1 张）</li>
+					<li><dfn>“放置时”收益</dfn> 首次将此卡放入卡阵时获得（2 激励）；若此收益涉及其他卡，仅考虑你卡阵中的卡。</li>
+					<li><dfn>卡牌编号</dfn></li>
+					<li><dfn>挑战骰 <a href="#slots">槽位</a></dfn> 作为影响槽 <svg class="◊" viewBox="0 0 500 500"><use href="#i-impact"/></svg>，挑战骰的士气结果 <svg class="◊" viewBox="0 0 500 478"><use href="#i-morale"/></svg> 任意玩家掷出的骰子可放在此处</li>
+					<li><dfn>卡牌行动</dfn> 当你执行其一，参阅此卡（1435）的故事书条目</li>
+					<li><dfn><a href="#boost">激励</a> 容量</dfn> 激励数量 <svg class="◊" viewBox="0 0 446 500"><use href="#i-boost"/></svg> 此卡可容纳（6）</li>
+					<li><dfn><a href="#boost">激励</a> 能力</dfn> 随时从本卡支付 2 激励，以获得 1 金币或 1 <span class="move skill">移动</span> 技能标记</li>
+					<li><dfn><a href="#boost">激励</a> 能力</dfn> 随时从本卡支付 1 激励以执行此操作</li>
+				</ol>
+			</rp-modal>
+			<rp-modal id="center">
+				<h2 slot="header">中央板（游戏盘）</h2>
+				<img class="shadow" src="components/center.webp" alt="中央板" width="600" height="600">
+				<ul>
+					<li><p>任意玩家可选择执行 <a href="#actions">行动</a> 中央板上的卡牌。</p></li>
+					<li><p>若挑战骰能力写「将它们放在中央，」指中央板惩罚区（否则会写「<a href="#challenge-dice">回收</a>」骰子，使其返回挑战骰池）。</p></li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="challenge-dice">
+				<h2 slot="header">挑战骰</h2>
+				<p><dfn><a href="#turns">回合</a> 步骤 4：从挑战骰池掷出等同于剩余费用的骰</dfn></p>
+				<p>The <a href="#cost">费用</a> 行动难度；从池中掷等于费用数值的挑战骰（例如费用 2，掷 2 枚挑战骰）。</p>
+				<ul>
+					<li>
+						<img class="float-right w175" src="figs/roll-dice.webp" alt="Roll challenge dice" width="300" height="135">
+						<p>例如，若费用为 <svg class="◊" viewBox="0 0 500 500"><use href="#i-cost-look"/></svg> <svg class="◊" viewBox="0 0 500 500"><use href="#i-cost-b3"/></svg> 且一名玩家支付了 1 <span class="look skill">观察</span> 技能标记，改为掷2枚挑战骰而非3枚。若费用因花费 <a href="#skills">技能标记</a>，不掷任何挑战骰。</p>
+					</li>
+					<li><p>当且仅当挑战骰池中可用骰少于剩余费用时，首先 <strong>回收</strong> 所有来自卡阵中卡牌以及中央板惩罚区的挑战骰 <a href="#center">中央板</a> 通过将其返回挑战骰池。 <span class="example">例如剩余费用为 2 但池中仅 1 枚骰，先回收全部挑战骰，再从满池掷 2 枚。</span></p></li>
+					<li><p>游戏中挑战骰总数始终为 8 加每名玩家 2（多余骰不用——留在盒中）。</p></li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="characters" class="glossary">
+				<h2 slot="header">角色</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>每名玩家始终在其卡阵中央拥有一张角色卡 <a href="#grid">卡阵</a>. 你就是该角色；透过其双眼看世界。每名角色独特，若想增加角色间不对称，可尝试执行一些 <a href="#actions">行动</a> 印在你的角色上。</p>
+				<details>
+					<summary><b>起始</b></summary>
+					<div>
+						<p>起始角色拥有 <a href="#cards">放置时</a> 获得 2 的收益 <a href="#boost">激励</a> （代表你的知识），以及最多 6 激励的容量。这很重要，因为从地点行动与离开行动获得激励的默认位置在角色上。起始角色能力如下：</p>
+					<ol type="a">
+						<li>支付 2 <a href="#boost">激励</a> 以获得 <a href="#coins"><svg class="◊" viewBox="0 0 500 500"><use href="#i-coin-1"/></svg></a> 或一次移动 <a href="#skill-tokens">技能</a></li>
+						<li>支付 1 <a href="#boost">激励</a> 以重掷 <a href="#challenge-dice">挑战骰</a> 你为……掷出的 <a href="#actions">行动</a> 并获得特定 <a href="#skill-tokens">技能</a> 若结果不变</li>
+						<li>支付 1 <a href="#boost">激励</a> 从你的……转移 1 张卡牌 <a href="#grid">储备</a> 至你的 <a href="#grid">卡阵</a> （你的角色包含1张储备卡的容量，部分其他卡牌会提高你的容量）</li>
+					</ol>
+					<p>角色也有若干行动；使用 <a href="#storybooks">故事书</a> 若你将其中任一行动作为回合行动，则匹配角色卡编号的条目</p>
+					</div>
+				</details>
+				<details>
+					<summary><b>幸存者</b></summary>
+					<div><p>有若干机会可将你的角色替换为生还者版本，这会改善其中一枚挑战骰 <a href="#slots">槽位</a>，为……增加并改进选项 <a href="#boost">激励</a> 能力，并提供对高温或严寒的免疫 <a href="#damage">伤害</a>.</p></div>
+				</details>
+				<details>
+					<summary><b>动力甲</b></summary>
+					<div><p>有若干机会可将你的角色替换为动力装甲版本，这会增加一枚挑战骰 <a href="#slot">槽位</a>，为……增加并改进选项 <a href="#boost">激励</a> 能力，并提供缺氧免疫 <a href="#damage">伤害</a>.</p></div>
+				</details>
+			</rp-modal>
+			<rp-modal id="coins">
+				<h2 slot="header">金币</h2>
+				<p>你会发现多种赚取和花费金币的方式（记作 <svg class="◊" viewBox="0 0 500 500"><use href="#i-coin-1"/></svg> 卡牌上以及故事书文字中的 $1）。许多 <a href="#cards">卡牌</a> 也有金币价值；行动 <a href="#results">结果</a> 会指示何时可按价值出售物品。除非你在同一 <a href="#locations">地点</a> 作为另一名玩家，你不能在玩家之间转移金币。</p>
+			</rp-modal>
+			<rp-modal id="components" wide max>
+				<h2 slot="header">组件</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#component-inventory">组件清单</a></li>
+				</ul>
+				<ul class="grid components">
+					<li class="storybooks"><a href="#storybooks"><img src="components/storybooks.webp" alt="故事书" width="600" height="234"> 故事书</a></li>
+					<li class="book-of-vantages"><a href="#book-of-vantages"><img src="components/book-of-vantages.webp" alt="《视界之书》" width="200" height="149"> 《视界之书》</a></li>
+					<li class="book-of-secrets"><a href="#book-of-secrets"><img src="components/book-of-secrets.webp" alt="《秘密之书》" width="300" height="360"> 《秘密之书》</a></li>
+					<li class="game-board"><a href="#center"><img src="components/center.webp" alt="Game board" width="600" height="600"> 中央板</a></li>
+					<li class="location-card"><a href="#locations"><img class=" cr-card-120x80" src="components/location-card.webp" alt="Location card" width="1200" height="800"> 地点卡</a></li>
+					<li class="standard-card"><a href="#cards"><img class="cr-card-57x87" src="components/card-captain.webp" alt="Standard card" width="600" height="916"> 标准卡</a></li>
+					<li class="challenge-dice"><a href="#challenge-dice"><img src="components/challenge-die.webp" alt="挑战骰" width="150" height="98"> 挑战骰</a></li>
+					<li class="skill-dice"><a href="#skill-tokens"><img src="components/skill-die.webp" alt="技能骰" width="150" height="84"> 技能骰</a></li>
+					<li class="boost-tokens"><a href="#tokens"><img src="components/boost-tokens.webp" alt="激励标记" width="600" height="89"> （激励）标记</a></li>
+					<li class="skill-tokens"><a href="#skill-tokens"><img src="components/skill-tokens.webp" alt="技能标记" width="150" height="89"> 技能标记</a></li>
+					<li class="coins"><a href="#coins"><img src="components/coins.webp" alt="金币" width="150" height="138"> 金币</a></li>
+					<li class="trackers"><a href="#trackers"><img src="components/trackers.webp" alt="Time trackers" width="577" height="300"> 时间、士气与体力追踪器</a></li>
+					<li class="location-card-holders"><a href="#location-card-holders"><img src="components/location-card-holder.webp" alt="地点卡座" width="200" height="99"> 地点卡座</a></li>
+					<li class="spoiler-pack"><a href="#spoiler-pack"><img src="components/spoiler-pack.webp" alt="剧透补充包" width="300" height="442"> 剧透补充包</a></li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="component-inventory">
+				<h2 slot="header">组件清单</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#components">组件</a></li>
+				</ul>
+				<ul>
+					<li>415 张大型卡牌（双面；80x120mm）</li>
+					<li>916 张标准卡牌（57×87mm）</li>
+					<li>1 包剧透卡牌</li>
+					<li>8 本故事书（含《秘密之书》）</li>
+					<li>1 本《视界之书》</li>
+					<li>1 块游戏盘（中央板）</li>
+					<li>20 颗挑战骰</li>
+					<li>12 颗技能骰</li>
+					<li>60 个激励标记（方块）</li>
+					<li>60 个技能标记</li>
+					<li>45 硬币</li>
+					<li>6 个时间追踪条（每位玩家 1 个）</li>
+					<li>6 个士气追踪条（每位玩家 1 个）</li>
+					<li>6 个体力追踪条（每位玩家 1 个）</li>
+					<li>6 个地点卡托（每位玩家 1 个）</li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="composition" class="glossary">
+				<h2 slot="header">构成</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>部分 <a href="#actions">行动</a> and <a href="#abilities">能力</a> 指卡的「构成」，即该卡主要关联元素。这些图标也出现在部分挑战骰 <a href="#slots">槽位</a>。并非所有卡都有构成，若有，则以下列图标之一显示：</p>
+				<ul class="grid icons">
+					<li>
+						<img src="icons/i-circuit.webp" alt="电路" width="146" height="146">
+						<p>电路</p>
+					</li>
+					<li>
+						<img src="icons/i-energy.webp" alt="能量" width="146" height="146">
+						<p>能量</p>
+					</li>
+					<li>
+						<img src="icons/i-fire.webp" alt="火" width="146" height="146">
+						<p>火</p>
+					</li>
+					<li>
+						<img src="icons/i-gold.webp" alt="金" width="146" height="146">
+						<p>金</p>
+					</li>
+					<li>
+						<img src="icons/i-leaf.webp" alt="叶" width="146" height="146">
+						<p>叶</p>
+					</li>
+					<li>
+						<img src="icons/i-metal.webp" alt="金属" width="146" height="146">
+						<p>金属</p>
+					</li>
+					<li>
+						<img src="icons/i-sand.webp" alt="沙" width="146" height="146">
+						<p>沙</p>
+					</li>
+					<li>
+						<img src="icons/i-sinew.webp" alt="筋腱" width="146" height="146">
+						<p>筋腱</p>
+					</li>
+					<li>
+						<img src="icons/i-stone.webp" alt="石" width="146" height="146">
+						<p>石</p>
+					</li>
+					<li>
+						<img src="icons/i-water.webp" alt="水" width="146" height="146">
+						<p>水</p>
+					</li>
+					<li>
+						<img src="icons/i-wind.webp" alt="风" width="146" height="146">
+						<p>风</p>
+					</li>
+					<li>
+						<img src="icons/i-wood.webp" alt="木" width="146" height="146">
+						<p>木</p>
+					</li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="cost">
+				<h2 slot="header">费用与行动</h2>
+				<p><dfn><a href="#turns">回合</a> 步骤 2：朗读费用与行动（非结果）</dfn></p>
+				<p>部分卡印刷费用和/或行动，但多数需查阅故事书。多数情况下用故事书条目查看费用与完整行动。使用与类别匹配的故事书（例如 <span class="engage skill">接触</span>）以及与行动所在卡匹配的条目（例如，地点 272）。</p>
+				<img class="storybook-action" src="figs/storybook-action.webp" alt="Storybook action" width="1523" height="411">
+				<ul>
+					<li>
+						<img class="float-right w100 shadow" src="figs/card-action-cost.webp" alt="Card action cost" width="272" height="202">
+						<p>部分卡含完整费用、行动与结果——这些行动勿查故事书。除行动类型与标准费用（数量为 <a href="#challenge-dice">要掷的挑战骰</a>），卡阵卡牌上的部分行动也有激励费用 <span class="nowrap">(<svg class="◊" viewBox="0 0 446 500"><use href="#i-boost"/></svg>;</span> 从该卡支付的方块）。右侧示例中，这是4费用 <span class="help skill">协助</span> 还要求你额外支付 1 激励的行动。</p></li>
+					<li>
+						<p>若 <a href="#actions">离开行动</a> 你选择的是相邻所列地点，则 <span class="move skill">移动</span> 费用为 1。其他相邻地点标有 <span class="star">*</span>；你必须查询其 <span class="move skill">移动</span> 声明方向后查阅离开类故事书中的费用。</p>
+						<ul>
+							<li><p><b>斜向：</b> 若沿特定基本方向移动（如向东），且 Depart 故事书有相关斜向条目（如向东南），可选择改走该相关方向而非原选择。</p></li>
+							<li><p><strong>区域：</strong> 部分地点行动指区域（涵盖多地点的更大范围），为括号内字母，见于 <span class="look skill">观察</span> 你所在地点的故事书条目。</p></li>
+						</ul>
+					</li>
+					<li><p>对于有费用的行动 <svg class="◊" viewBox="0 0 500 500"><use href="#i-cost-bx"/></svg>，从 1–6 选数作为费用。表示投入多少努力，行动结果取决于所选费用数字。</p></li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="continue">
+				<h2 slot="header">继续</h2>
+				<p><dfn><a href="#turns">回合</a> 步骤 8：结束你的回合。</dfn></p>
+				<p>若某地点 <a href="#actions">行动的</a> 结果包含“继续”指示时，你必须执行额外行动，忽略 <a href="#actions">步骤 1</a> （例如，若你已执行过 <span class="engage skill">接触</span> 地点行动，你可以选择另一个地点行动，但不能是同一 <span class="engage skill">接触</span> 行动）。</p>
+				<ul>
+					<li><p>某些结果包含继续执行特定行动的指示。若该行动标注在地点上，则从 <a href="#cost">步骤 2</a>。否则，从 <a href="#actions">步骤 1</a>.</p></li>
+					<li><p>某些非地点行动包含“继续”指示，但这些不会忽略 <a href="#actions">步骤 1</a>.</p></li>
+					<li><p>说明有时写「你可继续」；此时是否继续执行另一行动是选择，非强制。仅适用于当前回合；除非其他行动允许，未来回合不可在此地点继续。</p></li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="curses" class="glossary">
+				<h2 slot="header">诅咒</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>当被附近的……发现你在做鬼祟之事时 <a href="#sentients">智者</a> （有时在相邻地点的视野之外），你有可能获得诅咒卡。若如此，你必须将其放入你的 <a href="#grid">卡阵</a>。若你的卡阵已满，则不得 <a href="#grid">储备</a> 诅咒。改为储备一张非角色卡以腾出空间。</p>
+				<p>每个诅咒为未放置的 <a href="#penalties">挫折</a> 挑战骰结果（<svg class="◊" viewBox="0 0 500 474"><use href="#i-setback"/></svg>）当任何玩家与地点或其他带有对应 <a href="#composition">构成</a> 图标。就卡阵卡放置挫折骰而言，挫折结果不等同于挑战骰上的时间、士气、体力结果。 <a href="#slots">槽位</a>，即使未放置特定挫折结果的惩罚是失去时间、士气或体力。</p>
+			</rp-modal>
+			<rp-modal id="damage">
+				<h2 slot="header">伤害</h2>
+				<p>若你受到 1 点高温、严寒或缺氧伤害，失去 1 体力或 <svg class="◊" viewBox="0 0 500 500"><use href="#i-health"/></svg>，或 <em>两者</em> 1 时间 <svg class="◊" viewBox="0 0 400 500"><use href="#i-time"/></svg> <em>and</em> 1 士气 <svg class="◊" viewBox="0 0 500 478"><use href="#i-morale"/></svg>.</p>
+			</rp-modal>
+			<rp-modal id="difficulty" class="glossary">
+				<h2 slot="header">难度</h2>
+				<p>Vantage 为玩家提供多种调节获胜难度的选项，其中大多数在 <a href="#setup">开局</a>。不妨自行尝试，看看哪种最适合你。</p>
+				<ul>
+					<li><p><b>你的时间、士气和体力的起始位置 <a href="#trackers">追踪器</a>.</b> 若你胆量大，可全部设为 3 或 4；想要一点缓冲可选 5 或 6（轨道上限为 6）。就像 Nations，每位玩家独立选择，并考虑更冒险的玩家可能在局中更需要他人协助。你甚至可根据希望的游戏时长选择起始数值——我们发现有些玩家希望首局较快结束以免学习机制时看到太多，而其他人更偏好轻松体验。</p></li>
+					<li><p><b>任务类型。</b> 任务通过掷 2 <a href="#skill-tokens">技能骰</a>。数学上，掷出特定符文对的几率低于特定非对，故与对子相关的 6 张任务卡最难。如地点 000 所示，可重掷对子以获得较易任务。</p></li>
+					<li><p><b>坠机地点。</b> 在每次 <a href="#escape-pods">逃生舱</a>，共有 21 个可能坠毁地点（6 个逃生舱共 126 处）。前 6 个——对子——气候更极端，可重掷以获得较易开局。</p></li>
+					<li><p><b>各任务卡上包含助力你推进的行动。</b> 这些行动在试玩过程中加入，以协助任务困难的玩家。游戏不会手把手，许多任务有多种完成方式（此外你也可决定不在乎任务）。但若任务对你很重要却仍困难，每张任务卡含 4 项可协助的行动。</p></li>
+					<li><p><b>挑战骰（可选变体）：</b> 玩家第一次在卡阵中拥有 3 张和 6 张卡牌时 <a href="#grid">卡阵</a>，永久向挑战骰池加 1 枚骰。6 人不可；1–5 人共向池加 2 枚挑战骰。</p></li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="elementals" class="glossary">
+				<h2 slot="header">元素体</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>元素体是星球初次以12种 <a href="#composition">元素</a>.</p>
+				<ul>
+					<li><p><b>元素体地点：</b> 每局首次到达元素体地点时，会立即受罚并被迫前往相邻地点。这可视为元素体的警告。</p></li>
+					<li><p><b>元素体卡牌：</b> 若你通过释放获得元素体，它会指示你将3 <a href="#boost">激励</a> 从相邻卡转移到元素体（吸收周围卡牌力量）；若与元素体共边的卡上激励超过 3，你选择转移哪些激励。每个元素体有几个挑战骰 <a href="#slots">槽位</a> 需支付激励（来自元素体）才能使用。若元素体上无激励，失去该卡并获得所列收益（1 时间/士气/体力与 1 个特定 <a href="#skill-tokens">技能</a>).</p></li>
+					<li><p><b>斩杀元素体：</b> 斩杀巨型元素体是艰巨任务，需要多次 <a href="#actions">行动</a> 以完成。若你选择 <span class="skill overpower">压制-<span class="action">斩杀</span></span> 行动时，会指示在桌上找 4 张卡组合成元素体。你可选择先击杀哪张卡（怪物不同部位），不同部位带来不同收益以协助你 <span class="overpower action">斩杀</span> 行动。你也可以选择撤退，终止尝试 <span class="overpower action">斩杀</span> 元素体。元素体战斗卡上的行动计为 <a href="#interactions">互动</a> 与该元素体（含关联诅咒卡的任何额外惩罚）。</p></li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="end-game">
+				<h2 slot="header">游戏结束</h2>
+				<p>游戏可通过多种方式结束，且 <a href="#storybooks">故事书</a> 将提供选项（或要求）在以下情况结束游戏：</p>
+				<ul>
+					<li>
+						<img class="float-right cr-card-87x57 shadow" src="components/mission-card.webp" alt="Mission card" width="600" height="393">
+						<p>你完成任务（完成任务后，你可在结束游戏与继续追求命运之间做出选择）。</p>
+					</li>
+					<li>
+						<img class="float-right cr-card-87x57 shadow" src="components/destiny-card.webp" alt="Destiny card" width="600" height="393">
+						<p>你完成命运（然后选择阅读其故事书条目，将结束游戏）。可收集多张命运卡。</p>
+					</li>
+					<li><p>任意玩家的时间、士气或体力降至0。若发生此事，请在 <span class="take skill">获取</span> 故事书。</p></li>
+				</ul>
+				<p>你甚至可在分配来游玩 Vantage 的时间用尽时结束游戏。Vantage 时长因随机因素与玩家选择差异很大（例如执行任务卡印刷的行动可显著缩短）。有些局远快于 2 小时，有些可能超过 3 小时。</p>
+				<p>除任务胜利、命运胜利或史诗胜利（任务与命运皆完成）外，你可将所追求并实现的一切定义为成功。</p>
+				<img class="float-right" src="figs/put-away.webp" alt="Box packing" width="300" height="213">
+				<p>游戏结束时，将所有卡牌与组件收回盒中（剧透包获得的卡回到该包）。换言之一切完全重置，以便下次游玩 Vantage 开启新冒险。收纳时，将 3 叠地点卡平放入各自隔间，空隙中放各类标记/骰，再将所有故事书置于其上。</p>
+			</rp-modal>
+			<rp-modal id="errata">
+				<h2 slot="header">勘误与澄清</h2>
+				<fieldset class="rp-controls unlabeled tabs">
+					<ul data-relevance-set>
+						<li><label><input name="errata" type="radio" value="err-cards"><span>卡牌</span></label></li>
+						<li><label><input name="errata" type="radio" value="err-storybooks" checked><span>故事书</span></label></li>
+						<li><label><input name="errata" type="radio" value="err-rulebook"><span>规则</span></label></li>
+					</ul>
+				</fieldset>
+				<div data-relevance="err-cards">
+					<dl>
+						<dt><span class="loc-num">104</span></dt>
+							<dd><img class="float-right w100" src="figs/basket-fruit.webp" alt="Basket with 6 fruits" width="282" height="189"> 插画的相关部分被卡牌文字遮挡——一个装着6个水果的篮子。</dd>
+						<dt><span class="loc-num">267</span></dt>
+							<dd>卡牌构成应为风 <img class="◊" src="icons/i-wind.webp" alt="风" width="146" height="146">，而非叶 <img class="◊" src="icons/i-leaf.webp" alt="叶" width="146" height="146">.</dd>
+						<dt><span class="loc-num">431</span></dt>
+							<dd>将“Then go to <span class="loc-num">413</span>, <span class="loc-num">723</span>，或 <span class="loc-num">728</span>”改为“Then go to <span class="loc-num">476</span>.”</dd>
+						<dt><span class="card-num">874</span></dt>
+							<dd>将「（储备此卡）」替换为「（替换此卡）」。 <small>10 Oct 2025</small></dd>
+						<dt><span class="card-num">910</span>, <span class="card-num">911</span>, <span class="card-num">912</span>, <span class="card-num">913</span>, &amp; <span class="card-num">932</span></dt>
+							<dd>这些钓鱼装备卡缺少3个激励槽位（你可以通过执行其 <span class="overpower action">钓鱼</span> 行动并获得特定结果）。</dd>
+						<dt><span class="card-num">948</span></dt>
+							<dd>将激励能力的费用提高到 2 激励（而非 1）。 <small>10 Oct 2025</small></dd>
+						<dt><span class="card-num">957</span></dt>
+							<dd>The <svg class="◊" viewBox="0 0 500 500"><use href="#i-cost-move"/></svg> <a href="#slots">骰子槽位</a> 缺少激励输出 <svg class="◊" viewBox="0 0 500 400"><use href="#i-boost-output"/></svg>。当你在此槽位放置一枚挑战骰时，立即获得 <a href="#boost">激励</a> 标记放在该卡上。</dd>
+						<dt><span class="card-num">962</span></dt>
+							<dd>The <svg class="◊" viewBox="0 0 500 500"><use href="#i-cost-overpower"/></svg> <a href="#slots">骰子槽位</a> 缺少激励输出 <svg class="◊" viewBox="0 0 500 400"><use href="#i-boost-output"/></svg>。当你在此槽位放置一枚挑战骰时，立即获得 <a href="#boost">激励</a> 标记放在该卡上。</dd>
+						<dt><span class="card-num">1013</span></dt>
+							<dd><span class="move action">骑乘</span> 应为 <a href="#boost">激励</a> <svg class="◊" viewBox="0 0 446 500"><use href="#i-boost"/></svg> 能力，而非卡牌行动。</dd>
+						<dt><span class="card-num">1016</span></dt>
+							<dd>这张载具卡缺少3个激励槽位（你可以通过执行其 <span class="overpower action">钓鱼</span> 行动并获得特定结果）。</dd>
+						<dt><span class="card-num">1092	</span></dt>
+							<dd>The <span class="help action">制作</span> 行动指引你找到正确的卡牌（<span class="card-num">881</span>），但列为「Steelclamp」而非「Crabgrip」。此类卡名与编号不符时，以编号为准。</dd>
+						<dt><span class="card-num">1444</span> &amp; <span class="card-num">1450</span></dt>
+							<dd>第二个激励能力应为“回收另一张卡上的1枚挑战骰”</dd>
+					</dl>
+					<aside>
+						<p>勘误包还包含卡牌的小幅更新 <span class="card-num">1088</span> （新增：支付 2 激励以获得 1 协助）， <span class="card-num">1101</span> （名称变更）， <span class="card-num">1254</span> （图钉位置更新）， <span class="card-num">1452</span> （第二选项已改），以及 <span class="card-num">1488</span> （第一选项获得 +2 <span class="help skill">协助</span>).</p>
+					</aside>
+				</div>
+				<div data-relevance="err-storybooks">
+					<p class="note"><b>注：</b> 以下勘误已纳入 <a href="#story-lookup">故事书查询</a>.</p>
+					<dl>
+						<dt><span class="move skill">移动</span> <span class="loc-num">051</span>–<span class="loc-num">063</span></dt>
+							<dd>为使该行动更友好，当你 <span class="move action">下潜</span>，我们已将文字修订为：“你在水下时将全部载具卡储备（若有）。”</dd>
+						<dt><span class="look skill">观察</span> <span class="loc-num">145</span> &amp; <span class="loc-num">301</span></dt>
+							<dd>你获得的能力应为 <span class="card-num">1483</span> （非 <span class="card-num">1482</span>).</dd>
+						<dt><span class="look skill">观察</span> <span class="loc-num">303</span></dt>
+							<dd>将整个结果改为「当你沿石上线条描摹，三个颜色分明的图标浮现。你可选择聚焦其一。若选绿色图标，获得法术 <span class="card-num">1236</span>。若你选择粉色图标，获得法术 <span class="card-num">1237</span>。若你选择蓝色图标，获得法术 <span class="card-num">1238</span>.”</dd>
+						<dt><span class="look skill">观察</span> <span class="loc-num">439</span></dt>
+							<dd>将「多于 1 枚骰子」改为「1 枚或更多骰子」。</dd>
+						<dt><span class="engage skill">接触</span> <span class="loc-num">579</span></dt>
+							<dd>在第一个要点中， <span class="loc-num">410</span> 应为 <span class="loc-num">499</span>.</dd>
+						<dt><span class="engage skill">接触</span> <span class="loc-num">1435</span>–<span class="loc-num">1452</span></dt>
+							<dd>改为「旅行商人向你出售支持六项行动之一的特殊商品。你可先最多卖出 1 张卡（来自卡阵或储备）获得其金币面值，然后选择一项或获得 1 激励：」</dd>
+						<dt><span class="help skill">协助</span> <span class="loc-num">020</span>–<span class="loc-num">021</span>, <span class="loc-num">023</span>–<span class="loc-num">026</span>, <span class="loc-num">028</span>, <span class="loc-num">030</span>–<span class="loc-num">039</span>, <span class="loc-num">050</span></dt>
+							<dd><span class="help skill">协助-<span class="action">分享</span></span> 行动后应有「你可继续」（这些是你试图越过特定类型障碍之处）。</dd>
+						<dt><span class="take skill">获取</span> <span class="loc-num">123</span></dt>
+							<dd>这应给你卡牌 <span class="card-num">1472</span>，非 <span class="card-num">1480</span>.</dd>
+						<dt><span class="take skill">获取</span> <span class="loc-num">781</span></dt>
+							<dd>第一个选项应给你卡牌 <span class="card-num">1336</span>，非 <span class="card-num">1344</span>.</dd>
+						<dt><span class="overpower skill">压制	</span> <span class="loc-num">024</span>, <span class="loc-num">036</span>, &amp; <span class="loc-num">039</span></dt>
+							<dd>The <span class="overpower action">焚烧</span> 洞穴屏障上的行动应写“你可以继续执行观察-EXPLORE 行动。”</dd>
+						<dt><span class="overpower skill">压制</span> <span class="loc-num">530</span></dt>
+							<dd>对手的卡牌不应 <span class="card-num">1530</span>；应为 <span class="card-num">1521</span>.</dd>
+						<dt><span class="overpower skill">压制</span> <span class="loc-num">558</span></dt>
+							<dd>这应使你离开至 <span class="loc-num">271</span>，非 <span class="loc-num">215</span>.</dd>
+						<dt><span class="overpower skill">压制</span> <span class="loc-num">910</span>, <span class="loc-num">911</span>, <span class="loc-num">912</span>, <span class="loc-num">913</span>, <span class="loc-num">932</span>, &amp; <span class="loc-num">1016</span></dt>
+							<dd>这些与钓鱼相关条目的文字应包含“每从此处支付1个激励，额外掷1枚骰”。</dd>
+						<dt><span class="move skill">离开</span> <span class="loc-num">213</span> （北）</dt>
+							<dd>这应带你前往 <span class="loc-num">218</span>，非 <span class="loc-num">210</span>.</dd>
+					</dl>
+				</div>
+				<div data-relevance="err-rulebook">
+					<p>目前没有官方勘误，但规则书更新与澄清会在可用时纳入本参考。</p>
+				</div>
+			</rp-modal>
+			<rp-modal id="escape-pods" class="glossary">
+				<h2 slot="header">逃生舱</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<img class="float-right w150" src="components/escape-pod.webp" alt="Escape pod" width="200" height="133">
+				<p>每个逃生舱的视野独特，它们朝向6个不同 <a href="#cost">区域</a> 星球。每艘逃生舱可坠落于 21 <a href="#locations">地点</a> （共 126 处地点）——可能坠毁靠近另一玩家，但绝不会在同一地点坠毁。你不可执行 <a href="#actions">行动</a> 在逃生舱内于其他卡牌上。</p>
+			</rp-modal>
+			<rp-modal id="experience" class="glossary">
+				<h2 slot="header">经历</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>每个 <a href="#characters">角色</a> 都有一张特定的经历卡，可用于减轻挑战骰结果，甚至获得体力。然而，若有3个 <a href="#boost">激励</a> 你的经验卡上（它已「满」），在你回合结束时你 <em>必须</em> 失去该卡（无法找回），可用替代卡替换角色（通常是好主意，但若已有角色备用版本，可不替换）。发生时，经验卡与角色卡上的挑战骰 <a href="#challenge-dice">已回收</a> 至挑战骰池。你当前角色卡上的所有激励转移至新卡。</p>
+			</rp-modal>
+			<rp-modal id="faq">
+				<h2 slot="header">常见问题</h2>
+				<details>
+					<summary>若因玩家时间、士气或体力降至 0 而结束，是否完成当前行动？「集结作最后一次机会」每局能否多于一次？</summary>
+					<div>
+						<p>若某玩家的时间、士气或体力降至 0（通常在行动第 6 步，早于获得任何收益），立即阅读该任务在 TAKE 故事书中对应条目，其中包含可能继续的选项。若选择继续，会指示你「继续游戏」，此时你完成此前未完成的部分（包括获得当前行动的收益）。「最后一次机会」的意图是：最终就是最终——每局一次——但措辞故意略留模糊，以便玩家按自己的方式结束或继续。这是你们的旅程，不是我们的！</p>
+					</div>
+				</details>
+				<details>
+					<summary>如何获得更多技能标记？</summary>
+					<div>
+						<p>技能标记主要在游戏开局、尚缺乏多种方式缓解骰子结果时发挥作用。然而游戏中许多行动会给予特定技能标记（例如「获得 1 个 move」）或随机技能标记（掷 1 枚技能骰）。其中一些行动非常稳定——你们只需尝试各类行动并交流发现。甚至起始组件里就内置了几种方式：如版图所示，若你的时间/体力/士气为 6 且将再获得，则改为获得 1 个随机技能；如起始角色所示，你可支付 2 激励获得 1 个 move 技能标记，或在重掷且结果相同时获得 1 个技能。</p>
+					</div>
+				</details>
+				<details>
+					<summary>两本蓝色故事书</summary>
+					<div>
+						<p>有两本不同的蓝色故事书，一本用于移动行动，一本用于离开行动。</p>
+					</div>
+				</details>
+				<details>
+					<summary>技能标记</summary>
+					<div>
+						<p>主要功能是 <a href="#skills">技能标记</a> 是降低 <a href="#cost">费用</a> 的 <a href="#actions">行动</a> （通常在游戏早期），但执行任何行动从不需要技能标记。</p>
+					</div>
+				</details>
+				<details>
+					<summary>“将它们放在中央板”</summary>
+					<div>
+						<p>若挑战骰能力写“将其放入中央板”，指的是中央板的惩罚区 <a href="#center">中央板</a> （否则会写“回收”骰，将其送回挑战骰池）。</p>
+					</div>
+				</details>
+				<details>
+					<summary>卡牌行动</summary>
+					<div>
+						<p>你可以在卡阵中的卡牌上执行多种“卡牌行动” <a href="#grid">卡阵</a>、供应区与任务上。这些或在卡右侧列出（用故事书查费用与结果），或在卡底（显示技能类型、费用与结果）。执行卡牌行动时，照常遵循所有行动步骤。</p>
+					</div>
+				</details>
+				<details>
+					<summary>横卡不可放骰</summary>
+					<div>
+						<p>你只能放置 <a href="#challenge-dice">挑战骰</a> 你……卡牌上 <a href="#grid">卡阵</a> （不在你的储备或供应区）。</p>
+					</div>
+				</details>
+				<details>
+					<summary>槽位内带文字的挑战骰槽</summary>
+					<div>
+						<p>如示例 <a href="#slots">此处所示</a>，你可以在执行匹配行动时将挑战骰放在这些槽位上（例如，在执行某 <span class="help skill">协助-<span class="action">创造</span></span> 行动时，可将骰放在含「create」一词的槽位）。部分槽位含多个词，执行任一词对应行动时可用。</p>
+					</div>
+				</details>
+				<details>
+					<summary>城市</summary>
+					<div>
+						<p>城市地点标有城市名（或镇、村等——皆视为城市）。城市例外于每地点仅 1 次地点行动的常规规则。「你可在此执行多项不同行动（每回合 1 次）。」请注意「不同」——不可两次选择相同行动。</p>
+					</div>
+				</details>
+				<details>
+					<summary>地点行动限制 vs. 卡牌行动与离开行动</summary>
+					<div>
+						<p>每个地点你最多执行 1 次地点行动（除非该处地点行动写明「继续」）。此限制不适用于卡牌行动与离开行动。例如角色卡有多项行动（master、buy、equip）；可在不同回合执行任一项，甚至重复同一行动（除非写明只能执行一次）。</p>
+					</div>
+				</details>
+				<details>
+					<summary>什么是“阵营徽记”？</summary>
+					<div>
+						<p>这是你在 Vantage 中可找到的诸多卡牌类型之一。它在术语表中的 <a href="#items">物品</a> 为「徽章」。获得徽章时，卡上多处会出现「emblem」一词。</p>
+					</div>
+				</details>
+				<details>
+					<summary>某些谜题是否有多于一种解法？</summary>
+					<div>
+						<p>可以！若按谜题规则找到与《秘密之书》不同但仍有效的解法，仍成立。谜题与小游戏规则帮助见以下视频：</p>
+						<ul>
+							<li><a href="https://youtu.be/_zl8UR_T0Xw">Card 798</a></li>
+							<li><a href="https://youtu.be/MYuXc3o97b0">Card 802</a></li>
+						</ul>
+					</div>
+				</details>
+				<details>
+					<summary>是否有重要且常用的、未收录于印刷规则书的规则澄清？</summary>
+					<div>
+						<p class="note"><strong>注：</strong> 这些变更已纳入本 Rulepop。</p>
+						<ul>
+							<li>若挑战骰能力写「将它们放在中央」，指中央板的惩罚区（否则会写「回收」骰，即归还挑战骰池）。[第 11 页]</li>
+							<li>不可使用储备卡上的槽位、能力或威能，但保留激励标记。储备时，卡上挑战骰回收。[第 12 页]</li>
+							<li>不可将挑战骰放在供应区横向卡上。[第 12 页；印刷规则亦载：「逐枚将掷出的挑战骰放在卡阵卡上」]</li>
+						</ul>
+					</div>
+				</details>
+				<details>
+					<summary>故事书中是否有影响游戏玩法的错误？</summary>
+					<div>
+						<p>自 Vantage 印刷以来，我们在故事书中发现若干影响玩法的错误（即使忽略此勘误，这些行动仍会得到好卡作为结果，只是非原定卡牌）。建议在故事书这些条目旁点一小点；游玩遇到时，即信号去阅读 <a href="#errata">勘误</a>.</p>
+					</div>
+				</details>
+				<details>
+					<summary>如何赢得 Vantage？会输吗？</summary>
+					<div>
+						<p>简答是：有，Vantage 有明确胜负条件。但完整答案更复杂：Vantage 的胜利取决于你是否 <em>外在</em> 驱动或 <em>内在</em> 驱动（或两者兼有）。</p>
+						<ul>
+							<li><strong>胜利</strong>：你们当初来到这颗未知行星，共有 21 种不同理由——开局时会为整组随机抽取其中 1 个任务。你们并未计划坠毁，因此还要解决最终去向——游玩过程中，你们最多可发现 11 种完成所谓「命运」的选项（例如多种离开行星的方式）。完成任务或命运（或两者皆完成，即「史诗胜利」）即可赢得 Vantage，但规则也写明，你们可以自行定义所追求并实现的成功。Vantage 对何时结束游戏给予一定弹性：若已完成任务或准备完成命运，可选择继续游玩——大概以史诗胜利为目标——也可决定游戏结束。</li>
+							<li><strong>失败</strong>: 每位玩家拥有固定数量的体力、士气与时间（「时间」涵盖除身心之外的各种限制）。任一玩家首次体力、士气或时间降至 0 时，游戏可能结束——视情况你们有几种选择——但若第二次发生，游戏即结束。若尚未完成任务或命运，则失败。Vantage 不过度强调失败，更关乎旅程、沿途经历与对你重要的事。</li>
+						</ul>
+						<p>我明白内在胜利在桌游中并不常见。你玩过 The Mind 吗？严格来说，若在 10 个等级全部通过且未失败，才算赢 The Mind。我从没做到过。但我仍有过感觉像赢了的 The Mind 对局——也许我们玩了一次在第 3 关失败，决定再玩一次做得更好；若下次到第 5 关，我们就达成了目标并感觉像赢了。你在数字 Roguelike 里也可能有同感——比如决定围绕某张牌组 Slay the Spire，或在 Balatro 里用新 joker 玩出机灵组合。</p>
+						<p>话虽如此，若你不喜欢游戏中这类内在动机，可改追求任务（你来行星的初衷）或命运。任务适合外在动机者（或在众多选项与路径中需要聚焦目标的人）的胜利条件。</p>
+					</div>
+				</details>
+				<details>
+					<summary>能否与他人远程游玩 Vantage？</summary>
+					<div>
+						<p>若你有 Vantage，可与同样拥有游戏的任何人远程游玩。只需语音（事实上更贴合主题）。远程顺畅合作需要了解其他玩家的某些信息。为便于此点，请复制并使用 <a href="https://docs.google.com/spreadsheets/d/1e-Ay3ozVE-wnDZbCVk8BbczccIbmlunPeO9IBFYRTPk/edit?gid=0#gid=0">此 Google 表格</a> 远程游玩时。</p>
+					</div>
+				</details>
+				<details>
+					<summary>若玩家能解释地点卡上一切，包括可执行的行动，为何不能直接把卡给其他玩家看？</summary>
+					<div>
+						<ol>
+							<li >两个人看着完全相同的图画、场景或视野，描述方式也不会相同（无论现实生活中还是游戏中，等等）。</li>
+							<li >它鼓励玩家谈论所见、用文字表达并真正倾听彼此。</li>
+							<li >这节省时间——若人人可见，人人都会花时间观察。</li>
+							<li >这符合主题。我们身处星球不同区域，我能看见你所见并不合理。</li>
+							<li >这增加重玩价值，因为看见与听描述不同——若我到你描述的地点，未必意识到是同一处。</li>
+							<li >这增添了好奇与期待。若你描述的事物引人入胜，我也会好奇希望有朝一日亲自找到。</li>
+							<li >这不鼓励主导型玩法，让玩家能自行决策。</li>
+						</ol>
+					</div>
+				</details>
+				<details>
+					<summary>若两名玩家在同一地点相遇会怎样？</summary>
+					<div>
+						<p>玩家可共享地点；若如此，照常轮流，在回合间来回传递地点卡。规则关于共享同一地点有两条说明：</p>
+						<p>首先，放置挑战骰时：若其他玩家在你地点，经许可可将其卡上开放槽位（含非影响槽）放置挑战骰。</p>
+						<p>第二，阅读行动结果时：若另一名玩家在你的地点，你可以：</p>
+						<p>• 与你一同离开/移动（同时、经许可；他们不支付费用），以及<br>
+						• 给予他们金币、物品、植物与载具（忽略交换卡牌的"放置时"效果）</p>
+					</div>
+				</details>
+				<details>
+					<summary>Vantage 的移动如何运作？</summary>
+					<div>
+						<p>在 Vantage 中，玩家分散于广阔行星，只有你能看到自己的地点（正如你看不到其他地点）。地点为大卡，直立置于面前卡架。你始终面向北，真正透过角色双眼观察——你不是微缩模型，你就是角色。</p>
+						<p>回合中可选行动之一，是从当前地点沿任一基本方向移动到相邻地点。下例中，罗盘显示你可轻松向东或向南走。若如此，完成行动后将当前地点卡按编号收回盒中（占位卡保留其位置），取出地点卡 103 或 576 放入卡架。</p>
+						<p>你也可改为向北或向西移动，但这些方向的难度未知。这是 Vantage 中「用眼睛」重要性的体现之一。你擅长移动——或更具体，穿越水域？水面看起来平静还是风暴欲来？你或其他玩家能否（机制上）为这种移动提供建议？只有在你于此地点决定向北或向西移动后，才会得知难度、执行行动并前往结果地点。</p>
+						<p>另请注意，虽始终面向北，仍可从地点底部附近地形判断南侧有什么。若南向旅程格外危险，地点文字会描述身后情况。</p>
+						<p>这就是 Vantage 中的移动。几乎每个地点（近 800 个独特地点）都允许你以回合行动向任意方向移动。如此每次移动都在故事中创造新分支。即使运气使你坠毁在同一地点（126 分之一），也可换方向开启新冒险。</p>
+					</div>
+				</details>
+				<details>
+					<summary>在球形星球上，向北移动为何始终是选项之一？</summary>
+					<div>
+						<p>世界是一张东西、南北皆无缝衔接的卡阵。主题上，有些地点只是更近、更远、更大或更小——完全不影响玩法，但世界必须东西、南北一致且无缝衔接。游戏将向前移动等同于向北移动（若到达极点后地点卡突然显示向前即向南，会令人困惑）。</p>
+						<p>就像我坐在电脑前或开车去农夫市场时，地球的确切形状对我并不重要（重力存在即可），Vantage 行星的确切形状对角色在行星上行走的游戏玩法或世界故事也不重要。唯一重要的事——更像特色而非游戏内实用机制——是可以绕行星走一整圈（主要是为了表明你在探索完整行星，而非地图有边缘的一小块）。</p>
+					</div>
+				</details>
+				<aside>
+					<p>请访问 Stonemaier Games 网站查看 <a href="https://stonemaiergames.com/games/vantage/rules-faq/">更多常见问题</a> 并附设计师见解。</p>
+				</aside>
+			</rp-modal>
+			<rp-modal id="first-game">
+				<h2 slot="header">第一局开始前</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#setup">开局</a></li>
+				</ul>
+				<p><dfn>首局建议时间、士气、体力用「大胆」起始档位，并避开困难坠毁地点。</dfn> <img class="float-right mt1" src="figs/setup-difficulty.webp" alt="Setup difficulty" width="580" height="284"> 这些设置在地点 <span class="loc-num">000</span> 与逃生舱地点。游玩时大胆选择，因玩家首次时间、士气或体力降至 0 未必结束游戏——任务在 <span class="take skill">获取</span> 故事书。</p>
+				<p><dfn>首局很大程度上是实验，学习 Vantage 中不同行动、后果与风险承受。</dfn> 这比任务更重要；不如试着用从不同地点（及卡阵中卡牌行动）获得 8 张卡填满卡阵。未达成此目标完全正常。若想要方向或加快游戏，可执行任务卡印刷的行动。</p>
+				<p><dfn>发现与感知是 Vantage 的重要要素。</dfn> 你会琢磨如何做事、如何找到东西——这是本游戏发现曲线的正常部分，游戏不会手把手教你。去尝试吸引你的事物。用眼睛与直觉：若行动看起来很难，费用可能很高。有些行动结果或难度会出乎预期；这会在下次有人见到同类行动时有所帮助。对规则有疑问时，适用 <a href="#urtf">主题乐趣万能规则</a> 当场处理（事后再问）。</p>
+				<p><dfn>玩家之间的沟通至关重要</dfn>，且不仅用于共享技能与影响骰槽（代表共享建议与专长）。每位玩家的选择属自己，但你所见所经历的信息可自由分享。要成功，常需描述所见并讨论选项，无论短期或长期目标。</p>
+			</rp-modal>
+			<rp-modal id="flora" class="glossary">
+				<h2 slot="header">植物</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>世界中植物种类繁多，每种都有挑战骰 <a href="#slots">槽位</a> 与特定……的互动 <a href="#composition">元素</a>。植物卡上的激励代表你对该植物性质的理解，你可以通过食用一段来学习。</p>
+			</rp-modal>
+			<rp-modal id="gameplay">
+				<h2 slot="header">流程概览</h2>
+				<p>游戏由玩家轮流 <a href="#turns">回合</a> 顺时针绕桌进行。每名玩家执行 1 <a href="#actions">行动</a> 每回合（除非另有说明），使用 <a href="#skills">技能</a> 由任意玩家贡献以降低行动 <a href="#cost">费用</a>；掷骰 <a href="#challenge-dice">挑战骰</a> 根据该费用判定任何 <a href="#penalties">复杂情况</a> 遭遇；以及 <a href="#slots">放置骰子</a> 卡牌上的 <a href="#grid">卡阵</a> 以缓解这些复杂情况。执行行动总会成功；挑战在于避免失去时间、士气与体力。</p>
+				<p>你通常从抵达区域开始探索——与其他玩家不同——并与各地点互动，希望向 3×3 卡阵添加卡牌；这些卡提供额外挑战骰放置槽与其他能力。一名或多名玩家可追求共享 <a href="#end-game">任务</a> （你为何旅行至此星球），途中你可能发现各种 <a href="#end-game">命运</a> （在本世界或之外决定命运的选项）。必须发现命运卡——开局不会揭示命运。协力共享知识、技能与影响骰槽，避免任一玩家时间、士气或体力降至 0。</p>
+				<h3>单人游戏</h3>
+				<p>单人游玩 Vantage 与其他人数相同（挑战骰数量正常缩放，单人共 10 枚骰）。没有 Automa 代表其他角色——你完全掌控。无论人数，你只控制 1 名角色（强烈不建议打破沉浸同时玩多名角色）。</p>
+			</rp-modal>
+			<rp-modal id="goals" class="glossary">
+				<h2 slot="header">目标</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>除玩家认为重要的成就外，Vantage 有四种目标类型，含短期与长期抱负。</p>
+				<details>
+					<summary><b>任务</b></summary>
+					<div><p>每局玩家共享 1 个任务——这是你们来到未知行星的原因。部分任务随人数缩放（例如「每名玩家 +X」）；该数字仅加入总数——并非要求每位玩家各自达成。若任务困难，任务卡上有行动可引导方向甚至降低难度。完成任务后，你可选择 <a href="#end-game">结束游戏</a>. <a href="#actions">行动</a> 任务卡上的（行动）在任务完成后不能执行。</p></div>
+				</details>
+				<details>
+					<summary><b>命运</b></summary>
+					<div><p>你未料会坠毁于此，但既已如此，最终去向由你决定。每局玩家可发现并追求多个命运。有一种命运随人数缩放（「每名玩家 +1」）；该数字加入总数——非要求每位玩家各自达成。完成命运将 <a href="#end-game">结束游戏</a>，因此你可以等到准备好在 <a href="#book-of-secrets">《秘密之书》</a>.</p></div>
+				</details>
+				<details>
+					<summary><b>目标</b></summary>
+					<div><p>你可能发现角色有个人旅程，串联若干目标。获得目标时，横向加入你的 <a href="#grid">供应区</a>。你还不能在目标上放置挑战骰（若它有骰 <a href="#slots">槽位</a>），因为该卡不在你的 <a href="#grid">卡阵</a>。若你完成目标，说明会指示你将目标卡纵向旋转并放入你的卡阵。</p></div>
+				</details>
+				<details>
+					<summary><b>委托</b></summary>
+					<div>
+						<p>当你获得委托（通常通过提出协助智者），将其横向加入你的 <a href="#grid">供应区</a>。你还不能在委托上放置挑战骰，因为该卡尚未在你的 <a href="#grid">卡阵</a>. 若完成委托，说明会叫你纵向旋转委托并放入卡阵（之后不可再对卡上委托部分执行行动）。</p>
+						<p>获得委托时，常会指示朝特定方向前进。请像现实世界一样理解方向——若说向北，指「北侧区域」，而非笔直不变的正北路径。</p>
+					</div>
+				</details>
+			</rp-modal>
+			<rp-modal id="grid">
+				<h2 slot="header">卡阵</h2>
+				<ul class="grid card-grid float-right">
+					<li><div class="empty-space"></div></li>
+					<li><div class="empty-space"></div></li>
+					<li><div class="empty-space"></div></li>
+					<li><div class="empty-space"></div></li>
+					<li><img class="cr-card-57x87" src="components/card-captain.webp" alt="Character" width="600" height="916"></li>
+					<li><div class="empty-space"></div></li>
+					<li><div class="empty-space"></div></li>
+					<li><div class="empty-space"></div></li>
+					<li><div class="empty-space"></div></li>
+				</ul>
+				<p>每当你获得 <strong>纵向</strong> 卡（与角色卡同尺寸），放入 3×3 卡阵任一空位：最多 9 张牌的牌阵，角色居中。不可重新摆放卡阵中的卡牌。 <strong>当玩家首次完成其卡阵时，将命运1705放入 <a href="#center">中央板</a>.</strong></p>
+				<ul>
+					<li><p>除……之外 <a href="#slot">影响</a> <svg class="◊" viewBox="0 0 500 500"><use href="#i-impact"/></svg> 槽位/能力，卡阵中卡提供的收益仅适用于你卡阵中的卡（不含其他玩家控制的卡或储备中的卡）。</p></li>
+					<li><p>每当你被指示 <strong>替换</strong> 或失去卡阵中一张卡，回收其上骰并将激励归还公共供应。失去的卡收回盒中。卡阵中必须始终有角色卡。新卡插入与被替换卡相同位置。</p></li>
+					<li><p>在 Vantage 中，相邻始终指正交相邻（左右或上下边缘相接触的卡牌）。</p></li>
+				</ul>
+				<h3>储备</h3>
+				<p>你的……容量也有限 <strong>储备</strong> 供应区中卡阵外的纵向卡牌（容量为所有 <svg class="◊" viewBox="0 0 338 500"><use href="#i-reserve"/></svg> 卡阵中卡牌上的图标）。每当获得卡牌但卡阵已满，可储备新卡或储备卡阵中一张卡（角色卡除外）腾位。若超出储备容量，从储备失去一张多余卡。</p>
+				<ul>
+					<li><p>你不得使用 <a href="#slots">槽位</a>，储备卡上的能力或力量，但它们保留 <a href="#boost">激励</a> 标记。储备时，卡上的挑战骰 <a href="#challenge-dice">已回收</a>.</p></li>
+					<li><p>每个角色有 <a href="#boost">激励</a> 能力：将储备卡转入卡阵（空位或与卡交换）；勿获得自储备转入卡的「放置时」收益。</p></li>
+				</ul>
+				<h3>供应区</h3>
+				<p>你获得的部分卡牌 <strong>横向</strong>，而非纵向。这些卡牌要么与所有玩家共享（任务与命运），要么保留在你的供应区。还有 <strong>无上限</strong> 与你供应区中可拥有的横向卡牌数量有关。你不可以 <a href="#slots">放置挑战骰</a> 供应区中横向卡牌上。</p>
+			</rp-modal>
+			<rp-modal id="icons" max>
+				<h2 slot="header">图标</h2>
+				<div class="grid icons">
+					<a href="#skills">
+						<svg viewBox="0 0 500 500"><use href="#i-move"/></svg>
+						<p>移动</p>
+					</a>
+					<a href="#skills">
+						<svg viewBox="0 0 500 500"><use href="#i-look"/></svg>
+						<p>观察</p>
+					</a>
+					<a href="#skills">
+						<svg viewBox="0 0 500 500"><use href="#i-engage"/></svg>
+						<p>接触</p>
+					</a>
+					<a href="#skills">
+						<svg viewBox="0 0 500 500"><use href="#i-help"/></svg>
+						<p>协助</p>
+					</a>
+					<a href="#skills">
+						<svg viewBox="0 0 500 500"><use href="#i-take"/></svg>
+						<p>获取</p>
+					</a>
+					<a href="#skills">
+						<svg viewBox="0 0 500 500"><use href="#i-overpower"/></svg>
+						<p>压制</p>
+					</a>
+					<a href="#penalties">
+						<svg viewBox="0 0 500 500"><use href="#i-time"/></svg>
+						<p>时间</p>
+					</a>
+					<a href="#penalties">
+						<svg viewBox="0 0 500 500"><use href="#i-morale"/></svg>
+						<p>士气</p>
+					</a>
+					<a href="#penalties">
+						<svg viewBox="0 0 500 500"><use href="#i-health"/></svg>
+						<p>体力</p>
+					</a>
+					<a href="#penalties">
+						<svg viewBox="0 0 500 500"><use href="#i-setback"/></svg>
+						<p>挫折</p>
+					</a>
+					<a href="#penalties">
+						<svg viewBox="0 0 500 500"><use href="#i-blank"/></svg>
+						<p>空白</p>
+					</a>
+					<a href="#boost">
+						<svg viewBox="0 0 500 500"><use href="#i-boost"/></svg>
+						<p>激励</p>
+					</a>
+					<a href="#coins">
+						<svg viewBox="0 0 500 500"><use href="#i-coin"/></svg>
+						<p>金币</p>
+					</a>
+					<a href="#slots">
+						<svg viewBox="0 0 500 500"><use href="#i-impact"/></svg>
+						<p>影响</p>
+					</a>
+					<a href="#locations">
+						<svg viewBox="0 0 500 500"><use href="#i-mandatory"/></svg>
+						<p>强制</p>
+					</a>
+					<a href="#locations">
+						<svg viewBox="0 0 500 500"><use href="#i-traveler"/></svg>
+						<p>旅者</p>
+					</a>
+					<a href="#cost">
+						<svg viewBox="0 0 500 500"><use href="#i-cost-bx"/></svg>
+						<p>费用 X</p>
+					</a>
+					<a href="#grid">
+						<svg viewBox="0 0 500 500"><use href="#i-reserve"/></svg>
+						<p>储备</p>
+					</a>
+					<a href="#composition">
+						<img src="icons/i-circuit.webp" alt="电路" width="146" height="146">
+						<p>电路</p>
+					</a>
+					<a href="#composition">
+						<img src="icons/i-energy.webp" alt="能量" width="146" height="146">
+						<p>能量</p>
+					</a>
+					<a href="#composition">
+						<img src="icons/i-fire.webp" alt="火" width="146" height="146">
+						<p>火</p>
+					</a>
+					<a href="#composition">
+						<img src="icons/i-gold.webp" alt="金" width="146" height="146">
+						<p>金</p>
+					</a>
+					<a href="#composition">
+						<img src="icons/i-leaf.webp" alt="叶" width="146" height="146">
+						<p>叶</p>
+					</a>
+					<a href="#composition">
+						<img src="icons/i-metal.webp" alt="金属" width="146" height="146">
+						<p>金属</p>
+					</a>
+					<a href="#composition">
+						<img src="icons/i-sand.webp" alt="沙" width="146" height="146">
+						<p>沙</p>
+					</a>
+					<a href="#composition">
+						<img src="icons/i-sinew.webp" alt="筋腱" width="146" height="146">
+						<p>筋腱</p>
+					</a>
+					<a href="#composition">
+						<img src="icons/i-stone.webp" alt="石" width="146" height="146">
+						<p>石</p>
+					</a>
+					<a href="#composition">
+						<img src="icons/i-water.webp" alt="水" width="146" height="146">
+						<p>水</p>
+					</a>
+					<a href="#composition">
+						<img src="icons/i-wind.webp" alt="风" width="146" height="146">
+						<p>风</p>
+					</a>
+					<a href="#composition">
+						<img src="icons/i-wood.webp" alt="木" width="146" height="146">
+						<p>木</p>
+					</a>
+				</div>
+			</rp-modal>
+			<rp-modal id="interactions" class="glossary">
+				<h2 slot="header">互动</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>部分 <a href="#actions">行动</a> 规定它们只能在「与……互动」时执行 <a href="#sentients">智者</a>。”就这些行动而言，你在执行某 <a href="#locations">地点</a> 存在智者的行动（在插画和标识中均有体现 <a href="#composition">构成</a> 图标），或当你执行你的一张智者卡上印制的行动时 <a href="#grid">卡阵</a>.</p>
+			</rp-modal>
+			<rp-modal id="items" class="glossary">
+				<h2 slot="header">物品</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>世界中有大量物品种类；下方列出部分可能需要进一步说明的。</p>
+				<details>
+					<summary><b>神器</b></summary>
+					<div><p>神器是通过完成谜题获得的强力物品。当你首次放置神器时，获得1 <a href="#boost">激励</a> 其上（每张符合其……的卡牌最多 3） <a href="#composition">构成</a> 在你的 <a href="#grid">卡阵</a> （包括自身，因此它通过这种方式将始终获得至少 1 激励）。</p></div>
+				</details>
+				<details>
+					<summary><b>书籍</b></summary>
+					<div><p>书籍提供可与所有玩家分享的知识，但只有你能查看其中特定页 <a href="#book-of-vantages">《视界之书》</a> 使用书卡时 <a href="#boost">激励</a> 力量。每本书提供关于世界的信息（有时还有特殊行动）。</p></div>
+				</details>
+				<details>
+					<summary><b>弓与箭</b></summary>
+					<div><p>这些武器拥有在你执行某项行动前触发的能力 <span class="skill overpower">压制</span> 行动（<a href="#turns">步骤 3</a>）。此时，若你花费 1 个 <a href="#boost">激励</a> 来自弓（若你也有弓则来自箭），降低行动 <a href="#cost">费用</a> 减 1；若弓/箭上有多于 1 激励可多次如此。若使用箭上激励，另获得该箭独特特殊收益。</p></div>
+				</details>
+				<details>
+					<summary><b>徽记</b></summary>
+					<div><p>纹章是通过完成……获得的强大物品 <a href="#trials">试炼</a>。它们不能容纳 <a href="#boost">激励</a>，但它们为你卡阵中的每张卡增加激励 <a href="#grid">卡阵</a> 与其匹配的 <a href="#composition">构成</a>。纹章表明某类 <a href="#sentients">智者</a> 已将你的族人纳入其文化，因此他们惠及整支队伍（通过影响 <svg class="◊" viewBox="0 0 500 500"><use href="#i-impact"/></svg> 挑战骰 <a href="#slots">槽位</a>).</p></div>
+				</details>
+				<details>
+					<summary><b>地图</b></summary>
+					<div><p>将地图放入你的 <a href="#grid">卡阵</a>，获得 1 <a href="#boost">激励</a> 地图上每张与其相邻（共边）的卡。地图显示世界中特定目标的大致位置，但并非总是全面。花费 1 激励可在 <a href="#book-of-vantages">《视界之书》</a>.</p></div>
+				</details>
+				<details>
+					<summary><b>盾牌</b></summary>
+					<div><p>护盾可防止抵达危险地点时失去体力。这不包括基于气候的 <a href="#damage">伤害</a>——它仅适用于明确显示体力图标的“抵达时”惩罚（<svg class="◊" viewBox="0 0 500 500"><use href="#i-health"/></svg>).</p></div>
+				</details>
+			</rp-modal>
+			<rp-modal id="lessons" class="glossary">
+				<h2 slot="header">课程</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>本世界有三种魔法，获得魔法途径最常见的方式是 <a href="#spells">法术</a> 通过课程卡。每张课程卡有 <span class="skill look">观察-<span class="action">学习</span></span> 带有……的行动 <a href="#cost">费用</a> of <svg class="◊" viewBox="0 0 500 500"><use href="#i-cost-x"/></svg> （你从 1–6 选数）。掷骰越多，越可能掷出可放在 <a href="#slot">槽位</a> 课卡顶部以获得特定法术卡（此槽位可用于任意 <span class="skill look">观察-<span class="action">学习</span></span> 行动）。即使你不掷出匹配图标，课程 <span class="look action">学习</span> 行动（直至5级）解锁该魔法学派的下一级课程。</p>
+			</rp-modal>
+			<rp-modal id="locations">
+				<h2 slot="header">地点卡</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#cards">卡牌</a></li>
+				</ul>
+				<p>你的地点卡代表你在星球上的当前位置，其中包括你能看到的内容以及你的许多 <a href="#actions">行动</a> 选项。将其留在你的地点 <a href="#location-card-holders">卡座</a>.</p>
+				<p class="note">下方描述中的具体数字是示例，指向下方的示例地点。</p>
+				<rp-composite class="location-card" aspect-ratio="1200/800">
+					<img class="card cr-card-120x80" src="components/location-card.webp" alt="Location Card" width="1200" height="800">
+					<img class="art" src="figs/number-key.svg#1" alt="1">
+					<img class="location-number" src="figs/number-key.svg#2" alt="2">
+					<img class="compass" src="figs/number-key.svg#3" alt="3">
+					<img class="description" src="figs/number-key.svg#4" alt="4">
+					<img class="location-actions" src="figs/number-key.svg#5" alt="5">
+				</rp-composite>
+				<ol class="num-key">
+					<li><p><strong>美术（背景）</strong>: 这是你的视界。可向其他玩家描述此景象但不可展示，因他们在行星别处，无法透过你的双眼观看。</p></li>
+					<li><p><strong>地点编号（左上）</strong>: 与此地点互动时向其他玩家提供此编号，以便在故事书中查找对应条目（272）。</p></li>
+					<li>
+						<p><strong>罗盘（右上）</strong>：此符号显示你可前往的四个不同基本方向 <a href="#actions">离开</a> 从此地点（前方始终为北）。罗盘可能包含：</p>
+						<ul>
+							<li><p><strong>列出的相邻地点</strong> （例如， <span class="loc-num">500</span>, <span class="loc-num">273</span>，且 <span class="loc-num">271</span>）：离开至这些地点中的任意一个是 1 费用 <span class="move skill">移动</span> 无故事书条目的行动。</p></li>
+							<li><p><strong>未列出的相邻地点</strong>：在选择沿……方向离开后 <span class="star">*</span> 地点，费用在该地点编号对应的离开故事书中揭示（例如，272 向南移动）。</p></li>
+							<li><p><strong>被阻挡的方向</strong>：若无编号或 <span class="star">*</span>，你无法沿该方向从此地点离开。</p></li>
+						</ul>
+					</li>
+					<li>
+						<p><strong>描述</strong>：关于该地点的简述。你可以向其他玩家朗读这段文字。</p>
+						<ul>
+							<li><p>部分地点显示 <svg class="◊" viewBox="0 0 500 420"><use href="#i-traveler"/></svg> 左下角图标，后接引号内文字。表示神秘旅者在此地点与你对话。</p></li>
+							<li><p>A <svg class="◊" viewBox="0 0 500 366"><use href="#i-mandatory"/></svg> 图标表示必须立即执行的强制性指示 <a href="#results">抵达时</a> （通常是气候相关惩罚）。</p></li>
+							<li><p>元素体图标（例如， <img class="◊" src="icons/i-water.webp" alt="水" width="146" height="146">）表示与具有该构成的事物互动。</p></li>
+						</ul>
+					</li>
+					<li><p><strong>地点行动（几乎总是在右侧边栏）：</strong> 你可以向其他玩家朗读这些内容。这是在各类别中与地点互动的不同方式 <span class="move skill">移动</span> <svg class="◊" viewBox="0 0 398 500"><use href="#i-move"/></svg>, <span class="look skill">观察</span> <span class="nowrap"><svg class="◊" viewBox="0 0 500 400"><use href="#i-look"/></svg>,</span> <span class="engage skill">接触</span> <span class="nowrap"><svg class="◊" viewBox="0 0 500 500"><use href="#i-engage"/></svg>,</span> <span class="help skill">协助</span> <span class="nowrap"><svg class="◊" viewBox="0 0 500 416"><use href="#i-help"/></svg>,</span> <span class="take skill">获取</span> <span class="nowrap"><svg class="◊" viewBox="0 0 500 400"><use href="#i-take"/></svg>,</span> and <span class="overpower skill">压制</span> <svg class="◊" viewBox="0 0 234 500"><use href="#i-overpower"/></svg> （例如， <span class="look skill">观察-<span class="action">研究</span></span>）。除非行动结果 <a href="#continue">另有说明</a>，每个地点你只能执行 1 项地点行动。</p></li>
+				</ol>
+			</rp-modal>
+			<rp-modal id="location-card-holders">
+				<h2 slot="header">地点卡座</h2>
+				<img class="float-right w150" src="components/location-card-holder.webp" alt="Location card holder" width="200" height="99">
+				<p>由于你的 <a href="#locations">地点</a> 代表你的视界（你能看到的内容）， <strong>仅你可观察你当前的地点卡</strong>。将其放入地点卡架以保持竖立且易于看见——角度应使其他玩家无法看到。</p>
+			</rp-modal>
+			<rp-modal id="obstacles" class="glossary">
+				<h2 slot="header">障碍</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>部分行动描述含条件句变体「若 ____ 不再是障碍，将此费用降为 1」，通常关于向北越过挡路生物。请酌情适用 <a href="#urtf">主题乐趣万能规则</a>。例如，若你与一名 <a href="#sentients">智者</a> 在某地点时，你不能使用「<span class="move action">潜行</span> 绕过智者」行动，因为他们已经知道你在那里。</p>
+			</rp-modal>
+			<rp-modal id="orbs" class="glossary">
+				<h2 slot="header">光球</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>世界中有许多大型玻璃光球，为旅者指路。Vantage 并非 App 驱动游戏，但一类光球互动需访问网站，向全球其他玩家查看与发布周边提示。若进入没有光球的地点则无法使用。此功能受 Elden Ring 启发；感谢 Jose Manuel López-Cepero 创建网站（<a href="https://orb.stonemaiergames.com/">orb.stonemaiergames.com</a>）。玩 Vantage 不需要该网站，应用中不会获得或失去任何与游戏相关的内容。</p>
+			</rp-modal>
+			<rp-modal id="penalties">
+				<h2 slot="header">惩罚</h2>
+				<p><dfn><a href="#turns">回合</a> 步骤 6：承受来自已掷但未放置的挑战骰的惩罚</dfn></p>
+				<p>结算无法放入的骰子 <a href="#slots">卡牌槽位</a>，随后将其弃入中央板的惩罚区。</p>
+				<ul>
+					<li><p><svg class="◊" viewBox="0 0 400 500"><use href="#i-time"/></svg>/<svg class="◊" viewBox="0 0 500 478"><use href="#i-morale"/></svg>/<svg class="◊" viewBox="0 0 500 500"><use href="#i-health"/></svg> 这些符号分别代表失去时间、士气与体力。若无法将这些骰放在卡上，弃入中央板惩罚区。 <a href="#center">中央板</a>，并按相应追踪器失去骰所示的时间、士气及/或体力。这些损失同时结算。若任一数值降至 0，阅读任务在 <span class="take skill">获取</span> 故事书。</p></li>
+					<li><p><svg class="◊" viewBox="0 0 500 474"><use href="#i-setback"/></svg> 此符号代表挫折。若无法放置带此符号的骰，将其归还挑战骰池（这会延迟完全回收——所有骰从卡阵卡与惩罚区回到池）。</p></li>
+					<li><p><svg class="◊" viewBox="0 0 500 500"><use href="#i-blank"/></svg> 此符号代表空白结果（这是好事）。将此骰弃至中央板的惩罚区 <a href="#center">中央板</a>.</p></li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="puzzles" class="glossary">
+				<h2 slot="header">谜题</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>为获得世界上许多 <a href="#items">神器</a> and <a href="#items">徽记</a>，你必须解开特定谜题。你最终负责宣布谜题答案，但若请求协助，其他玩家可看谜题。少数谜题需不同颜色标记，我们建议用 <a href="#skill-tokens">技能标记</a>. 若遇到谜题且想要替代方式获得收益，改执行匹配的 9 费用行动（例如 <span class="look skill">观察-9-<span class="action">解谜</span></span>).</p>
+				<p class="note">感谢 Juliana Moreno 与 Ariel Rubin（The Wild Optimists）设计了其中许多谜题！</p>
+			</rp-modal>
+			<rp-modal id="reminders">
+				<h2 slot="header">友情提醒</h2>
+				<ul>
+					<li><p>你可以随时与其他玩家公开交谈并分享任意卡牌的文字，但不得展示你的 <a href="#locations">地点</a> 给任何其他人（除非卡牌特别说明），也不得观察你当前不在其上的任何地点。</p></li>
+					<li><p>当你离开前往 <a href="#locations">列出的相邻地点</a>，它是 <span class="move skill">移动</span> 带有……的行动 <a href="#cost">费用</a> 为 1。执行所有步骤以完成 1 费用 <span class="move skill">移动</span> 行动；与任何 <a href="#actions">行动</a>，此次移动即你的整回合。</p></li>
+					<li><p>放置挑战骰时，除非某挑战骰能力另有规定 <a href="#slots">槽位</a>，你甚至可以放置 <a href="#penalties">空白 <svg class="◊" viewBox="0 0 500 500"><use href="#i-blank"/></svg></a> and <a href="#penalties">挫折 <svg class="◊" viewBox="0 0 500 474"><use href="#i-setback"/></svg></a> 结果。例如掷 1 枚挑战骰移动到相邻所列地点且结果为空白，可放在通用 <span class="move skill">移动</span> 卡阵中某卡上的槽位（以获得激励加值），即使不放置也无惩罚。</p></li>
+					<li><p>回合中你可以不选择地点行动，而执行 <a href="#actions">行动</a> 在 <a href="#cards">卡牌</a> 在你的 <a href="#grid">卡阵</a>、你的供应区，或 <a href="#center">中央板</a>。若如此，使用卡底编号查看该行动的条目。</p></li>
+					<li><p>使用卡牌 <a href="#boost">激励</a> 能力，花费激励 <svg class="◊" viewBox="0 0 446 500"><use href="#i-boost"/></svg> 来自该特定卡牌。若你从……获得激励 <a href="#actions">地点行动</a>，将其放在你的角色上。</p></li>
+					<li><p>每地点每局只能执行 1 次地点行动，除非行动另有指示，或卡标明第二次行动始终可用（例如，你不能执行 <span class="take skill">获取</span> 地点上的行动，随后再执行 <span class="overpower skill">压制</span> 行动）。除该限制外，你完全自由选择行动。</p></li>
+					<li><p>执行行动前不可阅读费用与结果。同样，部分行动结果含更多选择；选择时可读选项，不可读结果。</p></li>
+					<li><p>Vantage 跨局唯一「持久」要素是信息。你对世界的所学可在未来局中受益，我们鼓励玩家利用该知识。请尊重其他玩家想避开或学习你已知的愿望。</p></li>
+					<li><p>有关使 Vantage 更简单或更困难的完整方法列表，请参阅《秘密之书》第11页的“难度”。</p></li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="resources">
+				<h2 slot="header">资源</h2>
+				<ul>
+					<li><p><a href="https://www.youtube.com/watch?v=xa476iCNIDk">Watch it Played</a> 规则视频。</p></li>
+					<li><p><a href="https://www.youtube.com/watch?v=lK2mk5Ldxqk">如何教学 Vantage</a> 来自设计师 Jamey Stegmaier 的视频。</p></li>
+					<li><p>通过……加入关于 Vantage 的讨论 <a href="https://www.facebook.com/groups/vantagegame">Facebook 群组</a> 或在 <a href="https://boardgamegeek.com/boardgame/420033/vantage">Board Game Geek</a>.</p></li>
+					<li><p>The <a href="https://stonemaiergames.com/games/vantage/">Vantage</a> Stonemaier Games 网站上的该栏目有游戏概览、新闻更新以及更多资源链接。</p></li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="results">
+				<h2 slot="header">行动结果</h2>
+				<p><dfn><a href="#turns">回合</a> 步骤 7：阅读行动结果</dfn></p>
+				<p>大多数行动会产生故事书中描述的即时收益（部分卡牌行动则在卡上描述）。</p>
+				<img class="wide-figure shadow" src="figs/results.webp" alt="Action results">
+				<ul>
+					<li><p>多选项列表中，在了解或查看结果前选择（例如若选择前往地点 259，仅决定后才查看该卡）。</p></li>
+					<li><p>若因此你的地点改变，负责管理卡牌的玩家会使用你的 <strong>占位卡</strong> 收回当前地点卡、找出并交给你新卡、标记新卡位置。罕见情况下若移动到他人地点卡两侧，来回传递即可。</p></li>
+					<li><p>若某地点的 <svg class="◊" viewBox="0 0 500 366"><use href="#i-mandatory"/></svg> （抵达时）效果或任何其他惩罚——会指示你承受1点炎热、寒冷或缺氧伤害，并失去你可选择的1点 <svg class="◊" viewBox="0 0 500 500"><use href="#i-health"/></svg> 或两者均为 1 <svg class="◊" viewBox="0 0 400 500"><use href="#i-time"/></svg> 且 1 <svg class="◊" viewBox="0 0 500 478"><use href="#i-morale"/></svg>.</p></li>
+					<li><p>若你本应获得 <svg class="◊" viewBox="0 0 400 500"><use href="#i-time"/></svg>/<svg class="◊" viewBox="0 0 500 478"><use href="#i-morale"/></svg>/<svg class="◊" viewBox="0 0 500 500"><use href="#i-health"/></svg> 当该数值已达上限 6 而再获得，改为获得 1 随机技能（掷技能骰，获得与结果对应的技能标记）。</p></li>
+					<li>
+						<p><strong>技能</strong></p>
+						<ul>
+							<li><p>若结果包含技能 <em>支付</em> （例如，支付 1 <span class="move skill">移动</span> 或 1 <span class="overpower skill">压制</span>），任何玩家可弃置1个技能标记，使你获得收益。若无人支付，你不会获得收益。</p></li>
+							<li><p>若结果包含技能 <em>收益</em> （例如，获得 1 <span class="move skill">移动</span> 或 1 <span class="engage skill">接触</span>），获得 1 个该类型的技能标记。</p></li>
+							<li><p>若结果指示你 <strong>获得随机技能</strong>，掷1枚技能骰以决定获得的标记。有时收益为特定技能（例如：“掷2枚技能骰并获得全部 <span class="move skill">移动</span> 结果”）。</p></li>
+						</ul>
+					</li>
+					<li>
+						<p>若另一玩家在你所在地点，在此步骤你可以：</p>
+						<ul>
+							<li><p>与你一同离开/移动（同时、经许可；他们不支付费用），以及</p></li>
+							<li><p>给予金币、物品、植物与载具（忽略交换卡的「放置时」效果；交换卡保留全部挑战骰但失去全部激励）。</p></li>
+						</ul>
+					</li>
+					<li><p>若行动结果或任何后果导致你失去你没有的东西（例如，失去 <svg class="◊" viewBox="0 0 500 500"><use href="#i-coin-1"/></svg> 无钱时失去储备卡、无储备卡时等），忽略该指示。此规则仅适用于结果， <strong>非费用</strong>——若你无法支付所列费用，则不得获得收益。</p></li>
+				</ul>
+				<p><strong>若你将获得一张你卡阵中已有的卡牌</strong>，改为在卡牌上获得 1 激励（若可能）。</p>
+				<p><strong>若你将获得另一玩家已有的卡牌</strong>，两名玩家决定谁保留/获得。若卡归你，卡上挑战骰回收，激励丢失，并获得卡上「放置时」收益（若有）。若卡仍归对方，你改为在角色上获得 1 激励（若可）。</p>
+			</rp-modal>
+			<rp-modal id="runes" class="glossary">
+				<h2 slot="header">符文</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>世界各处有与 6 种技能图标匹配的符文，部分行动要求你在当前地点寻找特定符文。符文颜色不重要（有些因此藏得很好），镜像也不重要；只看形状。</p>
+				<ul class="grid icons">
+					<li>
+						<svg viewBox="0 0 500 500"><use href="#i-move"/></svg>
+						<p>移动</p>
+					</li>
+					<li>
+						<svg viewBox="0 0 500 500"><use href="#i-look"/></svg>
+						<p>观察</p>
+					</li>
+					<li>
+						<svg viewBox="0 0 500 500"><use href="#i-engage"/></svg>
+						<p>接触</p>
+					</li>
+					<li>
+						<svg viewBox="0 0 500 500"><use href="#i-help"/></svg>
+						<p>协助</p>
+					</li>
+					<li>
+						<svg viewBox="0 0 500 500"><use href="#i-take"/></svg>
+						<p>获取</p>
+					</li>
+					<li>
+						<svg viewBox="0 0 500 500"><use href="#i-overpower"/></svg>
+						<p>压制</p>
+					</li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="sample-turn">
+				<h2 slot="header">示例回合</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#turns">回合</a></li>
+				</ul>
+				<p>这是对示例回合的简要概览，其中每一项 <a href="#turns">步骤</a> 此处描述的内容在其他处有详细说明。</p>
+				<ol>
+					<li><p><dfn>选择一项 <a href="#actions">行动</a> 三种行动类型之一：</dfn> 我在地点 272，决定执行一项 <strong>地点行动</strong>。我大声朗读我的地点描述并说明我看见什么。这片区域看起来并不危险，于是我决定执行 <span class="move skill">移动-<span class="action">漫游</span></span> 行动（进入下一步骤后不得改主意）。</p></li>
+					<li><p><dfn>阅读 <a href="#cost">费用与行动</a> （非结果）：</dfn> 另一名玩家在 <span class="move skill">移动</span> 故事书并朗读费用（3）与行动（「<span class="action"><span class="move">漫游</span> 神秘区域周边</span>”）。他们不会阅读行动结果。</p></li>
+					<li><p><dfn>每有一个匹配项，费用减 1 <a href="#skills">技能</a> 可由任意玩家选择支付：</dfn> 我没有 <span class="move skill">移动</span> 技能标记，但另一玩家有。他们弃掉 1 <span class="move skill">移动</span> 技能标记，使费用减 1。</p></li>
+					<li><p><dfn>从……掷骰 <a href="#challenge-dice">挑战骰</a> 池，数量等于剩余费用：</dfn> 我掷 2 枚挑战骰，得到 1 时间、1 体力须处理（主题上行动比预期更费时且弄伤自己）。</p></li>
+					<li><p><dfn>将掷出的挑战骰逐一枚放置于卡阵卡牌上（任意 <a href="#slots">槽位</a> 你的卡牌上以及其他玩家卡牌上的影响槽位）：</dfn> 我的角色，船长，两个挑战骰槽位都空着。我正在执行一个 <span class="move skill">移动</span> 行动，因此我可以在 <span class="move skill">移动</span> 槽位——我选择时间骰——并获得 1 激励 <svg class="◊" viewBox="0 0 446 500"><use href="#i-boost"/></svg> 作为立即效果，在角色上放 cube。我卡阵仅角色卡且无其他玩家开放影响 <svg class="◊" viewBox="0 0 500 500"><use href="#i-impact"/></svg> 体力结果的槽位，因此我无法放置体力结果。</p></li>
+					<li><p><dfn>承受 <a href="#penalties">惩罚</a> 来自已掷但未放置的挑战骰：</dfn> 显示体力的未放置骰子进入中央板的惩罚区 <a href="#center">中央板</a> ，我失去1点体力（调整我的追踪器）。时间骰仍留在角色卡上。</p></li>
+					<li><p><dfn>阅读行动 <a href="#results">结果</a>:</dfn> 另一名玩家朗读故事中条目 272 的结果 <span class="move skill">移动</span> 故事书。</p></li>
+					<li><p><dfn>结束你的回合：</dfn> 行动结果未写“<a href="#continue">继续</a>，因此我的回合在此结束。若行动写明「继续」，我必须再执行一项行动；若写明「你可继续」，则是否再执行行动由我选择。这仅适用于当前回合；除非其他行动允许，未来回合不可在此地点继续。我左侧玩家进行下一回合。</p></li>
+				</ol>
+			</rp-modal>
+			<rp-modal id="seeds-and-trees" class="glossary">
+				<h2 slot="header">种子与树木</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>种子是 <a href="#cards">卡阵卡牌</a>，但你无法获得 <a href="#boost">激励</a> 其上，直到你选择特定 <a href="#locations">地点</a> 将生长之处（你所在的地点）。此后只需时间，种子长成树。树为横向卡，保留在 <a href="#grid">供应区</a> 在其生长地点。记住树的位置，将树卡叠在其地点卡上（建议玩家离开时不要收回该地点，留在桌上）。</p>
+			</rp-modal>
+			<rp-modal id="sentients" class="glossary">
+				<h2 slot="header">智者</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>Vantage 世界居住着各种各样的智者（此世之人）。有时你会见到并互动，他们也积极行走、各自生活——无处不在。行星上许多人会短期加入你，结伴的临时性由 <a href="#boost">激励</a> 智者卡上（若智者激励为 0，行动结束时失去他们，除非行动中恢复激励）。每名智者有一个挑战骰 <a href="#slots">槽位</a> 需支付激励（来自智者）使用、与其专长能力相关的挑战骰槽，以及影响 <svg class="◊" viewBox="0 0 500 500"><use href="#i-impact"/></svg> 挑战骰槽位，用于与共享相同 <a href="#composition">构成</a> （含智者卡本身印刷的行动）。除非行动另有说明，智者上每项行动执行次数不限。</p>
+			</rp-modal>
+			<rp-modal id="setup">
+				<h2 slot="header">开局</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#first-game">第一局开始前</a></li>
+				</ul>
+				<rp-stepper id="setup-steps">
+					<img slot="fig" src="figs/setup-1.webp" alt="Setup step 1" width="1200" height="675">
+					<img slot="fig" src="figs/setup-2.webp" alt="Setup step 2" width="1200" height="675">
+					<img slot="fig" src="figs/setup-3.webp" alt="Setup step 3" width="1200" height="675">
+					<img slot="fig" src="figs/setup-4.webp" alt="Setup step 4" width="1200" height="675">
+					<img slot="fig" src="figs/setup-5.webp" alt="Setup step 5" width="1200" height="675">
+					<img slot="fig" src="figs/setup-6.webp" alt="Setup step 6" width="1200" height="675">
+					<div><p>将游戏盒放在桌上，靠近负责查找与归还卡牌的玩家（他们获得占位卡 <span class="card-num">1709–1714</span>）；这比传盒更高效。将三叠大卡从平放位置倾斜取出。</p></div>
+					<div><p>放置游戏盘（“<a href="#center">中央板</a>」）置于桌面中央，并追踪时间、士气和体力 <a href="#trackers">追踪器</a> 在附近。棋盘两面在功能上相同。</p></div>
+					<div><p>放置全部 <a href="#skill-tokens">技能标记</a>, <a href="#coins">金币</a>, <a href="#tokens">激励标记</a> （方块）， <a href="#skill-tokens">技能骰</a>，且 <a href="#storybooks">故事书</a> 于游戏盘附近的公共供应区（「<a href="#center">中央板</a>）。大多数故事书背面有参考指南。</p></div>
+					<div><p>向挑战骰池放入 8 枚挑战骰加每名玩家 2 枚（例如三人 14 枚），其余挑战骰收回盒中。</p></div>
+					<div><p>每位玩家获得 <a href="#location-card-holders">地点卡座</a>。随机选一名玩家担任 <strong>起始玩家</strong>.</p></div>
+					<div>
+						<p>将《视界之书》放在桌上，封底朝上以显示地点 <span class="loc-num">000</span>。按地点上的说明操作 <span class="loc-num">000</span> 完成开局，用技能骰随机化。每位玩家在此独立获得角色与起始数值。</p>
+						<aside>
+							<p class="note">对于你的 <a href="#first-game">第一局</a> 我们建议时间、士气与体力的“大胆”起始等级，并避开困难的坠毁地点。</p>
+						</aside>
+					</div>
+				</rp-stepper>
+			</rp-modal>
+			<rp-modal id="shared-info">
+				<h2 slot="header">信息共享</h2>
+				<p>由于你的 <a href="#locations">地点</a> 代表你的视界（你能看到的内容）， <strong>仅你可观察你当前的地点卡</strong>.</p>
+				<ul>
+					<li><p>你不可查看任何先前地点或其他玩家见过的地点。可向其他玩家描述卡面、朗读描述、分享地点行动选项。</p></li>
+					<li><p>若指示你观察……中的某一页 <a href="#book-of-vantages">《视界之书》</a>，你只能观察该页，且不得向其他玩家展示。</p></li>
+					<li><p>标记、骰、各玩家卡阵、储备、供应区中的卡，以及指示置于桌上的卡，均为公开信息。</p></li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="skill-tokens">
+				<h2 slot="header">技能标记</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#skills">技能</a></li>
+					<li><a href="#tokens">标记</a></li>
+				</ul>
+				<img class="float-right ml0" src="components/skill-tokens.webp" alt="技能标记" width="150" height="89">
+				<p>技能标记是玩家开局及局中以多种方式获得的收益（包括当你的时间 <svg class="◊" viewBox="0 0 400 500"><use href="#i-time"/></svg>/士气 <svg class="◊" viewBox="0 0 500 478"><use href="#i-morale"/></svg>/体力 <svg class="◊" viewBox="0 0 500 500"><use href="#i-health"/></svg> 会超过6）。它们代表各类行动类别的知识片段（<span class="skill move">移动/离开</span>, <span class="skill look">观察</span>, <span class="skill engage">接触</span>, <span class="skill help">协助</span>, <span class="skill take">获取</span>，且 <span class="skill overpower">压制</span>).</p>
+				<p>每当你有机会支付技能时，任何玩家都可以支付。技能常用于 <a href="#skills">降低费用</a> 行动——无论你在执行还是其他玩家——但部分行动结果也可支付技能获得额外收益，部分「抵达时」惩罚要求支付特定技能。</p>
+				<img class="float-right w100" src="components/skill-die.webp" alt="Skill Die" width="150" height="84">
+				<p>每当你获得“随机技能”时，掷1枚技能骰并获得与结果匹配的技能标记。</p>
+			</rp-modal>
+			<rp-modal id="skills">
+				<h2 slot="header">技能</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#skill-tokens">技能标记</a></li>
+				</ul>
+				<p><dfn><a href="#turns">回合</a> 步骤 3：任意玩家每可选支付1个匹配技能，行动费用减1</dfn></p>
+				<img class="float-right w150" src="figs/spend-skill-tokens.webp" alt="技能标记" width="300" height="195">
+				<p>使用 <a href="#skill-tokens">技能标记</a> 以降低 <a href="#cost">费用</a> 将降低因未放置 <a href="#challenge-dice">挑战骰</a>.</p>
+				<ul>
+					<li><p>技能（标记）代表洞见与建议。</p></li>
+					<li><p>玩家可随时支付技能使彼此受益，不仅限于降低行动费用。</p></li>
+					<li><p>将已付技能标记弃入公共供应区。你只能使用所提供的标记。</p></li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="skirm" class="glossary">
+				<h2 slot="header">Skirm</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+					<li><a href="#skirm-quick">变体：快速 Skirm</a></li>
+				</ul>
+				<p>Skirm 是许多人会玩的卡牌与骰子决斗游戏 <a href="#sentients">智者</a> 世界。Skirm 玩法见卡 798，智者（及你若未从 <a href="#spoiler-pack">剧透补充包</a>）。剧透包设计旨在贴合此虚构行星。Vantage 单局中收集的所有 Skirm 卡共占 1 个 <a href="#grid">储备</a> 容量（它们不能放入你的卡阵）；游戏结束时将所有非默认 Skirm 卡归还剧透包。</p>
+			</rp-modal>
+			<rp-modal id="skirm-quick" class="glossary">
+				<h2 slot="header">Skirm：快速变体</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+					<li><a href="#skirm">Skirm</a></li>
+				</ul>
+				<img class="float-right w125" src="components/spoiler-pack.webp" alt="剧透补充包" width="300" height="442">
+				<h3>开局</h3>
+				<ul>
+					<li>忽略卡牌 <span class="loc-num">798</span>.</li>
+					<li>若这是你第一次 Skirm 决斗，获得命运<span class="card-num">1603</span>.</li>
+					<li>来自 <a href="#spoiler-pack">剧透补充包</a>，获得 1 张随机卡牌。</li>
+				</ul>
+
+				<h3>掷技能骰</h3>
+				<img class="float-right w125" src="components/skill-die.webp" alt="Skill Die" width="150" height="84">
+				<ul>
+					<li>为自己掷 6 个技能骰。</li>
+					<li>为智者掷 6 个技能骰。</li>
+				</ul>
+				<h3>选择卡牌</h3>
+				<ol>
+					<li>选择 1 张你的 Skirm 卡为自己使用。</li>
+					<li>从该智者的牌包中随机选择1张 Skirm 卡（若行动中指定则为特定卡）。</li>
+				</ol>
+				<h3>结算</h3>
+				<ul>
+					<li>你试图让你卡上图标匹配骰多于对手卡上图标匹配骰（忽略全部文字）。</li>
+					<li>若你的卡牌有 <em>更高速度</em> （左上角数字），你可 <em>重掷 <strong>all</strong> 你的骰子一次</em>.</li>
+					<li>若你的卡牌有 <em>较低速度</em>，你 <em>打破平局</em> 比较骰子时。</li>
+				</ul>
+				<h3>结果</h3>
+				<ul>
+					<li><b>若你获胜：</b> 获得 $2。</li>
+					<li><b>无论胜、负或平：</b> 将获得的卡牌留在你的 <a href="grid">储备</a> （你的整个 Skirm 收藏仅计为 1 张储备卡）。
+					</li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="slots">
+				<h2 slot="header" class="small">卡牌槽位</h2>
+				<p><dfn><a href="#turns">回合</a> 步骤 5：将掷出的挑战骰逐一枚放入你的卡阵卡牌上（及影响 <svg class="◊" viewBox="0 0 500 500"><use href="#i-impact"/></svg> 任意玩家卡阵卡牌上的槽位）</dfn></p>
+				<p>通过将骰子置于空槽位，你避免承受其 <a href="#penalties">惩罚</a>.</p>
+				<ul>
+					<li>
+						<p>每个槽位最多可放1枚骰。大多数槽位对可放置的挑战骰类型有限制。 <i>点击下方示例查看详情。</i></p>
+						<dl class="disclosure-grid slots">
+							<dt><svg viewBox="0 0 500 500"><use href="#slot-skill-type"/></svg></dt>
+							<dd><p><dfn>技能类型</dfn> （例如，你仅能在……期间在此放置挑战骰 <span class="move skill">移动</span> (<svg class="◊" viewBox="0 0 398 500"><use href="#i-move"/></svg>）行动）。</p></dd>
+							<dt><svg viewBox="0 0 500 500"><use href="#slot-ability"/></svg></dt>
+							<dd><p><dfn>能力</dfn> （例如，你仅能在……期间在此放置挑战骰 <span class="help skill">协助-<span class="action">创造</span></span> 行动）。 <strong>重要：</strong> 若有与能力相关的骰槽或能力，移动到新地点时务必留意，尤其他人为你读故事书时。</p></dd>
+							<dt><svg viewBox="0 0 500 500"><use href="#slot-interaction"/></svg></dt>
+							<dd><p><dfn>互动</dfn> （例如，你仅可在涉及 sinew（<img class="◊" src="icons/i-sinew.webp" alt="筋腱" width="146" height="146">）生物。含显示此图标的地点行动与卡牌行动，以及互动离开行动（例如「潜行绕过生物」）。</p></dd>
+							<dt><svg viewBox="0 0 500 500"><use href="#slot-die-result"/></svg></dt>
+							<dd><p>许多槽位有 <svg class="◊" viewBox="0 0 400 500"><use href="#i-time"/></svg>, <span class="nowrap"><svg class="◊" viewBox="0 0 500 478"><use href="#i-morale"/></svg>,</span> <span class="nowrap"><svg class="◊" viewBox="0 0 500 500"><use href="#i-health"/></svg>,</span> or <span class="nowrap"><svg class="◊" viewBox="0 0 500 474"><use href="#i-setback"/></svg>,</span> 表示仅可放置显示该特定结果的骰。无特定骰面的槽位，可放任意结果（甚至 <svg class="◊" viewBox="0 0 500 500"><use href="#i-blank"/></svg>).</p></dd>
+							<dt><svg viewBox="0 0 500 500"><use href="#slot-impact"/></svg></dt>
+							<dd><p>影响 <svg class="◊" viewBox="0 0 500 500"><use href="#i-impact"/></svg> 骰槽位经你许可可由任意玩家使用，即使其在不同地点。它们代表专长与个性（例如有士气影响槽的角色积极且有领导力）。若其他玩家将挑战骰放在你的影响骰槽且存在奖励（如激励），你获得它。</p></dd>
+							<dt><svg viewBox="0 0 500 500"><use href="#slot-terrain"/></svg></dt>
+							<dd><p>要将挑战骰放在地形特定骰槽（如水下，从美术辨认），当前地点须匹配该地形。</p></dd>
+							<dt><svg viewBox="0 0 500 500"><use href="#slot-cost"/></svg></dt>
+							<dd><p>部分槽位放置挑战骰有费用（箭头指向 <strong>朝向</strong> 槽位；你必须从同一张卡支付所示的激励（1或2）。</p></dd>
+							<dt><svg viewBox="0 0 500 500"><use href="#slot-bonus"/></svg></dt>
+							<dd><p>部分槽位在你放置挑战骰时提供即时加值（箭头指向 <strong>离开</strong> 从槽位移除；将获得的激励放在同卡）。奖励通常为激励，也可能为其他（技能、 <svg class="◊" viewBox="0 0 400 500"><use href="#i-time"/></svg>/<span class="nowrap"><svg class="◊" viewBox="0 0 500 478"><use href="#i-morale"/></svg>/<svg class="◊" viewBox="0 0 500 500"><use href="#i-health"/></svg>,</span> 特定卡牌等）。</p></dd>
+						</dl>
+					</li>
+				</ul>
+
+
+				<ul>
+					<li><p>若其他玩家在你地点，经许可可将其卡上开放槽位（含非影响槽）放置挑战骰。</p></li>
+					<li><p>若其他玩家供应区有地点特定卡且你在该卡地点，可对该卡执行行动。</p></li>
+					<li><p>每当挑战骰被放在槽位上，它会留在那里直到全部挑战骰 <a href="#challenge-dice">已回收</a>.</p></li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="spells" class="glossary">
+				<h2 slot="header">法术</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>将法术放入你的 <a href="#grid">卡阵</a>，获得 <a href="#boost">激励</a> 法术栏中每张卡上（含法术卡本身）。大多数法术有影响 <svg class="◊" viewBox="0 0 500 500"><use href="#i-impact"/></svg> 挑战骰槽位以及强大的影响激励能力。</p>
+			</rp-modal>
+			<rp-modal id="spoilers">
+				<h2 slot="header">剧透</h2>
+				<p>与《秘密之书》术语表类似，本资源包含游玩 Vantage 时可能遇到的许多词条。强烈建议仅在有问题时阅读「剧透」条目，且仅在遇到特定卡牌类型或术语之后。例如首次见到 Lesson 卡，可查阅「Lessons」。</p>
+				<p>剧透条目可在 <a href="#find">索引与搜索</a>。你也可以选择在主界面中包含它们，于 <a href="#settings">设置</a>.</p>
+			</rp-modal>
+			<rp-modal id="spoiler-pack">
+				<h2 slot="header">剧透补充卡包</h2>
+				<img class="float-right w100" src="components/spoiler-pack.webp" alt="剧透补充包" width="300" height="442">
+				<p>探索行星时，你会赢得这包神秘卡牌的内容吗？跟随最大胆的游戏直觉去发现！</p>
+			</rp-modal>
+			<rp-modal id="story" data-dynamic="story" max></rp-modal>
+			<rp-modal id="story-lookup" max>
+				<h2 slot="header">故事书查询</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#storybooks">故事书</a></li>
+				</ul>
+				<div class="selected-story"><span class="loc-num"></span></div>
+				<ul class="grid story-type">
+					<li data-key="move" role="button" tabindex="0"><svg viewBox="0 0 500 500"><use href="#key-move"/></svg></li>
+					<li data-key="look" role="button" tabindex="0"><svg viewBox="0 0 500 500"><use href="#key-look"/></svg></li>
+					<li data-key="engage" role="button" tabindex="0"><svg viewBox="0 0 500 500"><use href="#key-engage"/></svg></li>
+					<li data-key="help" role="button" tabindex="0"><svg viewBox="0 0 500 500"><use href="#key-help"/></svg></li>
+					<li data-key="take" role="button" tabindex="0"><svg viewBox="0 0 500 500"><use href="#key-take"/></svg></li>
+					<li data-key="overpower" role="button" tabindex="0"><svg viewBox="0 0 500 500"><use href="#key-overpower"/></svg></li>
+					<li data-key="depart" role="button" tabindex="0"><svg viewBox="0 0 500 500"><use href="#key-depart"/></svg></li>
+					<li data-key="secret" role="button" tabindex="0"><svg viewBox="0 0 500 500"><use href="#i-secret"/></svg></li>
+				</ul>
+				<ul class="grid story-numpad">
+					<li data-key="1" role="button" tabindex="0">1</li>
+					<li data-key="2" role="button" tabindex="0">2</li>
+					<li data-key="3" role="button" tabindex="0">3</li>
+					<li data-key="4" role="button" tabindex="0">4</li>
+					<li data-key="5" role="button" tabindex="0">5</li>
+					<li data-key="6" role="button" tabindex="0">6</li>
+					<li data-key="7" role="button" tabindex="0">7</li>
+					<li data-key="8" role="button" tabindex="0">8</li>
+					<li data-key="9" role="button" tabindex="0">9</li>
+					<li data-key="delete" role="button" tabindex="0">⌫</li> <!-- backspace -->
+					<li data-key="0" role="button" tabindex="0">0</li>
+					<li data-key="submit" role="button" tabindex="0">✓</li> <!-- submit -->
+				</ul>
+			</rp-modal>
+			<rp-modal id="storybooks">
+				<h2 slot="header">故事书</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#story-lookup">故事书查询</a></li>
+				</ul>
+				<p>在大多数 <a href="#turns">回合</a> 游戏中会引用故事书中的短文：回合早期你会朗读 <a href="#cost">费用</a> 以及行动（加粗部分），随后在你回合稍后你将朗读 <a href="#results">结果</a> （非粗体文字）。建议玩家分担朗读，另一玩家在你回合朗读以便你专注执行行动机制。</p>
+				<img src="components/storybooks.webp" alt="故事书" width="600" height="234">
+				<p>共有9本书：每种技能各1本故事书，1本离开行动， <a href="#book-of-secrets">《秘密之书》</a>，且 <a href="#book-of-vantages">《视界之书》</a>. 分开多本故事书（而非一本巨册）是为了帮助玩家避免剧透同一地点上的其他行动，因为每项行动费用与结果不同。分开的故事书也避免玩家先做出选择、看到其他选项后再改主意（这违反规则与游戏精神——你们需用眼睛与全体共享知识，在执行前直觉判断行动性质与难度）。</p>
+			</rp-modal>
+			<rp-modal id="structures" class="glossary">
+				<h2 slot="header">建筑</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>建筑是保留在你供应区中的横向卡牌 <a href="#grid">供应区</a>. 你（任意玩家，不限于建造结构的玩家）仅能在结构起源地点上对其执行行动；可将结构卡叠在其地点卡上以作记忆（我们建议玩家离开时不要将此地点卡收回盒中，而留在桌上）。除非行动另有说明，每项结构行动可执行次数不限。</p>
+			</rp-modal>
+			<rp-modal id="terrain" class="glossary">
+				<h2 slot="header">地形</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>有多种类型的 <a href="#locations">地点</a> 在 Vantage 中，默认为「陆地」地点（行星表面户外）。部分卡可能指特定地形。</p>
+				<details>
+					<summary><b>城市</b></summary>
+					<div>
+						<p>城市地点为纵向卡，标有城市名（或镇、村等——皆视为城市。首都内各横向地点为 <strong>not</strong> 城市地点）。</p>
+						<p>每座城市内有多种可探索的商铺，各自标有行动图标（这些不计为“<a href="#runes">符文</a>”以用于其他行动）；你需要从美术与其他上下文线索直觉判断每家商铺的性质。</p>
+						<p>每个城市地点的卡上包含特殊说明："你可以在同一回合执行多种不同的 <a href="#actions">行动</a> here (1/turn)。" 这是每地点仅 1 次地点行动常规规则的例外。请注意「不同」——不可两次选相同行动。</p></div>
+				</details>
+				<details>
+					<summary><b>室内</b></summary>
+					<div><p>若你进入建筑内部，你有有限的时间与 <a href="#locations">地点</a> 之后才必须离开。建筑内部的不同功能处标有行动图标（这些不计为“<a href="#runes">符文</a>」供其他行动），让你聚焦吸引你的物品。离开室内时，常回到先前地点（例如从地点 123 到室内 550 再回到 123），为便于游玩，可在室内期间将地点卡暂置一旁。</p></div>
+				</details>
+				<details>
+					<summary><b>海洋</b></summary>
+					<div><p>海平面是不断变化的景观——你受潮汐摆布。你可以重复 <a href="#actions">行动</a> 于海洋地点（即：即使上回合已在该海洋地点执行过地点行动，仍可再执行地点行动）。海洋地点还可选择潜水；若你从水下地点浮出水面，洋流可能改变你的位置。没有预设可移动到的相邻海洋地点。</p></div>
+				</details>
+				<details>
+					<summary><b>天空</b></summary>
+					<div><p>有少数 <a href="#vehicles">载具</a> 以及让你飞越星球的物品（参照你当前的 <a href="#cost">区域</a>，位于 <span class="skill look">观察</span> <a href="#storybooks">故事书</a>，且 <a href="#book-of-vantages">《视界之书》</a>），鸟瞰下方大地。主题上，若不在户外则不可用这些载具与物品。因大气稀薄，你受到 1 缺氧 <a href="#damage">伤害</a> 每当你到达空中地点时。在空中地点，可向各基本方向飞行，或驶回行星，大致瞄准空中地点某象限——若上一行动是飞至空中——则落回先前地点。你可执行相同 <span class="skill move">移动-<span class="action">转向</span></span> <a href="#actions">行动</a> 在不同回合于同一天空地点，若你再次到达该处。</p></div>
+				</details>
+				<details>
+					<summary><b>地下</b> （洞穴屏障、洞穴与地牢）</summary>
+					<div>
+						<details>
+							<summary><b>洞穴屏障</b></summary>
+							<div><p>这些地下洞穴入口构成路径障碍。有 6 种不同洞穴屏障，各有关联 <a href="#actions">行动</a> 与深入相关。若同局多次来到同一洞穴屏障地点，始终允许执行深入所需行动（无论此前是否执行过）。</p></div>
+						</details>
+						<details>
+							<summary><b>洞穴</b></summary>
+							<div><p>这些地下地点拥有标准的 6 个地点 <a href="#actions">行动</a> 选择以及深入星球的方式。</p></div>
+						</details>
+						<details>
+							<summary><b>地城</b></summary>
+							<div><p>地牢是连接若干洞穴的地下地点。每个地牢呈现 <a href="#obstacles">障碍</a> 需克服，部分在你到达时先攻。地下城可选择退出至最初进入地下城的地点（即使此后穿越多个地下城地点）。你可重复 <a href="#actions">行动</a> 于地下城地点（即：即使上回合已在地下城执行地点行动，仍可再执行）。</p></div>
+						</details>
+					</div>
+				</details>
+				<details>
+					<summary><b>水下</b></summary>
+					<div><p>有些水下地点因缺氧，你会承受1点缺氧 <a href="#damage">伤害</a> 每当你抵达时。 <a href="#cost">费用</a> 在你处于水下时离开至相邻所列地点 <span class="skill move">移动-<svg class="◊" viewBox="0 0 500 500"><use href="#i-cost-1"/></svg>-<span class="action">游泳</span></span> （就像在陆地上步行至相邻所列地点一样）。大多数水下地点包含一个始终可用的 <span class="skill move">移动-<span class="action">上浮</span></span> 若需喘口气的行动。</p></div>
+				</details>
+				<details>
+					<summary><b>水</b></summary>
+					<div><p>有许多 <a href="#locations">地点</a> 有溪流、河、池、湖与海洋的地点。部分卡在你「水上」或近水时有特殊收益。地点上无符号标示；仅取决于当前地点能否看到水体。若在水下或空中，则不算「水上」。</p></div>
+				</details>
+			</rp-modal>
+			<rp-modal id="tokens">
+				<h2 slot="header">标记</h2>
+				<img src="components/boost-tokens.webp" alt="标记" width="600" height="89">
+				<p>Vantage 包含 <a href="#boost">激励</a> 标记（方块）以及 <a href="#skill-tokens">技能标记</a> （纸板）。方块有时用作激励以外的计数物（例如在目标卡上），或在某些谜题中按定义使用。</p>
+			</rp-modal>
+			<rp-modal id="trackers">
+				<h2 slot="header">追踪器</h2>
+				<img class="float-right w150" src="components/trackers.webp" alt="追踪器" width="577" height="300">
+				<p>用这些追踪你角色的时间 <svg class="◊" viewBox="0 0 400 500"><use href="#i-time"/></svg>，士气 <svg class="◊" viewBox="0 0 500 478"><use href="#i-morale"/></svg>，以及体力 <svg class="◊" viewBox="0 0 500 500"><use href="#i-health"/></svg> 在 <a href="#center">中央板</a> 游戏盘。</p>
+				<ul>
+					<li><p>若任意玩家的 <svg class="◊" viewBox="0 0 400 500"><use href="#i-time"/></svg>, <svg class="◊" viewBox="0 0 500 478"><use href="#i-morale"/></svg>, <svg class="◊" viewBox="0 0 500 500"><use href="#i-health"/></svg> 降至 0 时，朗读故事中该任务的条目 <span class="take skill">获取</span> <a href="#storybooks">故事书</a>.</p></li>
+					<li>若你本应提高 <svg class="◊" viewBox="0 0 400 500"><use href="#i-time"/></svg>, <svg class="◊" viewBox="0 0 500 478"><use href="#i-morale"/></svg>, <svg class="◊" viewBox="0 0 500 500"><use href="#i-health"/></svg> 或高于 6，则改为获得 1 <a href="#skill-tokens">随机技能</a>.</li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="traveler" class="glossary">
+				<h2 slot="header">旅者</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>神秘旅者发出信号将你们带到此行星。旅者出现在许多地点，以特定图标 <svg class="◊" viewBox="0 0 500 420"><use href="#i-traveler"/></svg> 以及引号内的文字（他们在与你对话）。</p>
+			</rp-modal>
+			<rp-modal id="trials" class="glossary">
+				<h2 slot="header">试炼</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>世界上每种文化都有其族人及希望融入他们的人的入会试炼。每项试炼 <a href="#locations">地点</a> 拥有特定行动——对其对应（内容）的重要行动 <a href="#sentients">智者</a>——在你经其他行动被正式欢迎参与试炼后可执行。试炼本身是谜题，每名玩家每局可尝试一次。若某玩家试炼失败，同局稍后其他玩家可再试。</p>
+			</rp-modal>
+			<rp-modal id="turns">
+				<h2 slot="header">回合</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#sample-turn">示例回合</a></li>
+				</ul>
+				<fieldset class="rp-controls unlabeled tabs">
+					<ul data-relevance-set>
+						<li><label><input name="turns" type="radio" value="turn-expanded" checked><span>展开</span></label></li>
+						<li><label><input name="turns" type="radio" value="turn-brief"><span>简要</span></label></li>
+					</ul>
+				</fieldset>
+				<ol>
+					<li><dfn>选择一项 <a href="#actions">行动</a>.</dfn><div data-relevance="turn-expanded"> 执行行动时你总会成功；挑战在于避免失去时间 <svg class="◊" viewBox="0 0 400 500"><use href="#i-time"/></svg>, <span class="nowrap">士气（<svg class="◊" viewBox="0 0 500 478"><use href="#i-morale"/></svg>)</span>，且 <span class="nowrap">体力（<svg class="◊" viewBox="0 0 500 500"><use href="#i-health"/></svg>)</span>.</div>
+						<ul data-relevance="turn-expanded">
+							<li><b>地点行动。</b> 每个 <a href="#locations">地点</a> 列出若干选项（通常为6个）。若你此前在此执行过地点行动，你不能再执行另一次。</li>
+							<li><b>卡牌行动。</b> 许多非地点卡包含行动选项。其中包括你 <a href="#grid">卡阵</a>，你的 <a href="#grid">供应区</a>，或 <a href="#center">中央板</a>.</li>
+							<li><b>离开行动。</b> 沿四个基本方向之一离开当前地点前往另一地点。若所选离开行动是前往相邻所列地点（即罗盘上有编号），无描述且费用为 1。</li>
+						</ul>
+					</li>
+					<li><dfn>阅读 <a href="#cost">费用与行动</a> （非结果）。</dfn><span data-relevance="turn-expanded"> 玩家在对应技能故事书中找卡号条目，只读费用与粗体文字。费用为 X 的行动，从 1–6 选数。</span></li>
+					<li><dfn>每有一个匹配项，费用减 1 <a href="#skills">技能</a> 可由任意玩家选择支付。</dfn><span data-relevance="turn-expanded"> 技能代表洞见与建议。例：观察行动费用为 2，但你或另一玩家支付 1 技能标记，费用降为 1。</span></li>
+					<li><dfn><a href="#challenge-dice">掷骰</a> 从挑战池取出等同于剩余费用的骰子。</dfn><span data-relevance="turn-expanded"> 若没有足够的可用骰，先将中央板与卡阵中卡牌上的全部挑战骰回收。</span></li>
+					<li><dfn>将掷出的骰放在 <a href="#slots">槽位</a> 你的卡阵中（以及任意卡阵中的槽位）。</dfn><span data-relevance="turn-expanded"> 多数槽位有类别，表示能否放置挑战骰，取决于技能类型、能力、构成、骰面等。影响（<svg class="◊" viewBox="0 0 500 500"><use href="#i-impact"/></svg>）槽位与能力可使任意玩家受益。</span></li>
+					<li><dfn>承受 <a href="#penalties">惩罚</a> 来自已掷但未放置的挑战骰。</dfn><span data-relevance="turn-expanded"> 失败 <span class="nowrap">时间（<svg class="◊" viewBox="0 0 400 500"><use href="#i-time"/></svg>）、</span> <span class="nowrap">士气（<svg class="◊" viewBox="0 0 500 478"><use href="#i-morale"/></svg>）、</span> <span class="nowrap">体力（<svg class="◊" viewBox="0 0 500 500"><use href="#i-health"/></svg>）</span>，和/或将这些骰子与空白骰 <svg class="◊" viewBox="0 0 500 500"><use href="#i-blank"/></svg> 放入中央板惩罚区。将挫折 <svg class="◊" viewBox="0 0 500 474"><use href="#i-setback"/></svg> 回收进挑战骰池。</span></li>
+					<li><dfn>阅读 <a href="#results">行动结果</a>.</dfn><span data-relevance="turn-expanded"> 故事书描述行动的后果与收益（若离开行动前往相邻所列地点，直接找该地点卡）。多选项列表中，在了解或查看收益前做出选择。</span></li>
+					<li><dfn>结果是否写“<a href="#continue">继续</a>”?</dfn>
+						<ul data-relevance="turn-expanded">
+							<li><b>是。</b> 你必须再执行一项行动（任意类型）。忽略地点行动限制。若结果写「你可继续」，由你选择。</li>
+							<li><b>否。</b> 结束你的回合。</li>
+						</ul>
+					</li>
+				</ol>
+			</rp-modal>
+			<rp-modal id="urtf">
+				<h2 slot="header">主题乐趣万能规则</h2>
+				<p>若你对 Vantage 的规则、卡牌、能力或其他任何问题有所疑问， <strong>选择在主题上最合理且最有趣的答案</strong>.</p>
+				<p>我们随时乐意实时或局后协助，若你在 <a href="https://www.facebook.com/groups/vantagegame">Vantage Facebook 群组</a>，在 <a href="https://boardgamegeek.com/boardgame/420033/vantage">BoardGameGeek</a>，在 <a href="https://stonemaiergames.com/games/vantage/rules-faq/">Vantage 常见问题</a> 我们网站上的页面，或在 <a href="https://stonemaiergames.com/discord/">Stonemaier Games Discord</a> 服务器。</p>
+			</rp-modal>
+			<rp-modal id="vehicles" class="glossary">
+				<h2 slot="header">载具</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#spoilers">剧透</a></li>
+				</ul>
+				<p>载具卡协助你旅行。部分载具有与地点相关的特殊收益 <a href="#terrain">地形</a>。许多载具有 <span class="skill move">移动-<span class="action">骑乘</span></span> 指示你在……中使用指南的行动 <a href="#book-of-vantages">《视界之书》</a>……以找到特定地点卡。几乎所有载具都有 <span class="skill help">协助-<span class="action">升级</span></span> 行动（需要 <a href="#boost">激励</a> 从当前载具）以更换为更好的载具。</p>
+			</rp-modal>
+		</main>
+		<footer>
+			<ul class="links">
+				<li><a href="#about">关于</a></li>
+				<li><a href="#rejoinder">反馈</a></li>
+				<li><a href="https://rulepop.com/#privacy">隐私</a></li>
+				<li><a href="https://rulepop.com">Rulepop</a></li>
+			</ul>
+			<rp-modal id="rejoinder" wide>
+				<h2 slot="header">欢迎告诉我们你的想法！</h2>
+				<p>对 Vantage 有问题或反馈？ <a href="https://boardgamegeek.com/boardgame/420033/vantage/forums">到 BoardGameGeek 参与讨论</a>.</p>
+				<p>如需报告问题或为 Vantage Rulepop 网页应用提供建议，请发邮件至 <a href="mailto:vantage@rulepop.com">vantage@rulepop.com</a>.</p>
+			</rp-modal>
+			<rp-modal id="install-pwa">
+				<h2 slot="header">安装 Rulepop 站点</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#about">关于本站</a></li>
+				</ul>
+				<p>你可以将此站点安装为独立应用，速度极快，且离线也能使用。方法如下…</p>
+				<details>
+					<summary>iPhone 或 iPad（移动版 Safari）</summary>
+					<div>
+						<ol>
+							<li>
+								<p>点按 <svg class="◊" viewBox="0 0 392 500"><use href="#icon-share-sheet"/></svg> 图标。</p>
+								<img src="assets/mobile-safari-step-1-CKlnxkk_.webp" alt="Mobile Safari step one" width="600" height="212">
+							</li>
+							<li>
+								<p>点按“添加到主屏幕”。</p>
+								<img src="assets/mobile-safari-step-2-CHMXqPRH.webp" alt="Mobile Safari step two" width="600" height="205">
+							</li>
+						</ol>
+						<p>
+							<b>注：</b> Safari 是唯一在 iPhone 和 iPad 上支持 PWA 的浏览器。
+						</p>
+					</div>
+				</details>
+				<details>
+					<summary>Android（Chrome、Brave、Firefox）</summary>
+					<div>
+						<p>首次访问站点时会提示安装应用。你也可以…</p>
+						<ol>
+							<li>
+								<p>点按 ⋮ 图标。</p>
+								<img src="data:image/webp;base64,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" alt="Android step one" width="570" height="169">
+							</li>
+							<li>
+								<p>点按“安装应用”。</p>
+								<img src="assets/android-step-2-CIEKmUXE.webp" alt="Android step two" width="576" height="168">
+							</li>
+						</ol>
+					</div>
+				</details>
+				<details>
+					<summary>Mac 或 PC（Chrome、Brave、Edge）</summary>
+					<div>
+						<p>点击地址栏右端附近的「安装」图标。</p>
+						<figure class="max">
+							<img src="data:image/webp;base64,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" alt="Chrome PWA install icon">
+							<figcaption>
+								<p>Google Chrome 与 Brave 的 PWA 安装图标</p>
+							</figcaption>
+						</figure>
+						<figure class="max">
+							<img src="assets/desktop-edge-CmXtGStC.webp" alt="Edge PWA install icon">
+							<figcaption>
+								<p>Microsoft Edge 的 PWA 安装图标</p>
+							</figcaption>
+						</figure>
+						<p>
+							<b>注：</b> Safari 和 Firefox 的桌面版不支持 PWA。
+						</p>
+					</div>
+				</details>
+			</rp-modal>
+			<rp-modal id="history-nav">
+				<h2 slot="header">前进/后退导航</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#about">关于本站</a></li>
+				</ul>
+				<p>每条规则条目如同独立网页。你可以使用前进/后退导航返回先前视图。</p>
+				<img src="assets/browser-history-nav-Bw_eWMEs.webp" alt="Browser history nav" class="float-right">
+				<h3>浏览器按钮</h3>
+				<p>浏览器的后退与前进按钮在本站内可用。试试看！</p>
+				<img src="assets/android-back-D9JKjfw7.webp" alt="Browser history nav" class="float-right">
+				<h3>安卓返回键</h3>
+				<p>对，这个也有效！</p>
+				<h3>页面内前进/后退按钮</h3>
+				<p>可在本站的设置中开关这些 <a href="#settings">设置 <svg class="◊" viewBox="0 0 500 500">
+							<use href="#icon-settings" />
+						</svg></a>.</p>
+				<h3>滑动翻页</h3>
+				<p>手势导航在触摸屏上非常自然且顺手。试试看！</p>
+				<ul>
+					<li>这是 <a href="https://osxdaily.com/2014/03/28/back-forward-gestures-safari-ios/">准备就绪</a> 于 iOS。</li>
+					<li>你可能需要 <a href="https://support.google.com/android/answer/9079644">启用</a> 在 Android 设备上。</li>
+				</ul>
+			</rp-modal>
+			<rp-modal id="link-to-rule">
+				<h2 slot="header">直接链接到 <span>规则<svg viewBox="0 0 500 315"><use href="#click-to-share"/></svg></span> 条目</h2>
+				<ul slot="header" class="see-also">
+					<li><a href="#about">关于本站</a></li>
+				</ul>
+				<p>每条规则有独立 URL 可分享。点击规则标题即可分享地址。（当然也可从浏览器地址栏复制。）</p>
+			</rp-modal>
+		</footer>
+		<div id="utilities">
+			<a href="#settings" title="设置"><svg viewBox="0 0 500 500"><use href="#icon-settings"/></svg></a>
+			<a href="#find" title="索引"><svg viewBox="0 0 500 500"><use href="#icon-find"/></svg></a>
+		</div>
+		<rp-modal id="settings" wide max>
+			<h2 slot="header">设置</h2>
+			<fieldset class="rp-controls">
+				<legend><a href="#spoilers">剧透</a> 在主界面显示条目</legend>
+				<ul data-relevance-set>
+					<li><label><input name="spoilers-nav" type="radio" value="spnav-hide" checked><span>隐藏</span></label></li>
+					<li><label><input name="spoilers-nav" type="radio" value="spnav-show"><span>显示</span></label></li>
+				</ul>
+			</fieldset>
+			<fieldset class="rp-controls settings" id="wake-lock">
+				<legend>屏幕常亮</legend>
+				<p>开启后，可在本应用运行时防止设备自动变暗或锁屏。</p>
+				<ul>
+					<li><label><input name="wake-lock" type="radio" value="off" checked><span>关</span></label></li>
+					<li><label><input name="wake-lock" type="radio" value="on"><span>On</span></label></li>
+				</ul>
+			</fieldset>
+			<fieldset class="rp-controls settings" id="numpad-layout">
+				<legend>数字键盘布局</legend>
+				<p>选择布局： <a href="#story-lookup">故事书查询</a> 数字键盘。</p>
+				<ul data-display-target=".story-numpad">
+					<li><label><input name="numpad-layout" type="radio" value="phone" checked><span>电话键盘</span></label></li>
+					<li><label><input name="numpad-layout" type="radio" value="calc"><span>计算器</span></label></li>
+				</ul>
+			</fieldset>
+			<fieldset class="rp-controls">
+				<legend>页面内前进/后退按钮</legend>
+				<ul data-relevance-set>
+					<li><label><input name="history-nav" type="radio" value="hist-show" checked><span>显示</span></label></li>
+					<li><label><input name="history-nav" type="radio" value="hist-hide"><span>隐藏</span></label></li>
+				</ul>
+				<p><b>注：</b> 除浏览器自带导航外，你还可以使用这些。</p>
+			</fieldset>
+		</rp-modal>
+		<rp-modal id="find" title="Find" x-wide max>
+			<fieldset class="rp-controls unlabeled tabs">
+				<ul data-relevance-set>
+					<li><label><input name="index-search" type="radio" value="find-index" checked><span>索引</span></label></li>
+					<li><label><input name="index-search" type="radio" value="find-search"><span>搜索</span></label></li>
+				</ul>
+			</fieldset>
+			<p><strong>警告：</strong> <a href="#spoilers">剧透</a> 条目收录于此。 </p>
+			<ul class="index site-index" data-relevance="find-index">
+				<li><a href="#abilities">能力</a></li>
+				<li><a href="#actions">行动</a></li>
+				<li><a href="#locations">列出的相邻地点</a></li>
+				<li><a href="#actions">始终可用</a></li>
+				<li><a href="#animals">动物</a></li>
+				<li><a href="#items">神器</a></li>
+				<li><a href="#penalties">空白</a></li>
+				<li><a href="#book-of-secrets">《秘密之书》</a></li>
+				<li><a href="#book-of-vantages">《视界之书》</a></li>
+				<li><a href="#items">书籍</a></li>
+				<li><a href="#boost">激励</a></li>
+				<li><a href="#cards">激励容量</a></li>
+				<li><a href="#tokens">激励标记</a></li>
+				<li><a href="#items">弓与箭</a></li>
+				<li><a href="#actions">卡牌行动</a></li>
+				<li><a href="#cards">卡牌图解</a></li>
+				<li><a href="#grid">卡阵</a></li>
+				<li><a href="#terrain">洞穴屏障</a></li>
+				<li><a href="#terrain">洞穴</a></li>
+				<li><a href="#center">中央板 </a></li>
+				<li><a href="#challenge-dice">挑战骰</a></li>
+				<li><a href="#characters">角色</a></li>
+				<li><a href="#composition">电路</a></li>
+				<li><a href="#terrain">城市</a></li>
+				<li><a href="#coins">金币</a></li>
+				<li><a href="#composition">构成</a></li>
+				<li><a href="#continue">继续</a></li>
+				<li><a href="#cost">费用</a></li>
+				<li><a href="#curses">诅咒</a></li>
+				<li><a href="#actions">离开行动</a></li>
+				<li><a href="#end-game">命运</a></li>
+				<li><a href="#difficulty">难度</a></li>
+				<li><a href="#terrain">地城</a></li>
+				<li><a href="#elementals">元素体</a></li>
+				<li><a href="#items">徽记</a></li>
+				<li><a href="#end-game">游戏结束</a></li>
+				<li><a href="#continue">回合结束</a></li>
+				<li><a href="#composition">能量</a></li>
+				<li><a href="#escape-pods">逃生舱</a></li>
+				<li><a href="#experience">经历</a></li>
+				<li><a href="#items">阵营徽记</a></li>
+				<li><a href="#composition">火</a></li>
+				<li><a href="#flora">植物</a></li>
+				<li><a href="#results">获得卡牌</a></li>
+				<li><a href="#gameplay">流程概览</a></li>
+				<li><a href="#spoilers">术语表</a></li>
+				<li><a href="#goals">目标</a></li>
+				<li><a href="#composition">金</a></li>
+				<li><a href="#grid">卡阵</a></li>
+				<li><a href="#penalties">体力</a></li>
+				<li><a href="#interactions">互动</a></li>
+				<li><a href="#cost">斜向</a></li>
+				<li><a href="#terrain">室内</a></li>
+				<li><a href="#items">物品</a></li>
+				<li><a href="#composition">叶</a></li>
+				<li><a href="#lessons">课程</a></li>
+				<li><a href="#actions">地点行动</a></li>
+				<li><a href="#locations">地点</a></li>
+				<li><a href="#locations">强制指示</a></li>
+				<li><a href="#items">地图</a></li>
+				<li><a href="#composition">金属</a></li>
+				<li><a href="#end-game">任务</a></li>
+				<li><a href="#penalties">士气</a></li>
+				<li><a href="#locations">神秘旅者</a></li>
+				<li><a href="#goals">目标</a></li>
+				<li><a href="#obstacles">障碍</a></li>
+				<li><a href="#terrain">海洋</a></li>
+				<li><a href="#orbs">光球</a></li>
+				<li><a href="#penalties">惩罚</a></li>
+				<li><a href="#characters">动力甲</a></li>
+				<li><a href="#puzzles">谜题</a></li>
+				<li><a href="#goals">委托</a></li>
+				<li><a href="#challenge-dice">回收</a></li>
+				<li><a href="#cost">区域</a></li>
+				<li><a href="#grid">替换卡牌</a></li>
+				<li><a href="#grid">储备</a></li>
+				<li><a href="#cards">储备容量</a></li>
+				<li><a href="#results">结果</a></li>
+				<li><a href="#runes">符文</a></li>
+				<li><a href="#sample-turn">示例回合</a></li>
+				<li><a href="#composition">沙</a></li>
+				<li><a href="#seeds-and-trees">种子与树木</a></li>
+				<li><a href="#sentients">智者</a></li>
+				<li><a href="#penalties">挫折</a></li>
+				<li><a href="#shared-info">信息共享</a></li>
+				<li><a href="#items">盾牌</a></li>
+				<li><a href="#composition">筋腱</a></li>
+				<li><a href="#skill-tokens">技能骰</a></li>
+				<li><a href="#skill-tokens">技能标记</a></li>
+				<li><a href="#skills">技能</a></li>
+				<li><a href="#skirm">Skirm</a></li>
+				<li><a href="#terrain">天空</a></li>
+				<li><a href="#slots">槽位</a></li>
+				<li><a href="#gameplay">单人游戏</a></li>
+				<li><a href="#spells">法术</a></li>
+				<li><a href="#spoiler-pack">剧透补充包</a></li>
+				<li><a href="#spoilers">剧透</a></li>
+				<li><a href="#composition">石</a></li>
+				<li><a href="#storybooks">故事书</a></li>
+				<li><a href="#structures">建筑</a></li>
+				<li><a href="#grid">供应区</a></li>
+				<li><a href="#characters">幸存者角色</a></li>
+				<li><a href="#terrain">地形</a></li>
+				<li><a href="#penalties">时间</a></li>
+				<li><a href="#tokens">标记</a></li>
+				<li><a href="#trackers">追踪器（时间、士气、体力）</a></li>
+				<li><a href="#traveler">旅者</a></li>
+				<li><a href="#trials">试炼</a></li>
+				<li><a href="#terrain">地下</a></li>
+				<li><a href="#terrain">水下</a></li>
+				<li><a href="#urtf">主题乐趣万能规则</a></li>
+				<li><a href="#vehicles">载具</a></li>
+				<li><a href="#composition">水（构成）</a></li>
+				<li><a href="#terrain">水（地形）</a></li>
+				<li><a href="#cards">放置时</a></li>
+				<li><a href="#composition">风</a></li>
+				<li><a href="#composition">木</a></li>
+				<li><a href="#cost">X（费用）</a></li>
+			</ul>
+			<search data-relevance="find-search">
+				<form id="search-form">
+					<input type="search">
+					<input type="reset">
+				</form>
+				<div id="search-results"></div>
+			</search>
+		</rp-modal>
+		<div id="bak-fwd" data-relevance="hist-show">
+			<button id="back-button" type="button" aria-label="Back">
+				<svg viewBox="0 0 40 128"><polygon points="20 0 0 64 20 128 40 128 20 64 40 0"/></svg>
+			</button>
+			<button id="forward-button" type="button" aria-label="Forward">
+				<svg viewBox="0 0 40 128"><polygon points="20 0 40 64 20 128 0 128 20 64 0 0"/></svg>
+			</button>
+		</div>
+		<div id="url-copied" role="alert">链接已复制</div>
+		<svg id="sprites" role="presentation">
+			<defs>
+				<path id="cost-hex" fill="#231f20" d="M21.2 250 135.6 51.8h228.9L478.9 250 364.5 448.2h-229L21.3 250ZM125 33.5 0 250l125 216.5h250L500 250 375 33.5H125Z"/>
+				<path id="cost-hex-b" d="M250 0 33.5 125v250L250 500l216.5-125V125L250 0z"/>
+				<path id="cost-ring" d="M250 0a250 250 0 1 0 0 500 250 250 0 0 0 0-500Zm0 475a225 225 0 1 1 0-450 225 225 0 0 1 0 450Z"/>
+				<path id="cost-x" d="M282.1 115h51.3L275 250.6 333.4 385H282l-31.5-84.4-32.3 84.4h-51.7l58-134.4-58-135.6H218l32.7 85.1 31.5-85.1Z"/>
+				<path id="cost-1" d="M281.4 118.8v262.4h-46.7V172.8l-44 32.2v-51l47.8-35.2h43Z"/>
+				<path id="cost-2" d="M239.5 117.9c51.5 0 77.3 20.1 77.3 60.5V201c0 25-9.7 44.4-29 58.2l-32.6 26a93.2 93.2 0 0 0-20.7 20.1c-3 5-4.6 12.2-4.6 21.7V341h85v41H183.2v-59.7c0-15 3-27.5 9-37.2 6-9.7 14.7-18.6 26.2-26.8l35.6-28.7a41.2 41.2 0 0 0 13-14.7c2.3-5 3.5-12.1 3.5-21.3v-10.3c0-7.4-2.2-13.1-6.7-17-4.5-4-14.4-6-29.9-6s-30.7 3.2-45.8 9.6v-44.5c15.4-5 32.5-7.6 51.4-7.6Z"/>
+				<path id="cost-3" d="M236 116.5c26.6 0 46.3 5.3 59.2 16a55 55 0 0 1 19.3 45v26.4c0 23.7-9 38.4-26.8 44 18.4 3.3 27.6 16.8 27.6 40.6v33.7c0 19.4-6.5 34.5-19.3 45.2-13 10.7-31.2 16-54.8 16s-42.5-2.5-56.5-7.6v-44c15.6 6.3 31 9.5 46.5 9.5s25.7-2 30.7-6c5-4.2 7.4-10 7.4-17.7v-23.4c0-8.1-2-14-5.9-17.8-4-3.7-10.7-5.5-20.1-5.5H215v-42.5h28c9.1 0 15.6-2.2 19.4-6.5 3.9-4.4 5.8-10.8 5.8-19.2V182c0-15.6-10.9-23.3-32.6-23.3-18 0-33.2 2.1-45.2 6.5v-43.3c12-3.6 27.2-5.4 45.6-5.4Z"/>
+				<path id="cost-4" d="M331.6 294.6v40.6h-25.3v46h-43.7v-46h-94.2v-42.5L245 118.8h61.3v175.8h25.3Zm-67.4 0v-129l-56 129h56Z"/>
+				<path id="cost-5" d="M185.3 117.7h123.3v42.9h-77.4v58.6c8-.8 16.1-1.2 24.5-1.2 19.7 0 34.7 5 45 15 10.4 10 15.6 24.3 15.6 43.2v45.2c0 19.2-6.4 34.1-19.2 44.8-12.8 10.8-32.3 16.1-58.6 16.1a184 184 0 0 1-54.8-8.4v-43.7c19.2 6.7 37 10 53.3 10 22 0 33-7.8 33-23.4v-34.4c0-8.2-2-14-6-17.7-4-3.5-11.2-5.3-21.7-5.3-3 0-22 1.3-57 3.8V117.7Z"/>
+				<path id="cost-6" d="M178.8 183.7c0-20.4 6.3-36.8 19-49.2 12.6-12.3 32.5-18.5 59.9-18.5 20.6 0 38 2.5 52 7.6v43.7a134.9 134.9 0 0 0-51.3-8.8c-22.4 0-33.7 10-33.7 29.8v28c8-3.6 20.7-5.4 38.3-5.4s31.7 5.1 42.3 15.4c10.6 10.2 16 24.6 16 43.2v49c0 20.2-5.9 36.2-17.5 48-11.6 11.7-29.5 17.5-53.8 17.5s-42.2-5.8-53.8-17.6c-11.6-11.7-17.4-27.7-17.4-47.8V183.7Zm96.5 89.7c0-15.1-8-22.6-24.2-22.6a55.2 55.2 0 0 0-26.4 5v62c0 8.4 1.9 14.8 5.6 19.1 3.7 4.4 10.3 6.5 19.7 6.5s16-2.1 19.7-6.5c3.7-4.3 5.6-10.7 5.6-19.1v-44.4Z"/>
+				<path id="cost-7" d="M184.7 118.8h130.6v36.8L285 248.3a301.9 301.9 0 0 0-15.3 93.8v39H223v-42.4c0-34 5.4-66.4 16-97.3l25.4-80h-79.7v-42.6Z"/>
+				<path id="cost-8" d="M322.4 179v26.4c0 21.2-7 36.2-21 45.2 14.2 9 21.4 24 21.4 45.2V321c0 20-6.1 35.6-18.2 47-12.2 11.3-30.4 17-54.8 17s-42.6-5.7-54.6-17c-12-11.4-18-27-18-47v-25.2c0-21 7-36 21.1-45.2-13.8-9-20.7-24-20.7-45.2V179c0-20 6-35.6 17.8-47 11.9-11.3 30-17 54.4-17s42.6 5.7 54.6 17c12 11.4 18 27 18 47Zm-45.2 141.3v-26c0-17.2-9-25.7-27.2-25.7s-27.2 8.5-27.2 25.6v26c0 16.7 9 25 27.2 25s27.2-8.3 27.2-25Zm-.4-140.6c0-16.6-9-24.9-26.8-24.9s-26.8 8.3-26.8 25v26.7c0 17.4 9 26 26.8 26s26.8-8.6 26.8-26v-26.8Z"/>
+				<path id="cost-9" d="M178.8 181.4c0-20.1 5.8-36 17.6-47.8C208 121.8 226 116 250.2 116s42 5.8 53.6 17.6c11.6 11.7 17.4 27.7 17.4 47.8V322c0 19.4-6.5 34.6-19.7 45.6-13.1 11-32 16.4-56.3 16.4s-43.6-2.5-57.6-7.6v-44c15.5 6.3 34 9.5 55.5 9.5s32.2-8.2 32.2-24.5v-30.6c-8.4 3.8-21.6 5.7-39.5 5.7s-31.8-5.2-42-15.5c-10-10.3-15-25-15-43.9v-51.7Zm96.5.8c0-8.4-1.8-14.8-5.4-19.1-3.6-4.4-10.1-6.5-19.7-6.5s-16.2 2.1-20 6.5c-3.6 4.3-5.5 10.7-5.5 19.1v46.4c0 16 8 24 24.2 24 12.7 0 21.5-1.7 26.4-5.3v-65Z"/>
+				<path id="cost-10" d="M205.4 122.7V385h-46.7V176.7l-44 32.1v-51l47.8-35.1h42.9Zm37.5 57.8c0-20.2 5.8-36.1 17.4-47.9C272 121 290 115 314.1 115s42.2 5.9 53.9 17.6c11.6 11.8 17.4 27.7 17.4 47.9v139c0 20.2-5.8 36.1-17.4 47.9C356.3 379 338.4 385 314 385s-42.1-5.9-53.8-17.6c-11.6-11.8-17.4-27.7-17.4-47.9v-139Zm96.5 1.5c0-8.4-1.8-14.8-5.5-19.1-3.7-4.4-10.3-6.5-19.8-6.5s-16 2.1-19.7 6.5c-3.7 4.3-5.5 10.7-5.5 19.1v136c0 8.4 1.8 14.8 5.5 19.1 3.7 4.4 10.3 6.5 19.7 6.5s16-2.1 19.8-6.5c3.7-4.3 5.5-10.7 5.5-19.1V182Z"/>
+				<path id="glyph-engage" d="M250 0a250 250 0 1 0 0 500 250 250 0 0 0 0-500Zm0 451a201 201 0 1 1 0-402 201 201 0 0 1 0 402Zm0-374a173 173 0 1 0 0 346 173 173 0 0 0 0-346Zm0 298a125 125 0 1 1 0-250 125 125 0 0 1 0 250Z"/>
+				<path id="glyph-help" d="M499.4 189A230.7 230.7 0 0 1 380 387.9C221 472.5 22.4 355.4 2.4 180.3c-.6-15.4-5.9-32.6 1.4-47 8.4-16.8 35.1-15.6 43 1 5.4 10.6 2.6 23.3 4.5 34.8 10.4 141.2 179.3 245.6 306.3 174 91.6-50.3 129-186 43.8-259.4-35-30.5-87.6-44.4-131.2-25.2A98.7 98.7 0 0 0 214.5 159a97.4 97.4 0 0 0 63.1 78.8c14.8 7.5 33.9 2 46.6 13.3a24.7 24.7 0 0 1-8.7 40.6c-10.7 4-22.8.2-33.8-1a145.7 145.7 0 0 1-82-48c-55.2-62-44.7-161 20.5-211.8 58.6-46.2 146.3-37.7 203.6 6.5 48.3 34.7 74.5 92.9 76.2 151.5h-.6ZM311 105.3a42 42 0 1 0 0 84 42 42 0 0 0 0-84Z"/>
+				<path id="glyph-look" d="M292 237h42a173 173 0 1 1 0-128h-42a135 135 0 1 0 0 128Zm189-82H173a19 19 0 0 0 0 38h308a19 19 0 0 0 0-38Z"/>
+				<path id="glyph-move" d="M30 449c0-4 1-7 3-10l150-238c4-6 10-8 18-7 5 0 10 2 14 6l151 242 1 9c-1 9-8 17-17 18-6 0-11-1-15-5L199 248 68 458c-3 5-8 9-13 10-12 3-25-7-25-19Zm169-51a51 51 0 1 0 1 102c26 0 50-22 50-51 0-28-23-51-51-51Zm-42-257L98 53c-3-4-7-7-11-8-12-3-24 6-24 18 0 3 0 7 2 10l57 86c3 5 7 8 12 9 13 4 25-6 25-20l-2-7Zm100 28c6 0 10-1 14-5l63-93c2-5 2-10 0-14-4-8-10-13-18-13s-13 4-17 9l-55 83c-3 4-5 8-5 13 0 11 8 19 18 20ZM97 200c-2-4-5-7-10-9l-62-31c-6-1-11 0-15 3-9 5-12 17-7 25 2 5 5 7 9 9l58 29c3 2 6 2 10 3 14 0 24-16 17-29Zm221 29c5 0 9-2 13-4l56-28c5-3 9-8 10-14 1-7-1-13-6-18-6-5-12-7-19-4-3 0-59 28-63 31-6 3-11 9-10 17-1 11 9 20 19 20ZM198 0c-17 0-31 14-31 33a32 32 0 1 0 31-33Zm-19 121c0 11 8 20 20 20 11 0 20-9 19-20 0-11-8-19-19-19s-19 8-20 19Z"/>
+				<path id="glyph-overpower" d="M227.92 338.33a20.36 20.36 0 0 0-28.78 0l-92.9 92.37V240.2c0-1.4 1.14-2.55 2.55-2.55h37.83a20.35 20.35 0 1 0 0-40.71h-37.83a2.55 2.55 0 0 1-2.55-2.55v-52.9c0-1.4 1.14-2.55 2.55-2.55h37.83a20.35 20.35 0 1 0 0-40.7h-37.83a2.55 2.55 0 0 1-2.55-2.56V20.35a20.35 20.35 0 1 0-40.71 0v75.33c0 1.41-1.14 2.55-2.55 2.55H20.47a20.35 20.35 0 1 0 0 40.71h42.5c1.42 0 2.56 1.14 2.56 2.55v52.9c0 1.4-1.14 2.55-2.55 2.55H20.47a20.35 20.35 0 1 0 0 40.71h42.5c1.42 0 2.56 1.14 2.56 2.55v239.45a20.35 20.35 0 0 0 34.75 14.4L227.92 367.1a20.36 20.36 0 0 0 0-28.78Z"/>
+				<path id="glyph-take" d="m488.17 58.57-225.6 225.59a20 20 0 0 1-28.25 0L11.84 61.68a20 20 0 0 1 14.12-34.11c5.34 0 10.36 2.07 14.13 5.85l208.36 208.35L459.9 30.3a20 20 0 0 1 28.26 0 20 20 0 0 1 0 28.26Zm-239.09 27.4a40 40 0 1 0 0-80 40 40 0 0 0 0 80Z"/>
+				<path id="slot" fill="#58595b" d="M369.2 443.2H130.8a52 52 0 0 1-51.9-51.9V152.9a52 52 0 0 1 51.9-51.9h238.4A52 52 0 0 1 421 153v238.4a52 52 0 0 1-52 51.9ZM130.8 109.4c-24 0-43.5 19.5-43.5 43.5v238.4c0 24 19.5 43.5 43.5 43.5h238.4c24 0 43.5-19.5 43.5-43.5V152.9c0-24-19.5-43.5-43.5-43.5H130.8Z"/>
+			</defs>
+			<symbol id="i-depart" viewBox="0 0 500 500">
+				<path fill="#1f9bd7" d="M250 0 148 148 0 250l148 102 102 148 102-148 148-102-148-102L250 0z"/>
+				<path fill="#fff" d="M250 141a109 109 0 1 0 0 218 109 109 0 0 0 0-218Zm0 152a43 43 0 1 1 0-86 43 43 0 0 1 0 86ZM228 95a22 22 0 1 1 44 0 22 22 0 0 1-44 0Zm44 310a22 22 0 1 1-44 0 22 22 0 0 1 44 0Zm155-155a22 22 0 1 1-44 0 22 22 0 0 1 44 0Zm-310 0a22 22 0 1 1-44 0 22 22 0 0 1 44 0Z"/>
+			</symbol>
+			<symbol id="key-depart" viewBox="0 0 500 500">
+				<circle cx="250" cy="250" r="250" fill="hsl(210 20% 85%)"/>
+				<use href="#i-depart" transform="translate(25, 25) scale(0.9)"/>
+			</symbol>
+			<symbol id="key-engage" viewBox="0 0 500 500">
+				<circle cx="250" cy="250" r="250" fill="var(--orange)"/>
+				<use href="#glyph-engage" fill="white" transform="translate(50, 50) scale(0.8)"/>
+			</symbol>
+			<symbol id="key-help" viewBox="0 0 500 500">
+				<circle cx="250" cy="250" r="250" fill="var(--green)"/>
+				<use href="#glyph-help" fill="white" transform="translate(50, 90) scale(0.8)"/>
+			</symbol>
+			<symbol id="key-look" viewBox="0 0 500 500">
+				<circle cx="250" cy="250" r="250" fill="var(--purple)"/>
+				<use href="#glyph-look" fill="white" transform="translate(50, 105) scale(0.8)"/>
+			</symbol>
+			<symbol id="key-move" viewBox="0 0 500 500">
+				<circle cx="250" cy="250" r="250" fill="var(--blue)"/>
+				<use href="#glyph-move" fill="white" transform="translate(90, 50) scale(0.8)"/>
+			</symbol>
+			<symbol id="key-overpower" viewBox="0 0 500 500">
+				<circle cx="250" cy="250" r="250" fill="var(--red)"/>
+				<use href="#glyph-overpower" fill="white" transform="translate(170, 50) scale(0.8)"/>
+			</symbol>
+			<symbol id="i-secret" viewBox="0 0 500 500">
+				<path fill="#4a433d" d="M317 0H183L67 67 0 183v134l67 116 116 67h134l116-67 67-116V183L433 67 317 0z"/>
+				<path fill="#fed77e" d="m101 169-69 29L91 97l92-50c11 6 16 14 18 28l-20 45-80 49Zm148-90 27 15h12l-39-77-37 77h12l25-15Zm156 90 70 29-59-101-92-50c-11 6-16 14-18 28l19 45 80 49ZM251 422l-27-15h-12l39 77 37-77h-12l-25 15Zm74-42-19 45c2 13 7 22 18 27l92-49 59-101-70 28-80 50Zm-224-50-69-28 59 101 92 49c11-5 16-14 18-27l-20-45-80-50Zm149 65L30 250l220-141 222 141-222 145Zm0-56a89 89 0 1 0 0-178 89 89 0 0 0 0 178Z"/>
+			</symbol>
+			<symbol id="key-take" viewBox="0 0 500 500">
+				<circle cx="250" cy="250" r="250" fill="hsl(49 100% 45%)"/>
+				<use href="#glyph-take" fill="white" stroke="white" stroke-width="20" transform="translate(50, 160) scale(0.8)"/>
+			</symbol>
+			<symbol id="i-north" viewBox="0 0 500 500">
+				<path fill="#1f9bd7" d="M229 12 3 402c-9 17 3 38 22 38h450c19 0 31-21 22-38L271 12a25 25 0 0 0-42 0Z"/>
+				<path fill="#fff" d="M278 161h55v257h-53c-37-93-58-150-64-169 5 20 8 53 8 101v68h-55V161h55l34 86c14 37 24 65 29 84-6-24-9-59-9-105v-65Z"/>
+			</symbol>
+			<symbol id="i-east" viewBox="0 0 500 500">
+				<path fill="#1f9bd7" d="M488 229 98 3C81-6 60 6 60 25v450c0 19 21 31 38 22l390-226c16-9 16-33 0-42Z"/>
+				<path fill="#fff" d="M117 125h130v49h-75v54h65v49h-65v58h75v48H117V125z"/>
+			</symbol>
+			<symbol id="i-south" viewBox="0 0 500 500">
+				<path fill="#1f9bd7" d="M271 488 497 98c9-17-3-38-22-38H25C6 60-6 81 3 98l226 390c9 16 33 16 42 0Z"/>
+				<path fill="#fff" d="M176 160c0-20 6-35 20-46 13-10 32-16 58-16s43 3 56 8v54c-15-7-33-10-52-10-10 0-16 1-20 5-3 3-5 7-5 13v5c0 7 1 12 3 16 3 3 8 7 16 11l42 24c21 11 31 28 31 50v23c0 20-8 35-23 46-14 11-35 16-62 16s-47-2-61-8v-54c17 7 36 11 57 11s32-6 32-18v-6c0-6-1-10-3-13-3-3-7-6-14-9l-39-22c-24-13-36-32-36-56v-24Z"/>
+			</symbol>
+			<symbol id="i-west" viewBox="0 0 500 500">
+				<path fill="#1f9bd7" d="m12 271 390 226c17 9 38-3 38-22V25c0-19-21-31-38-22L12 229a25 25 0 0 0 0 42Z"/>
+				<path fill="#fff" d="M377 130h48l-34 257h-50l-15-101-8-71c-2 27-5 51-8 71l-15 101h-53l-33-257h48a4131 4131 0 0 1 19 156c3-35 9-86 18-156h47l18 153c1-25 3-48 6-68l12-85Z"/>
+			</symbol>
+			<symbol id="i-blank" viewBox="0 0 500 118">
+				<path d="M441 118H59A59 59 0 1 1 59 0h382a59 59 0 1 1 0 118Z"/>
+			</symbol>
+			<symbol id="i-boost" viewBox="0 0 446 500">
+				<path fill="hsl(220 2% 35%)" d="M15 68 296 0c4-1 6 0 8 3l121 126-288 68L15 68Zm421 87-289 70 11 275 283-69c3-1 5-2 4-6l-9-270Zm-318 64L0 95l11 261c0 4 1 6 3 9l114 121-10-267Z"/>
+			</symbol>
+			<symbol id="i-boost-output" viewBox="0 0 500 400">
+				<!-- <rect x="0" y="0" width="500" height="400" fill="yellow"/> -->
+				<polygon points="351.89 241.783 351.89 320.237 391.118 281.01 351.89 241.783" fill="#58595b" transform="translate(-1050 -650) scale(3)"/>
+				<use href="#i-boost" transform="translate(70 4) scale(.98)"/>
+			</symbol>
+			<symbol id="i-coin" viewBox="0 0 500 500">
+				<path fill="hsl(197 90% 30%)" d="M250 435c-79 0-147-50-173-119H0v118l63 66h253v-77c-21 8-43 12-66 12Z"/>
+				<path fill="hsl(166 13% 57%)" d="M65 250c0-77 47-143 114-171V0H84L0 87v196h68l-3-33Z"/>
+				<path fill="hsl(46 40% 57%)" d="M409 0H211v69a186 186 0 0 1 222 210h67V94c-36-35-55-58-91-94Z"/>
+				<path fill="hsl(24 38% 51%)" d="M425 311c-14 40-42 74-77 96v93h122l30-34V311h-75Z"/>
+			</symbol>
+			<symbol id="i-coin-1" viewBox="0 0 500 500">
+				<use href="#i-coin"/>
+				<use href="#cost-1"/>
+			</symbol>
+			<symbol id="i-coin-2" viewBox="0 0 500 500">
+				<use href="#i-coin"/>
+				<use href="#cost-2"/>
+			</symbol>
+			<symbol id="i-cost-engage" viewBox="0 0 500 500">
+				<use href="#cost-ring"/>
+				<use href="#i-engage" transform="translate(62.5, 62.5) scale(0.75)"/>
+			</symbol>
+			<symbol id="i-cost-help" viewBox="0 0 500 500">
+				<use href="#cost-ring"/>
+				<use href="#i-help" transform="translate(62.5, 62.5) scale(0.75)"/>
+			</symbol>
+			<symbol id="i-cost-look" viewBox="0 0 500 500">
+				<use href="#cost-ring"/>
+				<use href="#i-look" transform="translate(62.5, 62.5) scale(0.75)"/>
+			</symbol>
+			<symbol id="i-cost-move" viewBox="0 0 500 500">
+				<use href="#cost-ring"/>
+				<use href="#i-move" transform="translate(62.5, 62.5) scale(0.75)"/>
+			</symbol>
+			<symbol id="i-cost-overpower" viewBox="0 0 500 500">
+				<use href="#cost-ring"/>
+				<use href="#i-overpower" transform="translate(62.5, 62.5) scale(0.75)"/>
+			</symbol>
+			<symbol id="i-cost-take" viewBox="0 0 500 500">
+				<use href="#cost-ring"/>
+				<use href="#i-take" transform="translate(62.5, 62.5) scale(0.75)"/>
+			</symbol>
+			<symbol id="i-cost-bx" viewBox="0 0 500 500">
+				<use href="#cost-hex-b"/>
+				<use href="#cost-x" fill="white"/>
+			</symbol>
+			<symbol id="i-cost-b3" viewBox="0 0 500 500">
+				<use href="#cost-hex-b"/>
+				<use href="#cost-3" fill="white"/>
+			</symbol>
+			<symbol id="i-cost-1" viewBox="0 0 500 500">
+				<use href="#cost-hex"/>
+				<use href="#cost-1"/>
+			</symbol>
+			<symbol id="i-cost-2" viewBox="0 0 500 500">
+				<use href="#cost-hex"/>
+				<use href="#cost-2"/>
+			</symbol>
+			<symbol id="i-cost-3" viewBox="0 0 500 500">
+				<use href="#cost-hex"/>
+				<use href="#cost-3"/>
+			</symbol>
+			<symbol id="i-cost-4" viewBox="0 0 500 500">
+				<use href="#cost-hex"/>
+				<use href="#cost-4"/>
+			</symbol>
+			<symbol id="i-cost-5" viewBox="0 0 500 500">
+				<use href="#cost-hex"/>
+				<use href="#cost-5"/>
+			</symbol>
+			<symbol id="i-cost-6" viewBox="0 0 500 500">
+				<use href="#cost-hex"/>
+				<use href="#cost-6"/>
+			</symbol>
+			<symbol id="i-cost-7" viewBox="0 0 500 500">
+				<use href="#cost-hex"/>
+				<use href="#cost-7"/>
+			</symbol>
+			<symbol id="i-cost-8" viewBox="0 0 500 500">
+				<use href="#cost-hex"/>
+				<use href="#cost-8"/>
+			</symbol>
+			<symbol id="i-cost-9" viewBox="0 0 500 500">
+				<use href="#cost-hex"/>
+				<use href="#cost-9"/>
+			</symbol>
+			<symbol id="i-cost-10" viewBox="0 0 500 500">
+				<use href="#cost-hex"/>
+				<use href="#cost-10"/>
+			</symbol>
+			<symbol id="i-cost-x" viewBox="0 0 500 500">
+				<use href="#cost-hex"/>
+				<use href="#cost-x"/>
+			</symbol>
+			<symbol id="i-dig" viewBox="0 0 500 500">
+				<path fill="#231f20" d="M165 459a315 315 0 0 1-133 8c-4-9-7-62 10-131 9-40 53-88 73-109l158 158c-20 20-69 64-108 74M338 72l37-37 90 89-37 37a63 63 0 0 1-88-1 63 63 0 0 1-2-88m-34 322c5-5 5-14 0-20l-79-78 105-106c36 26 87 24 118-8l47-47c6-6 6-15 0-21L385 4c-5-5-15-5-20 0l-47 47a91 91 0 0 0-8 119L204 275l-79-78c-5-6-14-6-20-1-3 3-77 74-91 133-17 68-17 131-8 150a31 31 0 0 0 16 15c19 9 81 9 149-7 60-15 130-89 133-93"/>
+			</symbol>
+			<symbol id="i-engage" viewBox="0 0 500 500">
+				<use fill="var(--orange)" href="#glyph-engage"/>
+			</symbol>
+			<symbol id="i-health" viewBox="0 0 500 440">
+				<path d="M466 225.8a135.3 135.3 0 0 0-191-191l-19.6 19.4c-3 3-7.8 3-10.8 0L224.9 35A135.3 135.3 0 0 0 34 226l210.6 211c3 3 7.9 3 11 0l210.6-211Z"/>
+			</symbol>
+			<symbol id="i-help" viewBox="0 0 500 416">
+				<use fill="var(--green)" href="#glyph-help"/>
+			</symbol>
+			<symbol id="i-impact" viewBox="0 0 500 500">
+				<path d="M500 66 265 0 0 262l260 94-156 144 396-162-240-123L500 66z"/>
+			</symbol>
+			<symbol id="i-look" viewBox="0 0 500 346">
+				<use fill="var(--purple)" href="#glyph-look"/>
+			</symbol>
+			<symbol id="i-mandatory" viewBox="0 0 500 366">
+				<path fill="#be1e2d" d="M491 1H9C2 1-3 9 2 15l241 347c4 5 10 5 14 0L498 15c5-6 0-14-7-14ZM268 46l-5 151h-30l-5-151h40Zm-19 217c-15 0-22-7-22-21s7-21 22-21 21 7 21 21-7 21-21 21Z"/>
+			</symbol>
+			<symbol id="i-morale" viewBox="0 0 500 478">
+				<path d="m258 6 69 139c2 5 7 8 12 9l153 22c8 1 11 10 5 15L386 300c-4 3-5 9-4 14l26 153c1 7-7 13-13 9l-138-72c-4-3-10-3-14 0l-138 72c-6 4-14-2-13-9l26-153c1-5 0-11-4-14L3 191c-6-5-3-14 5-15l153-22c5-1 10-4 12-9L242 6c3-7 13-7 16 0Z"/>
+			</symbol>
+			<symbol id="i-move" viewBox="0 0 398 500">
+				<use fill="var(--blue)" href="#glyph-move"/>
+			</symbol>
+			<symbol id="i-overpower" viewBox="0 0 234 500">
+				<use fill="var(--red)" href="#glyph-overpower"/>
+			</symbol>
+			<symbol id="i-repair" viewBox="0 0 500 500">
+				<path fill="#231f20" d="M75 425a12 12 0 1 0-16 16 12 12 0 0 0 16-16m318-237ZM369 29a118 118 0 0 0-122 167c2 6 1 12-3 16L36 420a25 25 0 0 0 0 36l8 8c10 10 26 10 36 0l208-208c4-4 10-5 16-3a118 118 0 0 0 167-122l-68 67c-3 4-8 5-13 4l-65-17c-5-1-9-5-10-10l-17-65c-1-5 0-10 4-14l67-67ZM24 484l-8-8a54 54 0 0 1 0-76l201-201A147 147 0 0 1 401 8a14 14 0 0 1 6 24l-80 79 13 49 49 13 79-80a14 14 0 0 1 24 6 147 147 0 0 1-191 184L100 484a54 54 0 0 1-76 0"/>
+			</symbol>
+			<symbol id="i-setback" viewBox="0 0 500 474">
+				<path d="M481 298h-47v-66C434 104 336 0 217 0 97 0 0 104 0 232v106c0 31 26 56 59 56s59-25 59-56V232c0-66 44-120 99-120 54 0 99 54 99 120v66h-48c-15 0-24 16-15 28l107 140c7 10 22 10 30 0l106-140c9-12 1-28-15-28Z"/>
+			</symbol>
+			<symbol id="i-take" viewBox="0 0 500 296">
+				<path fill="#706f6f" d="M492.4 62.8 266.81 288.4c-5.06 5.06-11.71 7.6-18.37 7.6s-13.3-2.54-18.36-7.6L7.6 65.92a26 26 0 0 1 0-36.74c4.9-4.9 11.43-7.6 18.36-7.6s13.47 2.7 18.37 7.6l204.12 204.11L455.66 26.07a26 26 0 0 1 36.73 0 26 26 0 0 1 0 36.74ZM249.06 92a46 46 0 1 0 0-92 46 46 0 0 0 0 92Z"/>
+				<use fill="var(--yellow)" href="#glyph-take"/>
+			</symbol>
+			<symbol id="i-time" viewBox="0 0 330 500">
+				<path d="m206 252-3-2h-1l4-2A164 164 0 0 0 313 19c-5-12-17-19-29-19H46C34 0 22 7 17 19a164 164 0 0 0 107 229l4 2-8 3A164 164 0 0 0 17 481c5 12 17 19 29 19h238c12 0 24-7 29-19a164 164 0 0 0-107-229Zm83 218c-1 2-3 3-5 3H46c-2 0-4-1-5-3a137 137 0 0 1 88-191l6-2c11-3 19-15 19-27 0-13-8-24-19-27l-4-1A137 137 0 0 1 41 30c1-2 3-3 5-3h238c2 0 4 1 5 3a137 137 0 0 1-90 192l-4 1c-11 3-19 14-19 27a28 28 0 0 0 23 28 137 137 0 0 1 90 192ZM165 194c-42 0-78-25-94-60-2-5 1-11 7-11h174c6 0 9 6 7 11-16 35-52 60-94 60Zm94 237c2 5-1 11-7 11H78c-6 0-9-6-7-11a103 103 0 0 1 188 0Z"/>
+			</symbol>
+			<symbol id="i-traveler" viewBox="0 0 500 420">
+				<path fill="#eeb41e" d="M268 1c-61 0-121 25-164 68-39 40-61 91-60 142 0 18 6 39 9 51L1 383a12 12 0 0 0 13 17l136-15c37 18 71 34 123 34 123 0 227-95 227-208C500 99 392 1 268 1Z"/>
+				<path fill="#b72c2f" d="M476 211c0-99-97-186-208-186-55 0-108 23-147 61-34 35-53 81-53 125 0 15 6 35 9 46l1 3c1 3 1 6-1 9L32 373a4948 4948 0 0 1 126-12c37 19 67 34 115 34 110 0 203-84 203-184Z"/>
+			</symbol>
+			<symbol id="i-reserve" viewBox="0 0 338 500">
+				<path fill="#58595b" d="M274 0H65C30 0 1 29 1 65v370c0 36 29 65 64 65h209c35 0 64-29 64-65V65c0-36-29-65-64-65Zm43 435c0 24-20 44-43 44H65c-24 0-43-20-43-44V65c0-24 19-44 43-44h209c23 0 43 20 43 44v370Z"/>
+				<path fill="#404041" d="M253 228v44h-60v62h-47v-62H85v-44h61v-62h47v62h60z"/>
+			</symbol>
+			<symbol id="slot-ability" viewBox="0 0 500 500">
+				<use href="#slot"/>
+				<path fill="#57b76d" d="M79 391.3a52 52 0 0 0 51.8 51.9h238.4c2.5 0 5-.2 7.4-.5v-88H78.9v36.6Z"/>
+				<circle cx="375" cy="398" r="43" fill="white" />
+				<path d="M131.6 415.9c3.8 0 7.1-.5 9.8-1.3v8.6c-2.8.8-6.2 1.2-10 1.2-10.8 0-16.3-4.2-16.3-12.5V382c0-4 1.4-7 4.1-9.2 2.7-2.2 6.8-3.3 12.3-3.3 3.6 0 6.8.4 9.7 1.1v8.7c-3.2-.9-6.2-1.3-9-1.3s-5 .4-6 1.2c-1 .8-1.5 2-1.5 3.6V411c0 3.3 2.3 4.9 6.9 4.9Zm39.1-13.2 8.6 21.3h-10.5l-7.5-20.4h-3.8V424H148V370h16c4.2 0 7.5 1 9.9 3 2.3 2.2 3.5 5.1 3.5 9v9.2c0 6.1-2.2 10-6.7 11.6Zm-2.8-20.1c0-3-1.6-4.6-5-4.6h-5.4v18h5.5c1.7 0 3-.4 3.7-1.2s1.2-2 1.2-3.8v-8.4Zm17.4 41.4h26v-8.3h-16.5v-15H209v-8.2h-14.3v-14.3h16.5v-8.3h-26V424Zm53.5-54.1L250 424h-9.2l-2.6-13.5H226l-2.5 13.5h-9.1l11.2-54.1h13.2Zm-2.2 32.5-4.6-24-4.5 24h9.1Zm14.7-24.2h10V424h9.6v-45.8h10v-8.3h-29.6v8.3Zm60.5 0v-8.3h-26V424h26v-8.3h-16.5v-15h14.3v-8.2h-14.3v-14.3h16.5Z"/>
+				<path fill="#a7a9ac" d="M374.5 443.2a45.5 45.5 0 1 1 .1-91 45.5 45.5 0 0 1 0 91Zm0-85.8a40.4 40.4 0 1 0 .1 80.8 40.4 40.4 0 0 0 0-80.8Z"/>
+				<use href="#glyph-help" fill="var(--green)" transform="translate(343 373) scale(0.128) "/>
+			</symbol>
+			<symbol id="slot-cost" viewBox="0 0 500 500">
+				<use href="#slot" transform="translate(19 0)"/>
+				<circle cx="102" cy="255" r="10" fill="white" />
+				<use href="#i-boost" transform="translate(40 212) scale(.233)"/>
+				<polygon points="200.559 279.529 157.949 236.919 157.949 256.176 157.949 302.882 157.949 322.139 200.559 279.529" fill="#58595b"/>
+			</symbol>
+			<symbol id="slot-bonus" viewBox="0 0 500 500">
+				<use href="#slot" transform="translate(-64 0)"/>
+				<polygon points="351.89 241.783 351.89 320.237 391.118 281.01 351.89 241.783" fill="#58595b"/>
+				<use href="#i-boost" transform="translate(390 221.5) scale(.233)"/>
+				<use href="#i-time" transform="translate(75 170) scale(.43)"/>
+			</symbol>
+			<symbol id="slot-die-result" viewBox="0 0 500 500">
+				<use href="#slot"/>
+				<use href="#i-health" transform="scale(0.55	) translate(205 240)" />
+			</symbol>
+			<symbol id="slot-impact" viewBox="0 0 500 500">
+				<use href="#slot"/>
+				<path fill="#fff" d="m310 202-4-6 46-42-57-21 72-72 76 22-57 36 56 29-132 54z"/>
+				<use href="#i-impact" transform="translate(307 66) scale(.242)"/>
+				<use href="#i-morale" transform="translate(148 172) scale(.4)"/>
+			</symbol>
+			<symbol id="slot-interaction" viewBox="0 0 500 500">
+				<use href="#slot"/>
+				<image href="icons/i-sinew.webp" x="75" y="70" height="150" width="150" />
+			</symbol>
+			<symbol id="slot-skill-type" viewBox="0 0 500 500">
+				<use href="#slot"/>
+				<circle cx="150" cy="145" r="72" fill="white" />
+				<use href="#i-cost-move" transform="scale(0.3	) translate(250 233)" />
+			</symbol>
+			<symbol id="slot-terrain" viewBox="0 0 500 500">
+				<path fill="#055072" d="M11 29v385c0 33 26 59 58 59h360c32 0 59-26 59-59V29H11Z"/>
+				<path fill="#fff" d="M446 153v238c0 26-20 46-46 46H162c-26 0-46-20-46-46V153c0-25 20-46 46-46h238c26 0 46 21 46 46ZM84 378H72l-17 1 29-10v-9H41v9h10l18-1-14 5-14 5v9h43v-9Zm0-223h-9v12h-9v-10h-8v10h-9v-12h-8v22h43v-22Zm-35 42h35v-10H49v-7h-8v24h8v-7Zm24 195H41v10h32c2 0 3 1 3 3s-1 4-3 4H41v9h32c3 0 6-1 8-3s3-6 3-10-1-7-3-9-5-4-8-4Zm11-241H41v-14c0-4 0-6 2-8s4-3 7-3h8c5 0 8 2 9 5l17-7v10l-16 6v1h16v10Zm-23-13-1-2-2-1h-7l-2 1-1 2v3h13v-3Zm23 165h-9v12h-9v-11h-8v11h-9v-12h-8v21h43v-21Zm0-69-43-8v-13l43-8v9l-10 2v8l10 2v8Zm-18-17-17 3 17 3v-6Zm18 137H41v-14c0-4 0-6 2-8s4-3 7-3h23c7 0 11 3 11 10v15Zm-8-13c0-2-1-3-3-3H50l-1 1-1 2v4h28v-4Zm8-43H41v-14c0-3 0-6 2-8l7-2h8c5 0 8 1 9 5l17-7v10l-16 6v1h16v9Zm-23-13-1-2H49l-1 2v4h13v-4Zm23-28-17-3-12-1 12-1 17-3v-8l-43-6v8l14 2 11 1-25 3v8a1818 1818 0 0 0 19 3l-19 3v8l43-5v-9Z"/>
+				<use href="#slot-skill-type" transform="translate(31 0)"/>
+			</symbol>
+			<symbol id="icon-settings" viewBox="0 0 500 500">
+				<path fill="var(--util-icon-bkg)" fill-rule="evenodd" d="M404.2,50.5l23.7,23.7,23.7,23.6c-55.2,53.7-30,119.9,48.9,119.9V284c-77.3,0-105.7,64.6-50.5,119.8l-23.7,23.7-23.6,23.6c-55.2-55.2-119.9-29.9-119.9,48.9H215c1.5-77.2-63.1-105.6-118.3-50.4L73,425.9,49.4,402.2C103,347,79.3,282.4.5,282.4V214.5c77.2,1.6,105.6-63,50.4-118.2L74.6,72.6,98.3,48.9c53.6,53.7,119.8,30,119.8-48.9h66.3C284.4,77.3,349,105.7,404.2,50.5ZM249.7,135.7c63.1,0,115.1,50.5,115.1,113.5s-52,115.2-115.1,115.2S136.1,312.3,136.1,249.2A113.1,113.1,0,0,1,249.7,135.7Z" />
+			</symbol>
+			<symbol id="icon-find" viewBox="0 0 500 500">
+				<circle fill="var(--util-icon-bkg)" cx="250" cy="250" r="250" />
+				<path fill="var(--util-icon-txt)" d="M158,217c0,20,4.7,39.7,14,57.5,1,2.1,2.2,4.1,3.5,5.9l-57.9,57.9h0c-6,5.8-9.4,13.8-9.5,22.2,0,8.4,3.2,16.4,9.2,22.3,5.9,5.9,14,9.2,22.3,9.2,8.4,0,16.4-3.5,22.2-9.5l57.9-57.9h0c1.9,1.3,3.9,2.5,5.9,3.5,26.5,13.7,57,17.5,86.1,10.6,29-6.8,54.7-23.8,72.3-47.9,17.6-24.1,26-53.7,23.7-83.4-2.3-29.7-15.1-57.7-36.2-78.8-17.5-17.5-39.8-29.4-64-34.2-24.3-4.8-49.4-2.3-72.2,7.1-22.8,9.5-42.4,25.5-56.1,46-13.7,20.6-21.1,44.7-21.1,69.5h0Zm181.2-56.2c17.6,17.5,26,42.2,22.8,66.7-3.2,24.6-17.6,46.3-39.1,58.7-21.4,12.4-47.5,14.2-70.4,4.7-22.9-9.5-40.1-29-46.6-53-6.4-23.9-1.4-49.5,13.7-69.2,15.1-19.7,38.5-31.2,63.3-31.2,21.1,0,41.3,8.3,56.2,23.2h0Z" />
+			</symbol>
+			<symbol id="icon-share-sheet" viewBox="0 0 392 500">
+				<path d="M119.1,98.7a21.7,21.7,0,0,1-.1-30.6L180.7,6.3A21.4,21.4,0,0,1,195.9,0h.2a21.3,21.3,0,0,1,15.1,6.2L273,68.1a21.7,21.7,0,0,1-30.8,30.7L217.7,74.3V282.6a21.7,21.7,0,0,1-43.4,0V74.3L149.7,98.8A21.6,21.6,0,0,1,119.1,98.7Zm229.2,53.5H283v43.5h65.2V456.5H43.8V195.7H109V152.2H43.7A43.4,43.4,0,0,0,.3,195.5V456.7A43.4,43.4,0,0,0,43.7,500H348.3a43.4,43.4,0,0,0,43.4-43.3V195.5A43.4,43.4,0,0,0,348.3,152.2Z" />
+			</symbol>
+			<symbol id="pwa-logo" viewBox="0 0 500 190">
+				<path d="M323.4,189.1,399.3.9H349L297,122.5,260.1.9H221.4L181.8,122.5l-28-55.4L128.5,145l25.7,44.1h49.5L239.6,80l34.1,109.1Z" fill="#5a0fc8" />
+				<path d="M500,189.1H447.7l-12.1-33.7H368l14.4-36.5h41.7L404.3,63.5,429.1.9ZM128.4,20a53.4,53.4,0,0,1,5.9,7.6L111.9,96.7l-8.1,24.7a91,91,0,0,1-25,3.1h-31v64.6H0V.9H77.9C100.1.9,116.9,7.2,128.4,20ZM95.5,62.3c0-7.5-2.2-13.6-6.7-18.1s-12.2-6.8-23-6.8h-18V88H65.7c11.6,0,19.6-2.5,23.9-7.5S95.5,70,95.5,62.3Z" />
+			</symbol>
+			<symbol id="click-to-share" viewBox="0 0 500 315">
+				<path d="M88.2,1.4c5.9,24.3,16.7,67.7,22.6,91.9L84.7,79.7c-36.3,62.5-17.4,138.2,39.6,180.9C39.2,226,6.4,136.6,29.4,51L0,35.8Zm3,173.2c-4.8-30.1,12.3-55,37.2-58.9,9.9-1.6,19,2,25.3,10.1l-12.2,13.1c-3.9-4.2-7.4-5.8-11.2-5.1-12.3,1.9-20.9,17.9-18,36.1,1.9,12.2,7.7,18.5,19.2,16.7,4.4-.7,8.6-4.1,12-8.1l10.7,11.9c-4,5.2-12.4,12.9-24.3,14.8C110.1,208.3,94.8,197.4,91.2,174.6Zm75.1,10.1a40.2,40.2,0,0,1-.4-8.9l2.9-71.1,20.7-3.3-2.9,71.9a9.1,9.1,0,0,0,.1,2.5c.4,2.4,1.8,3,3.1,2.8a7.8,7.8,0,0,0,2.3-.6l1.7,15.4a34.3,34.3,0,0,1-10.4,3.3C172.7,198.4,167.7,193.6,166.3,184.7Zm38.5-59.6,20.7-3.3-2.6,67-20.8,3.3Zm0-18.4c-1-6.2,3.6-12.5,10.6-13.6,5.4-.9,11.4,1.6,12.4,7.8s-3.6,12.6-10.6,13.7C211.7,115.5,205.8,113.2,204.8,106.7Zm31.4,53.9c-3.5-21.8,10.1-43.7,32.5-47.2a22.7,22.7,0,0,1,18.9,5.2l-9.5,14c-2.7-1.9-5-2.9-8.1-2.4-9.4,1.5-14.6,13.5-12.5,26.7,1,6.5,4.8,10.2,11,9.2,3.9-.6,6.2-2.8,8.3-5l10.6,11.3c-4.4,4.4-10.5,9.4-20.9,11.1C251.9,185.8,238.9,177.7,236.2,160.6Zm63.4-76.7,20.8-3.3L318.3,131h.5l17.6-26.7,22.9-3.6-22.2,33,21.1,33.7-20.8,3.3-12.7-22.7-7.4,10.2-.7,15.8-20.8,3.3Zm96.9,60.3a64.2,64.2,0,0,1-.3-8.8l1.2-24.4-8.3,1.3.7-15.8,9.2-2.3,3.1-17.5,17.4-2.8L419,91.1l14-2.3-.5,16.6-14.6,2.3-1,25.2a26.1,26.1,0,0,0,.4,4.2c.6,3.9,3,5.4,7.1,4.8a12.3,12.3,0,0,0,4.5-2.1l5.9,14a46,46,0,0,1-15.9,5.4C405.2,161.4,398.2,154.8,396.5,144.2Zm42.3-15.8c-4-25.2,12.4-44.1,30.3-46.9,15.6-2.5,27.7,6.8,30.3,22.9,4,25.2-12.4,44-30.4,46.9C453.5,153.8,441.3,144.5,438.8,128.4ZM478.4,108c-1-6.5-4-10.3-9-9.5-7.5,1.2-11.9,12.3-9.6,26.3,1,6.5,4,10.3,8.9,9.5C476.3,133.1,480.6,122,478.4,108ZM150.3,301.8l12.9-14.1c5.4,5.4,12.8,8.5,19.3,7.5s9.5-4.3,8.7-9-4.6-4.8-11-7.5l-8-3.4c-8.6-3.7-14.2-9.1-15.9-19.6-2.4-15.2,9.5-29.5,26.7-32.2,9.9-1.6,20.1,1.9,28.3,8.9l-11,14.3c-5-3.6-9.8-6-15.2-5.2s-8.5,4.7-7.9,8.7,4.5,4.5,11.9,7.7l8.6,3.6c8.9,3.6,13,8.4,14.6,18.3,2.5,15.5-8.3,30.1-28.5,33.3C173,314.8,161,312.2,150.3,301.8ZM227.1,212l20.8-3.3-1.1,21.7-1.3,11.9h.5c4.5-5.5,10.6-10.4,18.4-11.7,10.6-1.7,16.2,3.3,18,14.5a41.9,41.9,0,0,1,.4,9.5L281.2,296l-20.8,3.3,1.5-38.8a31.3,31.3,0,0,0,.2-5.9c-.6-3.6-3-5.1-6.3-4.6s-6.4,3.4-10.3,9.1L244,301.9l-20.7,3.3Zm67.4,59c-3.9-24.7,9.6-46.8,27.5-49.6,5.5-.9,11.7,1.3,14.8,5.9h.3l1.8-6.9,16.6-2.7-2.6,67L336,287.3l-1.3-8h-.3c-4.7,6.9-11.7,11.7-17.9,12.7C305.1,293.8,296.9,286.3,294.5,271Zm38.7-7.7.9-21.5a8.3,8.3,0,0,0-7.8-3.8c-7.6,1.2-13,12.4-10.7,27,1.1,6.7,3.9,9.2,7.5,8.6S330.9,270.8,333.2,263.3Zm37.1-48,16.9-2.7,1.5,12.8h.5c3.6-9.1,10.2-16.2,17.5-17.4,3.6-.6,5.8-.4,7.2.2l-3.9,19c-2-.8-4.8-.3-6.9,0-5.5.9-9.6,5-13.2,14.4l-1.2,37.4-20.8,3.3Zm76.6-13.8c15.9-2.5,23.4,7.7,25.5,21.3a42.2,42.2,0,0,1-1.1,16.1l-35.1,5.6c1.6,8.5,7.9,11.2,15.4,10,3.7-.5,7.8-3.3,10.3-5.8l9.3,11.8c-4.6,4.4-12.4,8.9-23.1,10.6-15.8,2.5-28.7-6.4-31.4-23.8C412.9,223.4,429.5,204.3,446.9,201.5Zm8.6,27.1a20.4,20.4,0,0,0-.1-4.2c-.7-4.4-3.1-7.5-8.5-6.6s-9.6,5.2-11.1,14Z" />
+			</symbol>
+			<symbol id="logo-stonemaier-games" viewBox="0 0 336 500">
+				<path d="M331.2,91.8,172.1,0h-8.2L4.8,91.8l-4,7.1V282.6l4,7.1,159.1,91.8h8.2l159.1-91.8,4-7.1V98.9ZM318.9,277.9,168,365,17.1,277.9V103.6L168,16.5l150.9,87.1ZM26.7,108.2l-.8,1.5V271.8l.8,1.5,140.5,81.1h1.6l140.5-81.1.8-1.5V109.7l-.8-1.5L168.8,27.1h-1.6Zm280.1,2.4V270.9L168,351.1,29.2,270.9V110.6L168,30.4ZM33.2,456.8c0,5.7-4.5,9.1-10.8,9.1A18.4,18.4,0,0,1,9.7,461l3.2-3.8c2.9,2.5,5.8,3.9,9.6,3.9s5.4-1.5,5.4-3.8-1.2-3.4-6.9-4.7-10.1-3.5-10.1-9.1,4.3-8.9,10.4-8.9a17.3,17.3,0,0,1,11,3.8l-2.9,4.1a13.1,13.1,0,0,0-8.2-3.1c-3.1,0-5,1.6-5,3.6s1.4,3.4,7.3,4.8S33.2,451.7,33.2,456.8Zm5.7-21.7H63.5V440H53.9v25.4H48.5V440H38.9Zm96.3,30.3h-4.5L114,443.8v21.6h-5.3V435.1h5l16.2,21v-21h5.3Zm15.3-25.6v7.9h15.2v4.8H150.5v8.2h17.4v4.7H145.2V435.1h22.5v4.7Zm50.8-4.6h5.6v30.4h-5.3V443.8L192,458.1h-.2l-9.5-14.2v21.7h-5.2V435.2h5.7l9.2,14.3Zm26.4-.2-13.4,30.6h5.5l3.1-7.4h14.4l3.1,7.4H246L232.6,435Zm-2.8,18.5,5.2-12.2,5.2,12.2Zm28.8-18.3H259v30.4h-5.3Zm20.9,25.6H292v4.8H269.3V435.2h22.5v4.7H274.6v8h15.3v4.7H274.6Zm50.8-16c0-5.9-4.3-9.6-11.3-9.6H300.5v30.4h5.4V455h6.7l7.4,10.6h6.3L318.1,454C322.4,452.9,325.4,449.8,325.4,444.8Zm-19.5,5.4V440h7.7c4,0,6.3,1.8,6.3,5.1s-2.4,5.1-6.2,5.1ZM88.3,441.9H79.6l-.7.4-4.3,7.5v.9l4.3,7.5.7.4h8.7l.8-.4,4.3-7.5v-.9l-4.3-7.5ZM87.9,457H80.1l-3.8-6.7,3.8-6.8h7.8l3.8,6.8Zm3.6-22.1h-15l-2.1,1.2L67,449v2.5l7.4,12.9,2.1,1.2h15l2.1-1.2,7.4-12.9V449l-7.4-12.9ZM90,460.7H78l-6.1-10.4L78,439.8H90l6.1,10.5Zm26.8,29.2h7.6v7.3A11.3,11.3,0,0,1,117,500c-5.7,0-9.3-4.2-9.3-9.4a9.2,9.2,0,0,1,9.2-9.5,9.7,9.7,0,0,1,6.8,2.4l-1.3,1.6a8,8,0,0,0-5.6-2.1c-4,0-6.9,3.4-6.9,7.5s2.8,7.6,7.2,7.6a8.9,8.9,0,0,0,5.3-1.8v-4.5h-5.6Zm24.2-8.6-8.3,18.4h2.1l2.2-4.8h9.9l2.1,4.8h2.3l-8.4-18.4ZM137.8,493l4.1-9.3,4.2,9.3Zm37.7-11.6h2.1v18.3h-2.1V484.9l-6.6,9.8h-.1l-6.7-9.8v14.8h-2V481.4h2.1l6.6,10ZM190,497.8h11.3v1.9H188V481.4h13.2v1.9H190v6.2h10v1.9H190Zm33.2-3c0,3.1-2.6,5.1-6.3,5.1a10.5,10.5,0,0,1-7.4-2.9l1.3-1.5a8.7,8.7,0,0,0,6.2,2.6c2.5,0,4.1-1.3,4.1-3.1s-.9-2.7-4.8-3.5-6.1-2.3-6.1-5.3,2.5-5,6-5a9.2,9.2,0,0,1,6.4,2.2l-1.2,1.6a7.9,7.9,0,0,0-5.2-2c-2.4,0-3.9,1.3-3.9,3s.9,2.7,4.9,3.6S223.2,491.9,223.2,494.8ZM74.8,283.5H120a18.9,18.9,0,0,0,18.6-18.6V198.8A18.7,18.7,0,0,0,120,180.2H86.3V137.7h21.9v31.2l30.4-7V126.2A18.7,18.7,0,0,0,120,107.6H74.8a18.6,18.6,0,0,0-18.6,18.6v65.6a18.6,18.6,0,0,0,18.6,18.6h33.4v42.7H86.3V221.7l-30.1,7v36.2A18.8,18.8,0,0,0,74.8,283.5Zm47.5-17.9-11.6-11.5V209.6l11.6-11.3Zm0-112.5-11.6,11.5V136.7l11.6-11.5ZM70,194.8l-7.5,7.5a15.4,15.4,0,0,1-4.1-10.5V126.2a15.6,15.6,0,0,1,4.1-10.6l7.5,7.6Zm-5.8-80.9a16.1,16.1,0,0,1,10.6-4.1H120a17.1,17.1,0,0,1,10.3,3.8l-7.8,7.8H71.8ZM74.3,194l11.3-11.3H120a16.4,16.4,0,0,1,10.6,3.8l-7.8,7.5Zm34.4,61.6,11.6,11.5h-46l11.3-11.5ZM81.3,225.2,71,235.5,60.7,230Zm-22.9,6.5,11.6,6v29.9l-7.5,7.8a15.7,15.7,0,0,1-4.1-10.5ZM190.1,197l11.8,44.8h29.4L243.4,197v86.5h30.1V107.6H243.6l-26.9,84.9-26.8-84.9H160V283.5h30.1Zm67.1,70.6-11.6,11.6V187.7l11.6-58.5ZM269,109.8l-10.8,10.8-10.8-10.8Zm-51,87,27.1-85.7,10.3,10L218,225.2Zm-44.2,70.8-11.6,11.6V111.6l11.6,11.6ZM164,109.8h21.8l-11,10.8Zm50,118.1-10.3,10.3-13.6-50.7L179.8,135Z"/>
+			</symbol>
+		</svg>
+		<img src="https://stats.rulepop.com/m.php?idsite=13&amp;rec=1" alt="" height="1" width="100">
+	</body>
+</html>
